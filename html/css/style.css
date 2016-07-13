@@ -9653,8 +9653,15 @@ button.close {
 
 /* CAROUSEL COMPONENT */
 /* ACCORDION COMPONENT */
+#accordion .panel .panel-heading {
+  padding: 0;
+}
+#accordion .panel .panel-heading .panel-title h1, #accordion .panel .panel-heading .panel-title h2, #accordion .panel .panel-heading .panel-title h3, #accordion .panel .panel-heading .panel-title h4, #accordion .panel .panel-heading .panel-title h5, #accordion .panel .panel-heading .panel-title h6 {
+  margin: 0;
+}
 #accordion .panel .panel-heading .panel-title a {
   display: block;
+  padding: 15px;
 }
 #accordion .panel .panel-heading .panel-title a:after {
   display: inline-block;
