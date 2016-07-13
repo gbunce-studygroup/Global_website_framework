@@ -1,0 +1,12 @@
+/* BREADCRUMB COMPONENT */
+.breadcrumb{
+	> li{
+		& a{
+		}
+		& + li{
+			&:before{
+				content: "/ ";
+			}
+		}
+	}
+}

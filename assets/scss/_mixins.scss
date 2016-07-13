@@ -1,0 +1,47 @@
+// APP MIXINS
+// --------------------------------------------------
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;
+            -ms-border-radius: $radius;
+                border-radius: $radius;
+}
+
+@mixin app-transition($property, $duration, $function) {
+    -webkit-transition: $property $duration $function;
+        -moz-transition: $property $duration $function;
+            -ms-transition: $property $duration $function;
+                -o-transition: $property $duration $function;
+                    transition: $property $duration $function;
+}
+
+// ANIMATE.CSS 
+$animate-scss-speed: 1s !default;
+@mixin animate($animation: none, $speed: $animate-scss-speed) {
+  @if $animation != none {
+    -webkit-animation-name: $animation;
+       -moz-animation-name: $animation;
+         -o-animation-name: $animation;
+            animation-name: $animation;
+  }
+  -webkit-animation-duration: $speed;
+     -moz-animation-duration: $speed;
+       -o-animation-duration: $speed;
+            animation-duration: $speed;
+  -webkit-animation-fill-mode: both;
+     -moz-animation-fill-mode: both;
+       -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+// MAIN NAV TOGGLE ICON STYLES
+@mixin nav-toggle-styles {
+    @include fa-icon;
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}

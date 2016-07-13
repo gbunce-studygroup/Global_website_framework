@@ -1,0 +1,26 @@
+/* ACCORDION COMPONENT */
+#accordion{
+	.panel{
+		.panel-heading{
+			.panel-title {
+				h1, h2, h3, h4, h5, h6{
+				}
+				a{
+					display: block;
+					&:after {
+					    @include fa-icon;
+						content: "\f068"; // Font Awesome close icon http://fontawesome.io/cheatsheet/
+						float: right;
+					}
+					&.collapsed {
+						&:after {
+							content: "\f067"; // Font Awesome open icon http://fontawesome.io/cheatsheet/
+						}
+					}
+				}
+			}
+		}
+		.panel-body{
+		}
+	}
+}

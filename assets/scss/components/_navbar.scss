@@ -1,0 +1,17 @@
+/* NAVBAR COMPONENT */
+.navbar{
+	margin: 0;
+	.navbar-collapse{
+		.nav{ // UL
+			li{
+				&.active{}
+				a{}
+				&.dropdown{
+					.dropdown-toggle{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

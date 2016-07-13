@@ -1,0 +1,7 @@
+/* TESTIMONIAL COMPONENT */
+.testimonial {
+	@include animate(bounce, 2s);
+	& img {
+		width: 100%;
+	}
+}

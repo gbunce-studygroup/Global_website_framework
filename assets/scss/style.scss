@@ -1,0 +1,62 @@
+@import "bootstrap"; 				// _bootstrap.scss
+@import "family"; 					// _family.scss
+@import "animate"; 					// _animate.scss
+@import "font-awesome";             // _font-awesome.scss
+
+body{
+	// font-family: $main_font;
+}
+
+h1, h2, h3, h4, h5, h6{
+	// font-family: $secondary_font;
+}
+
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+h4{
+
+}
+
+h5{
+
+}
+
+h6{
+
+}
+
+p, ul, ol{
+}
+
+table{
+	tr{
+		&:first-child{
+
+		}
+	}
+	td{
+		&:nth-child(odd){
+
+		}
+		&:nth-child(even)
+		{
+
+		}
+	}
+}
+
+#pageBody{ 
+}
+
+@import "components"; 				// Components
+@import "mediaqueries"; 			// Media queries

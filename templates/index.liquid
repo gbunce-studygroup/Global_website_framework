@@ -1,0 +1,72 @@
+{% include "layout/head" %}
+{% comment %} // DO NOT ADD CODE ABOVE THIS LINE // {% endcomment %}
+
+{% include "header" %}
+
+{% include "video_background" %}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            {% include "breadcrumb" %}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+			{% include "carousel" %}
+		</div>
+	</div>
+
+    <div class="row">
+        <div class="col-md-12">
+            {% include "accordion" %}
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-3">
+            {% include "sidebar_nav" %}
+
+            <Br><br>
+
+            {% include "news_archive" %} 
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-4">
+                    {% include "widget" %}
+                </div>
+                <div class="col-md-4">
+        			{% include "map" %}
+                </div>
+                <div class="col-md-4">
+                	{% include "testimonial" %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    {% include "search_results" %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    {% include "news_listing" %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    {% include "tabs" %}
+                </div>
+            </div>
+        </div>
+	</div>
+
+
+
+{% include "footer" %}
+
+{% comment %} // DO NOT ADD CODE BELOW THIS LINE // {% endcomment %}
+{% include "layout/foot" %}

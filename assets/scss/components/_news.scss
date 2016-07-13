@@ -1,0 +1,97 @@
+/* ALL NEWS COMPONENTS */
+
+/* News listing */
+.news_listing {
+	.news_items{
+		.news_item{
+			.news_heading{
+				& h1, h2, h3, h4, h5, h6{
+
+				}
+			}
+			.news_date{
+				em{
+
+				}
+			}
+			.news_details{
+				img{
+
+				}
+				.news_snippet{
+					p{
+
+					}
+				}
+				.button{
+					a{
+
+					}
+				}
+			}
+			.button{
+				a{
+
+				}
+			}
+		}
+	}
+}
+
+/* News feed */
+.news_feed{
+	.news_listing {
+		.news_items{
+			.news_item{
+				.news_heading{
+					& h1, h2, h3, h4, h5, h6{
+
+					}
+				}
+				.news_date{
+					em{
+
+					}
+				}
+				.news_details{
+					img{
+
+					}
+					.news_snippet{
+						p{
+
+						}
+					}
+				}
+				.button{
+					a{
+
+					}
+				}
+			}
+			.button{
+				a{
+
+				}
+			}
+		}
+	}	
+}
+
+/* News archive menu*/
+.news_archive{
+	ul{
+		li{
+			a{
+				
+			}
+			ul{
+				li{
+					a{
+
+					}
+				}
+			}
+		}
+	}
+}

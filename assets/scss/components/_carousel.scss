@@ -1,0 +1,23 @@
+/* CAROUSEL COMPONENT */
+.carousel{
+	.carousel-indicators{
+		li{
+			&.active{
+			}
+		}
+	}
+	.carousel-inner{
+		> .item{
+			.carousel-caption{
+			}
+			&.active{
+			}
+		}
+	}
+	.carousel-control{
+		&.left{
+		}
+		&.right{
+		}
+	}
+}

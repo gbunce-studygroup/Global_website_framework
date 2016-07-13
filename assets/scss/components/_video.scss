@@ -1,0 +1,16 @@
+/* VIDEO COMPONENT */
+.video {
+	padding: 0px;
+	position: relative;
+		& img {
+			width: 100%;
+		}
+		& .playButton {
+			background: url(../img/play.png) no-repeat center;
+		 	height: 41px;
+		    margin: 0;
+		    position: absolute;
+		    top: -10px;
+		    width: 100%;
+		}
+}
