@@ -9575,6 +9575,10 @@ button.close {
 }
 
 /* SIDEBAR NAV COMPONENT */
+.sidebar-nav li .second-level {
+  display: none;
+}
+
 /* CONTENT COMPONENT */
 /* HERO COMPONENT */
 .hero {
