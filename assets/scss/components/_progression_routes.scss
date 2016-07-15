@@ -1,0 +1,18 @@
+/* PROGRESSION ROUTES COMPONENT */
+.progRoutes{
+	.standard{
+		thead{
+			tr{
+				th{}
+			}
+		}
+		tbody{
+			tr{
+				&.alternate{
+					td{}
+				}
+				td{}
+			}
+		}
+	}
+}
