@@ -145,6 +145,7 @@ module.exports = function(grunt) {
             ],
           },
         },
+        
 
         /* REPLACE NEW VERSION ON STAGING WITH UPDATED URL VERSION SO THAT IMAGES AND FONTS WILL WORK*/
         replace: {
