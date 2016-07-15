@@ -1,0 +1,21 @@
+<div id="form" class="start-dates" style="">
+    <h4>Term dates</h4>
+    <div class="start-dates-content" data-bind="foreach: ViewBag.StartDates">
+        <p>            
+            <strong data-bind="text: Name">September 2016</strong>
+            <br>
+            <span data-bind=" if: TermDates.length == 0">
+                <span data-bind="text: sg.viewModelHolder.get().Model.formatDate(Date)">12/09/2016</span>
+                <br>
+            </span>
+        </p>
+        <p>            
+            <strong data-bind="text: Name">January 2017</strong>
+            <br>
+            <span data-bind=" if: TermDates.length == 0">
+                <span data-bind="text: sg.viewModelHolder.get().Model.formatDate(Date)">09/01/2017</span>
+                <br>
+            </span>
+        </p>
+    </div>
+</div>

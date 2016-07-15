@@ -1,0 +1,23 @@
+/* ENTRY REQUIREMENTS COMPONENT */
+#form{
+	.requirementsCountry{
+		label.control-label{}
+	}
+	.controls{
+		select.form-control{}
+	}
+}
+.entry-requirements{
+	&.table{}
+	thead{
+		tr{
+			.requirementHeading{}
+			th{}
+		}
+	}
+	tbody{
+		tr{
+			td{}
+		}
+	}
+}
