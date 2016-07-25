@@ -1,0 +1,94 @@
+/* ENQUIRY & BROCHURE DOWNLOAD FORM COMPONENTS */
+.form{
+	.form-summary{}
+	#form-loading{
+		border: 1px solid $main_colour;
+		margin: 10px 0;
+		padding: 15px 50px;
+		p{
+			color: $form_colour;
+			font-weight: bold;
+			text-align: center;
+		}
+		.progress{
+			margin: 0;
+			.progress-bar-striped{
+				background-image: linear-gradient(45deg, darken($form_colour, 10%) 25%, transparent 25%, transparent 50%, darken($form_colour, 10%) 50%, darken($form_colour, 10%) 75%, transparent 75%, transparent);
+				width: 100%;
+			    &.progress-bar{
+				    animation: load 3.5s, 2s linear 0s normal none infinite running progress-bar-stripes;
+					@keyframes load {
+					    0%   {width: 0%;}
+					    100% {width: 100%;}
+					}
+			    }
+			}
+			.progress-bar{
+				background-color: $form_colour;
+			}
+		}
+	}
+	fieldset{
+		#notificationArea{
+			.alert-error{
+				border-radius: 0;
+				margin-top: 20px;
+				text-align: center;
+				border: 1px solid red;
+				color: red;
+				font-weight: bold;
+				.glyphicon{
+					font-size: 25px;
+					display: block;
+					margin-bottom: 10px;
+				}
+			}
+		}
+		.form-group{
+			.control-label{
+				text-align: left;
+			}
+			sup{
+				&.required{
+					color: red;
+				}
+			}
+			.form-control{ //(select & input)
+				&:focus{
+					border-color: $main_colour;
+					box-shadow: none;
+				}
+			}
+			.radio{
+				label.radio{
+					display: inline-block;
+					margin-right: 20px;
+					input{}
+				}
+			}
+			p.text-info{
+				small{
+					color: $main_colour;
+					strong{}
+				}
+			}
+		}
+		button{
+			border: none;
+			border-radius: 0;
+			padding: 10px 15px;
+			background: $form_colour;
+			font-weight: bold;
+			color: #fff;
+			&:hover{
+				background: lighten($form_colour, 5%);
+			}
+			&:after {
+		        font-family: 'Glyphicons Halflings';
+				font-size: 12px;
+				content:"\e080";
+				margin: 0 0 0 7px;
+			}
+		}
+	}	
+}

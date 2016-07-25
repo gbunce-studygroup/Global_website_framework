@@ -6632,6 +6632,96 @@ button.close {
     display: none !important;
   }
 }
+label[for="date_picker"] span {
+  cursor: pointer;
+  color: #B61A29;
+}
+
+.ui-datepicker {
+  background-color: #fff;
+  border: 1px solid #B61A29;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(102, 102, 102, 0.3);
+  display: none;
+  margin-top: 4px;
+  padding: 10px;
+  width: 240px;
+}
+.ui-datepicker a:hover {
+  text-decoration: none;
+  transition: color 0.1s ease-in-out;
+}
+.ui-datepicker td:hover {
+  color: #2A6496;
+  transition: color 0.1s ease-in-out;
+}
+.ui-datepicker .ui-datepicker-header {
+  margin-bottom: 4px;
+  text-align: center;
+}
+.ui-datepicker .ui-datepicker-title {
+  font-weight: 700;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  cursor: default;
+  font-family: 'Glyphicons Halflings';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  height: 20px;
+  line-height: 1;
+  margin-top: 2px;
+  width: 30px;
+  color: #B61A29;
+}
+.ui-datepicker .ui-datepicker-prev {
+  float: left;
+  text-align: left;
+}
+.ui-datepicker .ui-datepicker-prev:before {
+  content: "\e079";
+}
+.ui-datepicker .ui-datepicker-next {
+  float: right;
+  text-align: right;
+}
+.ui-datepicker .ui-datepicker-next:before {
+  content: "\e080";
+}
+.ui-datepicker .ui-icon {
+  display: none;
+}
+.ui-datepicker .ui-datepicker-calendar {
+  table-layout: fixed;
+  width: 100%;
+}
+.ui-datepicker .ui-datepicker-calendar th, .ui-datepicker .ui-datepicker-calendar td {
+  text-align: center;
+  padding: 4px 0;
+}
+.ui-datepicker .ui-datepicker-calendar td {
+  border-radius: 4px;
+  transition: all 0.1s ease-in-out;
+}
+.ui-datepicker .ui-datepicker-calendar td:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-calendar td a {
+  text-decoration: none;
+  color: #000000;
+}
+.ui-datepicker .ui-datepicker-calendar td.ui-datepicker-current-day {
+  background-color: #B61A29;
+}
+.ui-datepicker .ui-datepicker-calendar td.ui-datepicker-current-day a {
+  color: #fff;
+}
+.ui-datepicker .ui-datepicker-calendar .ui-datepicker-unselectable:hover {
+  background-color: #fff;
+  cursor: default;
+}
+
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
@@ -9520,9 +9610,213 @@ button.close {
   clip: auto;
 }
 
+/* ACCORDION COMPONENT */
+#accordion .panel .panel-heading {
+  padding: 0;
+}
+#accordion .panel .panel-heading .panel-title h1, #accordion .panel .panel-heading .panel-title h2, #accordion .panel .panel-heading .panel-title h3, #accordion .panel .panel-heading .panel-title h4, #accordion .panel .panel-heading .panel-title h5, #accordion .panel .panel-heading .panel-title h6 {
+  margin: 0;
+}
+#accordion .panel .panel-heading .panel-title a {
+  display: block;
+  padding: 15px;
+}
+#accordion .panel .panel-heading .panel-title a:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f068";
+  float: right;
+}
+#accordion .panel .panel-heading .panel-title a.collapsed:after {
+  content: "\f067";
+}
+
+/* BREADCRUMB COMPONENT */
+.breadcrumb > li + li:before {
+  content: "/ ";
+}
+
+/* ACCORDION COMPONENT */
+#accordion .panel .panel-heading {
+  padding: 0;
+}
+#accordion .panel .panel-heading .panel-title h1, #accordion .panel .panel-heading .panel-title h2, #accordion .panel .panel-heading .panel-title h3, #accordion .panel .panel-heading .panel-title h4, #accordion .panel .panel-heading .panel-title h5, #accordion .panel .panel-heading .panel-title h6 {
+  margin: 0;
+}
+#accordion .panel .panel-heading .panel-title a {
+  display: block;
+  padding: 15px;
+}
+#accordion .panel .panel-heading .panel-title a:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f068";
+  float: right;
+}
+#accordion .panel .panel-heading .panel-title a.collapsed:after {
+  content: "\f067";
+}
+
+/* BUTTON COMPONENT */
+/* BUTTON GROUP COMPONENT */
+/* CAROUSEL COMPONENT */
+/* CONTENT COMPONENT */
+/* ENTRY REQUIREMENTS COMPONENT */
+/* FIND LOCAL AGENT COMPONENT */
+/* FOOTER COMPONENT */
+/* ENQUIRY & BROCHURE DOWNLOAD FORM COMPONENTS */
+.form #form-loading {
+  border: 1px solid #000000;
+  margin: 10px 0;
+  padding: 15px 50px;
+}
+.form #form-loading p {
+  color: #B61A29;
+  font-weight: bold;
+  text-align: center;
+}
+.form #form-loading .progress {
+  margin: 0;
+}
+.form #form-loading .progress .progress-bar-striped {
+  background-image: linear-gradient(45deg, #89141f 25%, transparent 25%, transparent 50%, #89141f 50%, #89141f 75%, transparent 75%, transparent);
+  width: 100%;
+}
+.form #form-loading .progress .progress-bar-striped.progress-bar {
+  -webkit-animation: load 3.5s, 2s linear 0s normal none infinite running progress-bar-stripes;
+          animation: load 3.5s, 2s linear 0s normal none infinite running progress-bar-stripes;
+}
+@-webkit-keyframes load {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes load {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.form #form-loading .progress .progress-bar {
+  background-color: #B61A29;
+}
+.form fieldset #notificationArea .alert-error {
+  border-radius: 0;
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid red;
+  color: red;
+  font-weight: bold;
+}
+.form fieldset #notificationArea .alert-error .glyphicon {
+  font-size: 25px;
+  display: block;
+  margin-bottom: 10px;
+}
+.form fieldset .form-group .control-label {
+  text-align: left;
+}
+.form fieldset .form-group sup.required {
+  color: red;
+}
+.form fieldset .form-group .form-control:focus {
+  border-color: #000000;
+  box-shadow: none;
+}
+.form fieldset .form-group .radio label.radio {
+  display: inline-block;
+  margin-right: 20px;
+}
+.form fieldset .form-group p.text-info small {
+  color: #000000;
+}
+.form fieldset button {
+  border: none;
+  border-radius: 0;
+  padding: 10px 15px;
+  background: #B61A29;
+  font-weight: bold;
+  color: #fff;
+}
+.form fieldset button:hover {
+  background: #cc1d2e;
+}
+.form fieldset button:after {
+  font-family: 'Glyphicons Halflings';
+  font-size: 12px;
+  content: "\e080";
+  margin: 0 0 0 7px;
+}
+
+/* FOOTER LINKS */
+/* GALLERY COMPONENT */
+.gallery {
+  padding: 0 15px;
+}
+.gallery .col-md-6, .gallery .col-sm-6, .gallery .col-xs-6 {
+  padding: 0;
+}
+.gallery h1, .gallery h2, .gallery h3, .gallery h4, .gallery h5, .gallery h6 {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+.gallery .carousel .carousel-control {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.gallery .carousel .carousel-control img {
+  width: auto;
+}
+.gallery .carousel .item {
+  text-align: center;
+}
+.gallery .carousel .controls {
+  text-align: center;
+}
+
 /* HEADER COMPONENT */
-/* MAIN LOGO COMPONENT */
+/* HERO COMPONENT */
+.hero {
+  height: 450px;
+  background: url(http://placehold.it/1800x450) no-repeat center top;
+  background-size: cover;
+}
+
 /* LANGUAGE LINKS COMPONENT */
+/* MAIN LOGO COMPONENT */
+/* MAP COMPONENT */
+/* NAVBAR COMPONENT */
+.navbar {
+  margin: 0;
+}
+.navbar .navbar-collapse .nav li.dropdown .dropdown-toggle {
+  display: none;
+}
+
+/* ALL NEWS COMPONENTS */
+/* News listing */
+/* News feed */
+/* News archive menu*/
+/* PROGRESSION ROUTES COMPONENT */
+/* SEARCHBAR COMPONENT */
 /* SEARCHBAR COMPONENT */
 .search_toggle {
   display: inline-block;
@@ -9556,75 +9850,15 @@ button.close {
   height: auto;
 }
 
-/* SEARCHBAR COMPONENT */
-/* NAVBAR COMPONENT */
-.navbar {
-  margin: 0;
-}
-.navbar .navbar-collapse .nav li.dropdown .dropdown-toggle {
-  display: none;
-}
-
-/* ALL NEWS COMPONENTS */
-/* News listing */
-/* News feed */
-/* News archive menu*/
-/* BREADCRUMB COMPONENT */
-.breadcrumb > li + li:before {
-  content: "/ ";
-}
-
+/* SG LOGO COMPONENT */
 /* SIDEBAR NAV COMPONENT */
 .sidebar-nav li .second-level {
   display: none;
 }
 
-/* CONTENT COMPONENT */
-/* HERO COMPONENT */
-.hero {
-  height: 450px;
-  background: url(http://placehold.it/1800x450) no-repeat center top;
-  background-size: cover;
-}
-
-/* BUTTON COMPONENT */
-/* BUTTON GROUP COMPONENT */
-/* WIDGET COMPONENT */
-.widget h1:first-of-type, .widget h2:first-of-type, .widget h3:first-of-type, .widget h4:first-of-type, .widget h5:first-of-type, .widget h6:first-of-type {
-  margin-top: 0;
-}
-
-/* MAP COMPONENT */
-/* GALLERY COMPONENT */
-.gallery {
-  padding: 0 15px;
-}
-.gallery .col-md-6, .gallery .col-sm-6, .gallery .col-xs-6 {
-  padding: 0;
-}
-.gallery h1, .gallery h2, .gallery h3, .gallery h4, .gallery h5, .gallery h6 {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.gallery img {
-  width: 100%;
-  height: auto;
-}
-.gallery .carousel .carousel-control {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-.gallery .carousel .carousel-control img {
-  width: auto;
-}
-.gallery .carousel .item {
-  text-align: center;
-}
-.gallery .carousel .controls {
-  text-align: center;
-}
-
+/* SOCIAL MEDIA COMPONENT */
+/* START DATES COMPONENT */
+/* TABS WIDGET COMPONENT */
 /* TESTIMONIAL COMPONENT */
 .testimonial {
   -webkit-animation-name: bounce;
@@ -9636,6 +9870,23 @@ button.close {
 }
 .testimonial img {
   width: 100%;
+}
+
+/* HERO COMPONENT */
+.video_bg {
+  height: 450px;
+  background-size: cover;
+}
+.video_bg .video_wrapper {
+  position: relative;
+}
+.video_bg .video_wrapper video {
+  width: 100%;
+}
+.video_bg .video_wrapper .video_content {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* VIDEO COMPONENT */
@@ -9655,52 +9906,9 @@ button.close {
   width: 100%;
 }
 
-/* CAROUSEL COMPONENT */
-/* ACCORDION COMPONENT */
-#accordion .panel .panel-heading {
-  padding: 0;
-}
-#accordion .panel .panel-heading .panel-title h1, #accordion .panel .panel-heading .panel-title h2, #accordion .panel .panel-heading .panel-title h3, #accordion .panel .panel-heading .panel-title h4, #accordion .panel .panel-heading .panel-title h5, #accordion .panel .panel-heading .panel-title h6 {
-  margin: 0;
-}
-#accordion .panel .panel-heading .panel-title a {
-  display: block;
-  padding: 15px;
-}
-#accordion .panel .panel-heading .panel-title a:after {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\f068";
-  float: right;
-}
-#accordion .panel .panel-heading .panel-title a.collapsed:after {
-  content: "\f067";
-}
-
-/* TABS WIDGET COMPONENT */
-/* FOOTER COMPONENT */
-/* FOOTER LINKS */
-/* SOCIAL MEDIA COMPONENT */
-/* SG LOGO COMPONENT */
-/* HERO COMPONENT */
-.video_bg {
-  height: 450px;
-  background-size: cover;
-}
-.video_bg .video_wrapper {
-  position: relative;
-}
-.video_bg .video_wrapper video {
-  width: 100%;
-}
-.video_bg .video_wrapper .video_content {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* WIDGET COMPONENT */
+.widget h1:first-of-type, .widget h2:first-of-type, .widget h3:first-of-type, .widget h4:first-of-type, .widget h5:first-of-type, .widget h6:first-of-type {
+  margin-top: 0;
 }
 
 @media (max-width: 991px) {

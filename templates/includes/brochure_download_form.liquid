@@ -1,0 +1,158 @@
+<div id="brochureForm" class="form brochure-download-form">
+    <!-- Hidden input fields -->
+    <input name="name" id="cultureCode" value="en-GB" type="hidden">
+    <input name="name" id="successUrl" type="hidden">
+    <input name="name" id="showTelFields" value="false" type="hidden">
+
+    <div id="form-container">
+
+        <div id="error-container" class="ui-state-error" style="display: none">
+            <span class="fl ui-icon ui-icon-alert"></span><span id="errorText"></span>
+        </div>
+
+        <div class="form-summary">
+            Form summary text form summary text form summary text form summary text form summary text form summary text
+        </div>
+
+        <div style="" id="form-loading">
+            <div style="" id="overlay-text">
+                <p>Loading Enquiry Form</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="submitting" style="display: none">
+            <div class="">
+                <p class="wait-message">
+                    Submitting form...
+                </p>
+                <div class="loader"></div>
+            </div>
+        </div>
+
+        <fieldset class="form-horizontal">
+            <div id="notificationArea">
+                <div class="alert alert-error" style="">
+                    <span class="glyphicon glyphicon-exclamation-sign"></span> You have not filled in all required fields
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="firstName">
+                        First Name
+                        <sup class="required">&nbsp;*</sup>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <div class="controls">
+                        <input data-sg-unique-elem-seq="1" maxlength="50" id="firstName" name="nameGiven" data-bind="field: Model.FirstNames" class="form-control required" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="lastName">
+                        Last Name
+                        <sup class="required">&nbsp;*</sup>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <div class="controls">
+                        <input data-sg-unique-elem-seq="2" maxlength="50" id="lastName" name="lastName" data-bind="field: Model.LastName" class="form-control required" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="emailAddress">
+                        Email
+                        <sup class="required">&nbsp;*</sup>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <div class="controls">
+                        <input data-sg-unique-elem-seq="3" maxlength="100" id="emailAddress" name="emailAddress" data-bind="field: Model.Email" class="form-control required" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="countryOfResidence">
+                        Country of residence
+                        <sup class="required">&nbsp;*</sup>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <div class="controls">
+                        <select data-sg-unique-elem-seq="4" class="form-control  required" id="countryOfResidence" name="countryOfResidence" data-bind="field: Model.CountryOfResidenceId, options: ViewBag.Countries, optionsText: 'Name', optionsValue: 'Id', optionsCaption: sg.strings.pleaseSelectCaption">
+                            <option value="">-- Please Select --</option>
+                            <option value="1">Afghanistan</option>
+                            <option value="239">Zimbabwe</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+                        
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="subscribe">
+                        Subscribe
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <div class="checkbox">
+                        <label class="subscribe">
+                            <input data-bind="field: Model.NewsletterSubscribe" name="subscribe" id="subscribe" type="checkbox">
+                            Please check this box if you would like to periodically receive special offers and news from us. You can unsubscribe at any time, and your e-mail address will remain confidential.
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8">
+                    <button class="pull-right" type="button" id="submit-button">
+                        Download brochure
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8">
+                    <span data-bind="text: sg.BrochureRequest.BrochureLink.url"></span>
+                </div>
+            </div>
+        </fieldset>
+        
+        <!-- display brochure links after form submitted: -->
+        <div id="download-links" class="brochure-link-fields row" style="">
+            <div class="form-group">
+                <div class="col-md-12">
+                    <h3>Thank you for submitting your details.</h3>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-12 brochure-link">
+                    <div>
+                        <p>Please click the image below to download the brochure.</p>
+                    </div>
+                    <a id="brochureLink1" href="#" target="_blank" rel="nofollow" title="View a pdf file of XXXX University ISC brochure" alt="">
+                        <img src="http://placehold.it/300x425">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
