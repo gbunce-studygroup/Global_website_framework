@@ -9,5 +9,6 @@
 @import "bootstrap/modal.js";
 @import "bootstrap/tooltip.js";
 @import "bootstrap/popover.js";
+@import "bootstrap/datepicker.js";
 
-@import "application.js";
+@import "application.js"; // Custom scripts for project

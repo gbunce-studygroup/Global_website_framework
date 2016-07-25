@@ -2012,6 +2012,8 @@
 
 }(jQuery);
 
+// RUN THE DATEPICKER
+$(".date-picker").datepicker();
 
 // THIS MAKES THE SEARCH BAR TOGGLE ON CLICK
 $('#searchToggle').click(function () {
@@ -2035,4 +2037,4 @@ $(".modal").on('hidden.bs.modal', function (e) {
 // ADDS CLASS 'show' TO THE 'second-level' UL SO THE 3RD LEVEL NAVIGATION SHOWS IF THE PARENT IS ACTIVE
 $(".sidebar-nav li a.active").siblings("ul").addClass("show");
 // ADDS CLASS 'show' TO THE 'second-level' UL SO THE 3RD LEVEL NAVIGATION SHOWS IF A CHILD IS ACTIVE
-$(".second-level li a.active").closest("ul").addClass("show");
+$(".second-level li a.active").closest("ul").addClass("show"); // Custom scripts for project
