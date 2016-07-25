@@ -1,4 +1,13 @@
 /* TABS WIDGET COMPONENT */
 .tab_wrapper{
-	
+	.nav-tabs{ // UL
+		li{
+			&.active{}
+		}
+	}
+	.tab-content{
+		.tab-pane{
+			&.active{}
+		}
+	}
 }

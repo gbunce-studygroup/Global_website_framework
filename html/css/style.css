@@ -9636,7 +9636,7 @@ label[for="date_picker"] span {
 }
 
 /* BREADCRUMB COMPONENT */
-.breadcrumb > li + li:before {
+.breadcrumb li + li:before {
   content: "/ ";
 }
 
@@ -9668,10 +9668,8 @@ label[for="date_picker"] span {
 /* BUTTON COMPONENT */
 /* BUTTON GROUP COMPONENT */
 /* CAROUSEL COMPONENT */
-/* CONTENT COMPONENT */
 /* ENTRY REQUIREMENTS COMPONENT */
 /* FIND LOCAL AGENT COMPONENT */
-/* FOOTER COMPONENT */
 /* ENQUIRY & BROCHURE DOWNLOAD FORM COMPONENTS */
 .form #form-loading {
   border: 1px solid #000000;
@@ -9792,7 +9790,6 @@ label[for="date_picker"] span {
   text-align: center;
 }
 
-/* HEADER COMPONENT */
 /* HERO COMPONENT */
 .hero {
   height: 450px;
@@ -9812,11 +9809,37 @@ label[for="date_picker"] span {
 }
 
 /* ALL NEWS COMPONENTS */
-/* News listing */
 /* News feed */
+/* News listing */
 /* News archive menu*/
+/* PAGINATION COMPONENT */
+.pagination li a {
+  color: #B61A29;
+  border-color: #E0DED8;
+}
+.pagination li a:hover {
+  color: #B61A29;
+  background: #E0DED8;
+}
+.pagination li.active a {
+  border-color: #B61A29;
+  background: #B61A29;
+  color: #fff;
+}
+
 /* PROGRESSION ROUTES COMPONENT */
 /* SEARCHBAR COMPONENT */
+.search_results .listing {
+  padding-left: 15px;
+}
+.search_results .listing li p .highlight {
+  color: #B61A29;
+  font-weight: bold;
+}
+.search_results .listing li a {
+  color: #B61A29;
+}
+
 /* SEARCHBAR COMPONENT */
 .search_toggle {
   display: inline-block;
@@ -9860,14 +9883,6 @@ label[for="date_picker"] span {
 /* START DATES COMPONENT */
 /* TABS WIDGET COMPONENT */
 /* TESTIMONIAL COMPONENT */
-.testimonial {
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
 .testimonial img {
   width: 100%;
 }
@@ -9896,14 +9911,25 @@ label[for="date_picker"] span {
 }
 .video img {
   width: 100%;
+  height: auto;
 }
 .video .playButton {
-  background: url(../img/play.png) no-repeat center;
-  height: 41px;
-  margin: 0;
   position: absolute;
-  top: -10px;
-  width: 100%;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.video .playButton:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f01d';
+  font-size: 65px;
+  color: #fff;
 }
 
 /* WIDGET COMPONENT */

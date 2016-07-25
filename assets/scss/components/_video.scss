@@ -2,15 +2,20 @@
 .video {
 	padding: 0px;
 	position: relative;
-		& img {
-			width: 100%;
-		}
-		& .playButton {
-			background: url(../img/play.png) no-repeat center;
-		 	height: 41px;
-		    margin: 0;
-		    position: absolute;
-		    top: -10px;
-		    width: 100%;
-		}
+	& img {
+		width: 100%;
+		height: auto;
+	}
+	& .playButton {
+		position: absolute;
+		top: 55%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	    &:before{
+	    	@include fa-icon;
+	    	content: '\f01d';
+	    	font-size: 65px;
+	    	color: #fff;
+	    }
+	}
 }

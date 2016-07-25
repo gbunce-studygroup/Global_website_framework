@@ -41,6 +41,12 @@ h6{
 p, ul, ol{
 }
 
+a{
+	&:hover{}
+	&:active{}
+	&:focus{}
+}
+
 table{
 	tr{
 		&:first-child{
@@ -57,6 +63,13 @@ table{
 		}
 	}
 }
+
+header{}
+
+// INTERNAL PAGES
+.main_content{}
+
+footer{}
 
 @import "components"; 				// Website Components
 @import "mediaqueries"; 			// Media queries

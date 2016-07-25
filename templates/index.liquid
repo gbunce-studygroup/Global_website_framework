@@ -1,72 +1,197 @@
 {% include "layout/head" %}
 {% comment %} // DO NOT ADD CODE ABOVE THIS LINE // {% endcomment %}
 
-{% include "header" %}
+<div class="container">
+    <h1>Header components:</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Website logo:</h4>
+            {% include "components/logo" %}
+        </div>
+        <div class="col-md-4">
+            <h4>Languge select:</h4>
+            {% include "components/language_select" %}
+        </div>
+        <div class="col-md-4">
+            <h4>Searchbar:</h4>
+            {% include "components/searchbar" %}
+        </div>
+    </div>
+</div>
 
-{% include "video_background" %}
+<hr>
 
 <div class="container">
-
+    <h1>Navigation components:</h1>
     <div class="row">
-        <div class="col-md-12">
-            {% include "breadcrumb" %}
+        <div class="col-md-8">
+            <h4>Main navbar:</h4>
+            {% include "components/navbar" %}
+            <h4>Breadcrumb:</h4>
+            {% include "components/breadcrumb" %}
+        </div>
+        <div class="col-md-4">
+            <h4>Sidebar navbar:</h4>
+            {% include "components/sidebar_nav" %}
         </div>
     </div>
+</div>
 
-    <div class="row">
-        <div class="col-md-12">
-			{% include "carousel" %}
-		</div>
-	</div>
+<hr>
 
+<div class="container">
+    <h1>Media components:</h1>
     <div class="row">
-        <div class="col-md-12">
-            {% include "accordion" %}
+        <div class="col-md-4">
+            <h4>Gallery:</h4>
+            {% include "components/gallery" %}
+        </div>
+        <div class="col-md-4">
+            <h4>Video player:</h4>
+            {% include "components/video" %}
+        </div>
+        <div class="col-md-4">
+            <h4>Background video:</h4>
+            {% include "components/video_background" %}
         </div>
     </div>
+</div>
 
+<hr>
 
+<div class="container">
+    <h1>Display components:</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Carousel:</h4>
+            {% include "components/carousel" %}
+            <h4>Tabs:</h4>
+            {% include "components/tabs" %}
+        </div>
+        <div class="col-md-6">
+            <h4>Accordion:</h4>
+            {% include "components/accordion" %}
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <h1>Page components:</h1>
     <div class="row">
         <div class="col-md-3">
-            {% include "sidebar_nav" %}
-
-            <Br><br>
-
-            {% include "news_archive" %} 
+            <h4>Widget:</h4>
+            {% include "components/widget" %}
         </div>
-        <div class="col-md-9">
-            <div class="row">
-                <div class="col-md-4">
-                    {% include "widget" %}
-                </div>
-                <div class="col-md-4">
-        			{% include "map" %}
-                </div>
-                <div class="col-md-4">
-                	{% include "testimonial" %}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    {% include "search_results" %}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    {% include "news_listing" %}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    {% include "tabs" %}
-                </div>
-            </div>
+        <div class="col-md-3">
+            <h4>Map:</h4>
+            {% include "components/map" %}
         </div>
-	</div>
+        <div class="col-md-3">
+            <h4>Testiomonial:</h4>
+            {% include "components/testimonial" %}
+        </div>
+        <div class="col-md-3">
+            <h4>Button:</h4>
+            {% include "components/button" %}
+            <h4>Button group:</h4>
+            {% include "components/button_group" %}
+        </div>
+    </div>
+</div>
 
+<hr>
 
+<div class="container">
+    <h1>Data fed components:</h1>
+    <div class="row">
+        <div class="col-md-5">
+            <h4>Progression routes:</h4>
+            {% include "components/progression_routes" %}
+        </div>
+        <div class="col-md-5">
+            <h4>Entry requirements:</h4>
+            {% include "components/entry_requirements" %}
+        </div>
+        <div class="col-md-2">
+            <h4>Start dates:</h4>
+            {% include "components/start_dates" %}
+        </div>
+    </div>
+</div>
 
-{% include "footer" %}
+<hr>
+
+<div class="container">
+    <h1>News components:</h1>
+    <div class="row">
+        <div class="col-md-5">
+            <h4>News feed:</h4>
+            {% include "components/news_feed" %}
+        </div>
+        <div class="col-md-5">
+            <h4>News listing:</h4>
+            {% include "components/news_listing" %}
+        </div>
+        <div class="col-md-2">
+            <h4>News archive:</h4>
+            {% include "components/news_archive" %} 
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <h1>Search components:</h1>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Search results:</h4>
+            {% include "components/search_results" %}
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <h1>Form components:</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Brochure download form:</h4>
+            {% include "components/brochure_download_form" %}
+        </div>
+        <div class="col-md-4">
+            <h4>Enquiry form:</h4>
+            {% include "components/enquiry_form" %}
+        </div>
+        <div class="col-md-4">
+            <h4>Find local agent form:</h4>
+            {% include "components/find_local_agent" %}
+        </div>
+    </div>  
+</div>
+
+<hr>
+
+<div class="container">
+    <h1>Footer components:</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Footer links:</h4>
+            {% include "components/footer_links" %}
+        </div>
+        <div class="col-md-4">
+            <h4>Social media:</h4>
+            {% include "components/social_media" %}
+        </div>
+        <div class="col-md-4">
+            <h4>Study Group logo:</h4>
+            {% include "components/sg_logo" %}
+        </div>
+    </div>    
+</div>
 
 {% comment %} // DO NOT ADD CODE BELOW THIS LINE // {% endcomment %}
 {% include "layout/foot" %}

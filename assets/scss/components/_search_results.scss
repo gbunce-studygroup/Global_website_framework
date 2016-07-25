@@ -1,29 +1,19 @@
 /* SEARCHBAR COMPONENT */
 .search_results{
 	.listing{
+		padding-left: 15px;
 		li{
 			.type{
 
 			}
 			p{
 				.highlight{
-					
+					color: $form_colour;
+					font-weight: bold;
 				}
 			}
 			a{
-
-			}
-		}
-	}
-	.pagination{
-		li{
-			a{
-
-			}
-			&.active{
-				a{
-
-				}
+				color: $form_colour;
 			}
 		}
 	}

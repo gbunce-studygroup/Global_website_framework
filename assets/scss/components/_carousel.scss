@@ -7,10 +7,10 @@
 		}
 	}
 	.carousel-inner{
-		> .item{
-			.carousel-caption{
-			}
+		.item{
 			&.active{
+			}
+			.carousel-caption{
 			}
 		}
 	}

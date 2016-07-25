@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Global Website Framework</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -23,31 +23,32 @@
         <div id="pageBody">
 
 
-<!-- HEADER COMPONENT START -->
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <!-- LOGO COMPONENT START -->
+<div class="container">
+    <h1>Header components:</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Website logo:</h4>
+            <!-- LOGO COMPONENT START -->
 <div class="logo">
     <a href="/">
         <img src="http://placehold.it/200x100">
-        <!-- <h1>Heading</h1> -->
     </a>
 </div>
 <!-- LOGO COMPONENT END -->
 
-            </div>
-            <div class="col-md-6">
-                <!-- BUTTON GROUP COMPONENT START -->
-<div class="button-group">
-	<ul>
-		<li><a href="#">Apply now</a></li>
-		<li><a href="#">Contact us</a></li>
-	</ul>
-</div>
-<!-- BUTTON GROUP COMPONENT START -->
-                <!-- SEARCH COMPONENT START -->
+        </div>
+        <div class="col-md-4">
+            <h4>Languge select:</h4>
+            <!-- LANGUAGE LINKS COMPONENT START -->
+<ul class="language_links">
+	<li><a href="#">EN</a></li>
+	<li><a href="#">中文</a></li>
+</ul>
+<!-- LANGUAGE LINKS COMPONENT END -->
+        </div>
+        <div class="col-md-4">
+            <h4>Searchbar:</h4>
+            <!-- SEARCH COMPONENT START -->
 <a href="#" id="searchToggle" class="search_toggle"></a>
 <div class="search">
     <div id="searchwrapper" class="siteSearch">
@@ -59,12 +60,18 @@
     </div>
 </div>
 <!-- SEARCH COMPONENT END -->
-            </div>
-    	</div>
+        </div>
+    </div>
+</div>
 
-        <div class="row">
-            <div class="col-md-12">
-            	<!-- NAVBAR COMPONENT START -->
+<hr>
+
+<div class="container">
+    <h1>Navigation components:</h1>
+    <div class="row">
+        <div class="col-md-8">
+            <h4>Main navbar:</h4>
+            <!-- NAVBAR COMPONENT START -->
 <div class="navbar">
     <div class="container">
         <div class="navbar-header">
@@ -134,13 +141,165 @@
     </div>
 </div>
 <!-- NAVBAR COMPONENT END -->
-            </div>
-    	</div>
+            <h4>Breadcrumb:</h4>
+            <!-- BREADCRUMB COMPONENT START -->
+<ol class="breadcrumb">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Second level</a></li>
+	<li class="active">Third level</li>
+</ol>
+<!-- BREADCRUMB COMPONENT END -->
+        </div>
+        <div class="col-md-4">
+            <h4>Sidebar navbar:</h4>
+            <!-- SIDEBAR NAV COMPONENT START -->
+<ul class="sidebar-nav">
+	<li><a class="active" href="#">link one</a>
+		<ul class="second-level">
+			<li><a class="active" href="#">link one</a></li>
+			<li><a href="#">link two</a></li>
+			<li><a href="#">link three</a></li>
+			<li><a href="#">link four</a></li>
+		</ul>
+	</li>
+	<li><a href="#">link two</a></li>
+	<li><a href="#">link three</a></li>
+	<li><a href="#">link four</a></li>
+</ul>
+<!-- SIDEBAR NAV COMPONENT END -->
+        </div>
     </div>
-</header>
-<!-- HEADER COMPONENT END -->
+</div>
 
-<!-- VIDEO BACKGROUND COMPONENT START -->
+<hr>
+
+<div class="container">
+    <h1>Media components:</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Gallery:</h4>
+            <!-- GALLERY COMPONENT START -->
+<div class="gallery">
+    <h3>Gallery</h3> <!-- Option for content editors to choose heading tag -->
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <a data-slide-to="0" href="#imageGallery"><img data-target="#galleryModal" data-toggle="modal" src="http://placehold.it/350x250"></a>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <a data-slide-to="1" href="#imageGallery"><img data-target="#galleryModal" data-toggle="modal" src="http://placehold.it/350x250"></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <a data-slide-to="2" href="#imageGallery"><img data-target="#galleryModal" data-toggle="modal" src="http://placehold.it/350x250"></a>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <a data-slide-to="3" href="#imageGallery"><img data-target="#galleryModal" data-toggle="modal" src="http://placehold.it/350x250"></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <a data-slide-to="4" href="#imageGallery"><img data-target="#galleryModal" data-toggle="modal" src="http://placehold.it/350x250"></a>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <a data-slide-to="5" href="#imageGallery"><img data-target="#galleryModal" data-toggle="modal" src="http://placehold.it/350x250"></a>
+        </div>
+    </div>
+	<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="galleryModal" role="dialog" tabindex="-1">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+	            <div class="modal-body">
+	                <div class="carousel slide" data-interval="false" id="imageGallery">
+	                    <div class="carousel-inner">
+	                        <div class="item active">
+	                            <img alt="item1" src="http://placehold.it/700x500">
+	                            <div class="carousel-caption"><!-- Richtext field copy -->
+	                                <h3>Heading 1</h3>
+	                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	                            </div>
+	                        </div>
+	                        <div class="item">
+	                            <img alt="item2" src="http://placehold.it/700x500">
+	                            <div class="carousel-caption"><!-- Richtext field copy -->
+	                                <h3>Heading 2</h3>
+	                                <p>Slide 1 description.</p>
+	                            </div>
+	                        </div>
+	                        <div class="item">
+	                            <img alt="item3" src="http://placehold.it/700x500">
+	                            <div class="carousel-caption"><!-- Richtext field copy -->
+	                                <h3>Heading 3</h3>
+	                                <p>Mauris iaculis odio erat, ac sagittis orci pellentesque a. </p>
+	                            </div>
+	                        </div>
+	                        <div class="item">
+	                            <img alt="item4" src="http://placehold.it/700x500">
+	                            <div class="carousel-caption"><!-- Richtext field copy -->
+	                                <h3>Heading 4</h3>
+	                                <p>Phasellus pretium libero vulputate quam tincidunt, eget feugiat felis gravida. </p>
+	                            </div>
+	                        </div>
+	                        <div class="item">
+	                            <img alt="item5" src="http://placehold.it/700x500">
+	                            <div class="carousel-caption"><!-- Richtext field copy -->
+	                                <h3>Heading 5</h3>
+	                                <p>Phasellus at ornare leo, vel eleifend sapien. </p>
+	                            </div>
+	                        </div>
+	                        <div class="item">
+	                            <img alt="item6" src="http://placehold.it/700x500">
+	                            <div class="carousel-caption"><!-- Richtext field copy -->
+	                                <h3>Heading 6</h3>
+	                                <p>Proin et luctus massa. Morbi pulvinar quam mi, bibendum sodales magna vehicula id. </p>
+	                            </div>
+	                        </div>
+	                    </div> 
+	                   <div class="controls">
+	                         <a class="left carousel-control" data-slide="prev" href="#imageGallery" role="button"><i class="fa fa-angle-left" aria-hidden="true"></i></a> 
+	                         <a class="right carousel-control" data-slide="next" href="#imageGallery" role="button"><i class="fa fa-angle-right" aria-hidden="true"></i></a> 
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
+<!-- GALLERY COMPONENT END -->
+
+
+        </div>
+        <div class="col-md-4">
+            <h4>Video player:</h4>
+            <!-- VIDEO COMPONENT START -->
+<div class="video">
+	<h3>Video</h3> <!-- Option for content editors to choose heading tag -->
+	<a class="video" data-toggle="modal" data-target="#video" title="" href="#">
+		<img title="ISC Video" src="http://placehold.it/375x211">
+		<div class="playButton"></div>
+	</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="video" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">ISC Video</h4>
+			</div>
+			<div class="modal-body">
+				<iframe width="100%" height="315" src="http://www.youtube.com/embed/ufsrgE0BYf0?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- VIDEO COMPONENT END -->
+        </div>
+        <div class="col-md-4">
+            <h4>Background video:</h4>
+            <!-- VIDEO BACKGROUND COMPONENT START -->
 <div class="video_bg">
 	<div class="video_wrapper">
 		<video autoplay loop poster="video/video.jpg" id="bgvid">
@@ -153,24 +312,18 @@
 	</div>
 </div>
 <!-- VIDEO BACKGROUND COMPONENT END -->
-
-<div class="container">
-
-    <div class="row">
-        <div class="col-md-12">
-            <!-- BREADCRUMB COMPONENT START -->
-<ol class="breadcrumb">
-	<li><a href="#">Home</a></li>
-	<li><a href="#">Second level</a></li>
-	<li class="active">Third level</li>
-</ol>
-<!-- BREADCRUMB COMPONENT END -->
         </div>
     </div>
+</div>
 
+<hr>
+
+<div class="container">
+    <h1>Display components:</h1>
     <div class="row">
-        <div class="col-md-12">
-			<!-- CAROUSEL COMPONENT START -->
+        <div class="col-md-6">
+            <h4>Carousel:</h4>
+            <!-- CAROUSEL COMPONENT START -->
 <div id="carousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -210,11 +363,36 @@
     </a>
 </div>
 <!-- CAROUSEL COMPONENT END -->
-		</div>
-	</div>
-
-    <div class="row">
-        <div class="col-md-12">
+            <h4>Tabs:</h4>
+            <!-- TABS COMPONENT START -->
+<div class="tab_wrapper">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Tab 1</a></li>
+        <li role="presentation"><a href="#1" aria-controls="1" role="tab" data-toggle="tab">Tab 2</a></li>
+        <li role="presentation"><a href="#2" aria-controls="2" role="tab" data-toggle="tab">Tab 3</a></li>
+        <li role="presentation"><a href="#3" aria-controls="3" role="tab" data-toggle="tab">Tab 4</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="home">
+            Tab 1 content <!-- Richtext field copy -->
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="1">
+            Tab 2 content <!-- Richtext field copy -->
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="2">
+            Tab 3 content <!-- Richtext field copy -->
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="3">
+            Tab 4 content <!-- Richtext field copy -->
+        </div>
+    </div>
+</div>
+<!-- CAROUSEL COMPONENT END -->
+        </div>
+        <div class="col-md-6">
+            <h4>Accordion:</h4>
             <!-- ACCORDION COMPONENT START -->
 <div class="accordion">
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -276,28 +454,753 @@
 <!-- ACCORDION COMPONENT END -->
         </div>
     </div>
+</div>
 
+<hr>
 
+<div class="container">
+    <h1>Page components:</h1>
     <div class="row">
         <div class="col-md-3">
-            <!-- SIDEBAR NAV COMPONENT START -->
-<ul class="sidebar-nav">
-	<li><a class="active" href="#">link one</a>
-		<ul class="second-level">
-			<li><a class="active" href="#">link one</a></li>
-			<li><a href="#">link two</a></li>
-			<li><a href="#">link three</a></li>
-			<li><a href="#">link four</a></li>
+            <h4>Widget:</h4>
+            <!-- WIDGET COMPONENT START -->
+<div class="widget">
+    <h3>Widget</h3> <!-- Option for content editors to choose heading tag -->
+    <p>
+        lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+    <p>
+        Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+	<div class="button">
+	    <a href="#">Apply now</a>
+	</div>
+</div>
+<!-- WIDGET COMPONENT END -->
+        </div>
+        <div class="col-md-3">
+            <h4>Map:</h4>
+            <!-- MAPS COMPONENT START -->
+<div class="map">
+    <h3>Map</h3> <!-- Option for content editors to choose heading tag -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40314.597521627686!2d-0.10618970000002341!3d50.83741795000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758509f6294167%3A0x9cc6af7a727d0ef9!2sBrighton%2C+The+City+of+Brighton+and+Hove!5e0!3m2!1sen!2suk!4v1418750835816" width="100%" height="250" frameborder="0" style="border:0"></iframe>
+    <p>About the location...</p>
+</div>
+<!-- MAPS COMPONENT END -->
+        </div>
+        <div class="col-md-3">
+            <h4>Testiomonial:</h4>
+            <!-- TESTIMONIAL COMPONENT START -->
+<div class="testimonial">
+    <h3>Testimonial</h3> <!-- Option for content editors to choose heading tag -->
+    <img src="http://placehold.it/375x211">
+    <div class="testimonial_content">
+        <p>
+            "The style of the education is completely different. For example, during the class, the tutors are more focused on what you think and what your opinion is. There is a lot of opportunity for you to express yourself."
+        </p>
+    </div>
+    <div class="testimonial_info">
+        <p>
+            <em>Xyuing (Shelly)</em>
+            from China studied business
+        </p>
+    </div>
+</div>
+<!-- TESTIMONIAL COMPONENT END -->
+        </div>
+        <div class="col-md-3">
+            <h4>Button:</h4>
+            <!-- BUTTON COMPONENT START -->
+<div class="button">
+    <a href="#">Apply now</a>
+</div>
+<!-- BUTTON COMPONENT START -->
+            <h4>Button group:</h4>
+            <!-- BUTTON GROUP COMPONENT START -->
+<div class="button-group">
+	<ul>
+		<li><a href="#">Apply now</a></li>
+		<li><a href="#">Contact us</a></li>
+	</ul>
+</div>
+<!-- BUTTON GROUP COMPONENT START -->
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <h1>Data fed components:</h1>
+    <div class="row">
+        <div class="col-md-5">
+            <h4>Progression routes:</h4>
+            <div class="progRoutes">
+    <table class="standard">
+        <thead>
+            <tr>
+                <th>Degree Programmes</th>
+                <th>Award</th>
+                <th>English Grade</th>
+                <th>Semester 1</th>
+                <th>Semester 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Computer Science</td>
+                <td>BSc (Hons)</td>
+                <td>60%</td>
+                <td>50%</td>
+                <td>50%</td>
+            </tr>
+            <tr class="alternate">
+                <td>Computer Science (4 year course)</td>
+                <td>MComp</td> 
+                <td>60%</td>
+                <td>50%</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td>Computer Science (with an industrial placement year) </td>
+                <td>BSc (Hons)</td> 
+                <td>60%</td>
+                <td>50%</td>
+                <td>50%</td>                      
+            </tr>
+            <tr class="alternate">
+                <td>Computer Science (with an industrial placement) (5 year course)</td>
+                <td>MComp</td> 
+                <td>60%</td>
+                <td>50%</td>
+                <td>50%</td>                       
+            </tr>
+            <tr>
+                <td>Computer Science and Artificial Intelligence</td>
+                <td>BSc (Hons)</td> 
+                <td>60%</td>
+                <td>50%</td>
+                <td>50%</td>                      
+            </tr>
+            <tr class="alternate">
+                <td>Computer Science and Artificial Intelligence (with an industrial placement year) </td>
+                <td>BSc (Hons)</td>
+                <td>60%</td>
+                <td>50%</td>
+                <td>50%</td>                       
+            </tr>
+            <tr>
+                <td>Computing for Business and Management</td>
+                <td>BSc (Hons)</td> 
+                <td>60%</td>
+                <td>50%</td>
+                <td>50%</td>                      
+            </tr>
+            <tr class="alternate">
+                <td>Computing for Business and Management (with an industrial placement year) </td>
+                <td>BSc (Hons)</td> 
+                <td>60%</td>
+                <td>50%</td>
+                <td>50%</td>                       
+            </tr>
+            <tr>
+                <td>Computing for Digital Media</td>
+                <td>BSc (Hons)</td>
+                <td>60%</td>
+                <td>50%</td>
+                <td>50%</td>                      
+            </tr>
+            <tr class="alternate">
+                <td>Computing for Digital Media (with an industrial placement year)</td>
+                <td>BSc (Hons)</td> 
+                <td>60%</td>
+                <td>50%</td>
+                <td>50%</td>                       
+                </tr>
+            <tr>
+            <td>Games and Multimedia Environments (GAME)</td>
+                <td>BSc (Hons)</td> 
+                <td>60%</td>
+                <td>50%</td>
+                <td>50%</td>                     
+            </tr>
+            <tr class="alternate">
+                <td>Games and Multimedia Environments (GAME) (with an industrial placement year)</td>
+                <td>BSc (Hons)</td> 
+                <td>60%</td>
+                <td>50%</td>
+                <td>50%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+        </div>
+        <div class="col-md-5">
+            <h4>Entry requirements:</h4>
+            <input name="iscrlayout_1$iscrmaincontent_3$sitecoreContent" id="sitecoreContent" style="display: none" value="{&quot;CentreId&quot;:188,&quot;Programs&quot;:[{&quot;GroupLibId&quot;:&quot;68&quot;,&quot;Name&quot;:&quot;International Foundation Year&quot;}]}" hidden="hidden" type="text">
+<div style="display: none;" id="formWait" class="short-enquiryForm">
+    <p>Please wait</p>
+    <img src="/images/shared/ajax-load/big-circle-ball.gif">
+</div>
+<div id="form" style="">
+    <div class="requirementsCountry">
+        <label class="control-label" for="addressCountry">
+            Country
+        </label>
+        <div class="controls">
+            <select class=" form-control" id="addressCountry" name="addressCountry" data-bind="field: Model.Country, options: ViewBag.Countries, optionsText: 'Name', optionsValue: 'Id', optionsCaption: sg.strings.pleaseSelectCaption">
+                <option value="">-- Please Select --</option>
+                <option value="1">Afghanistan</option>
+                <option value="2">Albania</option>
+                <option value="3">Algeria</option>
+                <option value="4">American Samoa</option>
+                <option value="5">Andorra</option>
+                <option value="6">Angola</option>
+                <option value="7">Anguilla</option>
+                <option value="8">Antarctica</option>
+                <option value="9">Antigua &amp; Barbuda</option>
+                <option value="10">Argentina</option>
+                <option value="11">Armenia</option>
+                <option value="12">Aruba</option>
+                <option value="13">Australia</option>
+                <option value="14">Austria</option>
+                <option value="15">Azerbaijan</option>
+                <option value="16">Bahamas</option>
+                <option value="17">Bahrain</option>
+                <option value="18">Bangladesh</option>
+                <option value="19">Barbados</option>
+                <option value="20">Belarus</option>
+                <option value="21">Belgium</option>
+                <option value="22">Belize</option>
+                <option value="23">Benin</option>
+                <option value="24">Bermuda</option>
+                <option value="25">Bhutan</option>
+                <option value="26">Bolivia</option>
+                <option value="27">Bosnia &amp; Herzegovina</option>
+                <option value="28">Botswana</option>
+                <option value="29">Brazil</option>
+                <option value="30">British Indian Ocean Terr</option>
+                <option value="31">British Virgin Islands</option>
+                <option value="32">Brunei</option>
+                <option value="33">Bulgaria</option>
+                <option value="34">Burkina</option>
+                <option value="35">Burundi</option>
+                <option value="36">Cambodia</option>
+                <option value="37">Cameroon</option>
+                <option value="38">Canada</option>
+                <option value="39">Cape Verde</option>
+                <option value="40">Cayman Islands</option>
+                <option value="41">Central African Republic</option>
+                <option value="42">Chad</option>
+                <option value="43">Chile</option>
+                <option value="44">China PRC</option>
+                <option value="45">Christmas Island</option>
+                <option value="46">Cocos (Keeling) Islands</option>
+                <option value="47">Colombia</option>
+                <option value="48">Comoros</option>
+                <option value="51">Cook Islands</option>
+                <option value="52">Costa Rica</option>
+                <option value="53">Croatia</option>
+                <option value="54">Cuba</option>
+                <option value="55">Cyprus</option>
+                <option value="56">Czech Republic</option>
+                <option value="50">Democratic Republic of the Congo</option>
+                <option value="57">Denmark</option>
+                <option value="58">Djibouti</option>
+                <option value="59">Dominica</option>
+                <option value="60">Dominican Republic</option>
+                <option value="242">East Timor</option>
+                <option value="61">Ecuador</option>
+                <option value="62">Egypt</option>
+                <option value="63">El Salvador</option>
+                <option value="64">Equatorial Guinea</option>
+                <option value="65">Eritrea</option>
+                <option value="66">Estonia</option>
+                <option value="67">Ethiopia</option>
+                <option value="69">Falkland Islands</option>
+                <option value="68">Faroe Islands</option>
+                <option value="70">Fiji</option>
+                <option value="71">Finland</option>
+                <option value="72">France</option>
+                <option value="73">French Guiana</option>
+                <option value="74">French Polynesia</option>
+                <option value="75">Gabon</option>
+                <option value="76">Gambia</option>
+                <option value="77">Georgia</option>
+                <option value="78">Germany</option>
+                <option value="79">Ghana</option>
+                <option value="80">Gibraltar</option>
+                <option value="81">Greece</option>
+                <option value="82">Greenland</option>
+                <option value="83">Grenada</option>
+                <option value="84">Guadeloupe</option>
+                <option value="85">Guam</option>
+                <option value="86">Guatemala</option>
+                <option value="87">Guernsey</option>
+                <option value="88">Guinea</option>
+                <option value="89">Guinea-Bissau</option>
+                <option value="90">Guyana</option>
+                <option value="91">Haiti</option>
+                <option value="92">Heard &amp; Mcdonald Is</option>
+                <option value="93">Honduras</option>
+                <option value="240">Hong Kong SAR</option>
+                <option value="94">Hungary</option>
+                <option value="95">Iceland</option>
+                <option value="96">India</option>
+                <option value="97">Indonesia</option>
+                <option value="98">Iran</option>
+                <option value="99">Iraq</option>
+                <option value="100">Ireland</option>
+                <option value="101">Isle of Man</option>
+                <option value="102">Israel</option>
+                <option value="103">Italy</option>
+                <option value="104">Ivory Coast</option>
+                <option value="105">Jamaica</option>
+                <option value="106">Japan</option>
+                <option value="107">Jersey</option>
+                <option value="109">Jordan</option>
+                <option value="110">Kazakhstan</option>
+                <option value="111">Kenya</option>
+                <option value="112">Kiribati</option>
+                <option value="241">Kosovo</option>
+                <option value="113">Kuwait</option>
+                <option value="114">Kyrgyzstan</option>
+                <option value="115">Laos</option>
+                <option value="116">Latvia</option>
+                <option value="117">Lebanon</option>
+                <option value="118">Lesotho</option>
+                <option value="119">Liberia</option>
+                <option value="120">Libya</option>
+                <option value="121">Liechtenstein</option>
+                <option value="122">Lithuania</option>
+                <option value="123">Luxembourg</option>
+                <option value="124">Macau</option>
+                <option value="125">Macedonia</option>
+                <option value="126">Madagascar</option>
+                <option value="127">Malawi</option>
+                <option value="128">Malaysia</option>
+                <option value="129">Maldives</option>
+                <option value="130">Mali</option>
+                <option value="131">Malta</option>
+                <option value="132">Marshall Islands</option>
+                <option value="133">Martinique</option>
+                <option value="134">Mauritania</option>
+                <option value="135">Mauritius</option>
+                <option value="136">Mayotte</option>
+                <option value="137">Mexico</option>
+                <option value="138">Micronesia</option>
+                <option value="140">Moldova</option>
+                <option value="141">Monaco</option>
+                <option value="142">Mongolia</option>
+                <option value="243">Montenegro</option>
+                <option value="143">Montserrat</option>
+                <option value="144">Morocco</option>
+                <option value="145">Mozambique</option>
+                <option value="146">Myanmar (Burma)</option>
+                <option value="147">Namibia</option>
+                <option value="148">Nauru</option>
+                <option value="149">Nepal</option>
+                <option value="150">Netherlands</option>
+                <option value="151">Netherlands Antilles</option>
+                <option value="152">New Caledonia</option>
+                <option value="153">New Zealand</option>
+                <option value="154">Nicaragua</option>
+                <option value="155">Niger</option>
+                <option value="156">Nigeria</option>
+                <option value="157">Niue</option>
+                <option value="158">Norfolk Island</option>
+                <option value="159">North Korea</option>
+                <option value="160">Northern Mariana Islands</option>
+                <option value="161">Norway</option>
+                <option value="162">Oman</option>
+                <option value="163">Pakistan</option>
+                <option value="164">Palau</option>
+                <option value="165">Panama</option>
+                <option value="166">Papua New Guinea</option>
+                <option value="167">Paraguay</option>
+                <option value="168">Peru</option>
+                <option value="169">Philippines</option>
+                <option value="170">Pitcairn Island</option>
+                <option value="171">Poland</option>
+                <option value="172">Portugal</option>
+                <option value="173">Puerto Rico</option>
+                <option value="174">Qatar</option>
+                <option value="49">Republic of the Congo</option>
+                <option value="175">Reunion</option>
+                <option value="176">Romania</option>
+                <option value="177">Russian Federation</option>
+                <option value="178">Rwanda</option>
+                <option value="179">Samoa</option>
+                <option value="180">San Marino</option>
+                <option value="181">Sao Tome &amp; Principe</option>
+                <option value="182">Saudi Arabia</option>
+                <option value="183">Senegal</option>
+                <option value="237">Serbia</option>
+                <option value="184">Seychelles</option>
+                <option value="185">Sierra Leone</option>
+                <option value="186">Singapore</option>
+                <option value="187">Slovakia</option>
+                <option value="188">Slovenia</option>
+                <option value="189">Solomon Islands</option>
+                <option value="190">Somalia</option>
+                <option value="191">South Africa</option>
+                <option value="192">South Korea</option>
+                <option value="245">South Sudan</option>
+                <option value="193">Spain</option>
+                <option value="195">Sri Lanka</option>
+                <option value="196">St. Helena</option>
+                <option value="197">St. Kitts &amp; Nevis</option>
+                <option value="198">St. Lucia</option>
+                <option value="199">St. Pierre &amp; Miquelon</option>
+                <option value="200">St. Vincent &amp; Grenadines</option>
+                <option value="201">Sudan</option>
+                <option value="202">Suriname</option>
+                <option value="203">Svalbard</option>
+                <option value="204">Swaziland</option>
+                <option value="205">Sweden</option>
+                <option value="206">Switzerland</option>
+                <option value="207">Syria</option>
+                <option value="208">Taiwan ROC</option>
+                <option value="209">Tajikistan</option>
+                <option value="210">Tanzania</option>
+                <option value="211">Thailand</option>
+                <option value="212">Togo</option>
+                <option value="213">Tokelau</option>
+                <option value="214">Tonga</option>
+                <option value="215">Trinidad &amp; Tobago</option>
+                <option value="216">Tunisia</option>
+                <option value="217">Turkey</option>
+                <option value="218">Turkmenistan</option>
+                <option value="219">Turks &amp; Caicos Islands</option>
+                <option value="220">Tuvalu</option>
+                <option value="221">Uganda</option>
+                <option value="222">Ukraine</option>
+                <option value="223">United Arab Emirates</option>
+                <option value="224">United Kingdom</option>
+                <option value="225">United States</option>
+                <option value="226">Uruguay</option>
+                <option value="227">Uzbekistan</option>
+                <option value="228">Vanuatu</option>
+                <option value="229">Vatican City</option>
+                <option value="230">Venezuela</option>
+                <option value="231">Vietnam</option>
+                <option value="232">Virgin Islands (US)</option>
+                <option value="234">Wallis &amp; Futuna</option>
+                <option value="235">West Bank &amp; Gaza</option>
+                <option value="236">Yemen</option>
+                <option value="238">Zambia</option>
+                <option value="239">Zimbabwe</option>
+            </select>
+        </div>
+    </div>
+    <table class="entry-requirements table" data-bind="foreach: Model.Requirements">
+        <thead>
+            <tr>
+                <th class="requirementHeading" colspan="100" data-bind="text: sg.viewModelHolder.get().Model.mapProgName(ProgrammeId, ProgrammeName)">International Foundation Year</th>
+            </tr>
+            <tr>
+                <th>Course length</th>
+                <th>School group</th>
+                <th>Grading system</th>
+                <th>Academic requirements</th>
+                <th>English requirements</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: EntryRequirements">
+            <tr>
+                <td data-bind="text: CourseLength">3</td>
+                <td data-bind="text: SchoolGroup">All schools</td>
+                <td data-bind="text: GradingSystem">GCSE/IGCSE</td>
+                <td data-bind="text: GeneralRequirements">5 A-C ,Including relevant subjects, no native language</td>
+                <td data-bind="text: IELTS">IELTS Overall: 5.0; IELTS Writing: 5.0; </td>
+            </tr>
+            <tr>
+                <td data-bind="text: CourseLength">3</td>
+                <td data-bind="text: SchoolGroup">All schools</td>
+                <td data-bind="text: GradingSystem">O Level</td>
+                <td data-bind="text: GeneralRequirements">5 A-C ,Including relevant subjects, C in Maths, no native language</td>
+                <td data-bind="text: IELTS">IELTS Overall: 5.0; IELTS Writing: 5.0; </td>
+            </tr>
+            <tr>
+                <td data-bind="text: CourseLength">3</td>
+                <td data-bind="text: SchoolGroup">All schools</td>
+                <td data-bind="text: GradingSystem">International Baccalaureate Diploma</td>
+                <td data-bind="text: GeneralRequirements">26 points,subject pass level 3</td>
+                <td data-bind="text: IELTS">IELTS Overall: 5.0; IELTS Writing: 5.0; </td>
+            </tr>
+            <tr>
+                <td data-bind="text: CourseLength">3</td>
+                <td data-bind="text: SchoolGroup">All schools</td>
+                <td data-bind="text: GradingSystem">UCAS tariff</td>
+                <td data-bind="text: GeneralRequirements">80 points,</td>
+                <td data-bind="text: IELTS">IELTS Overall: 5.0; IELTS Writing: 5.0; </td>
+            </tr>
+            <tr>
+                <td data-bind="text: CourseLength">3</td>
+                <td data-bind="text: SchoolGroup">All schools</td>
+                <td data-bind="text: GradingSystem">Secondary School Cert (Habilitações Literárias )</td>
+                <td data-bind="text: GeneralRequirements">Minimum GPA 14 including relevant subjects,</td>
+                <td data-bind="text: IELTS">IELTS Overall: 5.0; IELTS Writing: 5.0; </td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th class="requirementHeading" colspan="100" data-bind="text: sg.viewModelHolder.get().Model.mapProgName(ProgrammeId, ProgrammeName)">International Year One/Diploma</th>
+            </tr>
+            <tr>
+                <th>Course length</th>
+                <th>School group</th>
+                <th>Grading system</th>
+                <th>Academic requirements</th>
+                <th>English requirements</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: EntryRequirements">
+            <tr>
+                <td data-bind="text: CourseLength">3</td>
+                <td data-bind="text: SchoolGroup">All schools</td>
+                <td data-bind="text: GradingSystem">BTEC level 3</td>
+                <td data-bind="text: GeneralRequirements">Equivalent to 160 UCAS points,</td>
+                <td data-bind="text: IELTS">IELTS Overall: 5.5; IELTS Writing: 5.5; </td>
+            </tr>
+            <tr>
+                <td data-bind="text: CourseLength">3</td>
+                <td data-bind="text: SchoolGroup">All schools</td>
+                <td data-bind="text: GradingSystem">NCUK Foundation</td>
+                <td data-bind="text: GeneralRequirements">3xD and EAP D with no less than D in any band,</td>
+                <td data-bind="text: IELTS">IELTS Overall: 5.5; IELTS Writing: 5.5; </td>
+            </tr>
+            <tr>
+                <td data-bind="text: CourseLength">3</td>
+                <td data-bind="text: SchoolGroup">All schools</td>
+                <td data-bind="text: GradingSystem">International Baccalaureate Diploma</td>
+                <td data-bind="text: GeneralRequirements">29  points - subject level pass is 3,</td>
+                <td data-bind="text: IELTS">IELTS Overall: 5.5; IELTS Writing: 5.5; </td>
+            </tr>
+            <tr>
+                <td data-bind="text: CourseLength">3</td>
+                <td data-bind="text: SchoolGroup">All schools</td>
+                <td data-bind="text: GradingSystem">UCAS tariff</td>
+                <td data-bind="text: GeneralRequirements">160 points (excluding native language),</td>
+                <td data-bind="text: IELTS">IELTS Overall: 5.5; IELTS Writing: 5.5; </td>
+            </tr>
+            <tr>
+                <td data-bind="text: CourseLength">0</td>
+                <td data-bind="text: SchoolGroup">All schools</td>
+                <td data-bind="text: GradingSystem">n/a</td>
+                <td data-bind="text: GeneralRequirements">Grade B or equivalent required in Maths in further year study,</td>
+                <td data-bind="text: IELTS">IELTS Overall: 5.5; IELTS Writing: 5.5; </td>
+            </tr>
+            <tr>
+                <td data-bind="text: CourseLength">0</td>
+                <td data-bind="text: SchoolGroup">All schools</td>
+                <td data-bind="text: GradingSystem">n/a</td>
+                <td data-bind="text: GeneralRequirements">Grade B or equivalent required in Maths in further year study,</td>
+                <td data-bind="text: IELTS">IELTS Overall: 5.5; IELTS Writing: 5.5; </td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th class="requirementHeading" colspan="100" data-bind="text: sg.viewModelHolder.get().Model.mapProgName(ProgrammeId, ProgrammeName)">Pre-Masters</th>
+            </tr>
+            <tr>
+                <th>Course length</th>
+                <th>School group</th>
+                <th>Grading system</th>
+                <th>Academic requirements</th>
+                <th>English requirements</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: EntryRequirements">
+            <tr>
+                <td data-bind="text: CourseLength">2</td>
+                <td data-bind="text: SchoolGroup">All schools</td>
+                <td data-bind="text: GradingSystem">NCC Advanced Diploma</td>
+                <td data-bind="text: GeneralRequirements">60%+ all modules with overall grade Merit,</td>
+                <td data-bind="text: IELTS">IELTS Overall: 6.0; IELTS Writing: 6.0; Minimum 5.5</td>
+            </tr>
+            <tr>
+                <td data-bind="text: CourseLength">2</td>
+                <td data-bind="text: SchoolGroup">All schools</td>
+                <td data-bind="text: GradingSystem">n/a</td>
+                <td data-bind="text: GeneralRequirements">25% of the non-degree qualification should be related to the general area of the PM programme and not necessarily to the ultimate Degree aim,</td>
+                <td data-bind="text: IELTS">IELTS Overall: 6.0; IELTS Writing: 6.0; Minimum 5.5</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+        </div>
+        <div class="col-md-2">
+            <h4>Start dates:</h4>
+            <div id="form" class="start-dates" style="">
+    <h4>Term dates</h4>
+    <div class="start-dates-content" data-bind="foreach: ViewBag.StartDates">
+        <p>            
+            <strong data-bind="text: Name">September 2016</strong>
+            <br>
+            <span data-bind=" if: TermDates.length == 0">
+                <span data-bind="text: sg.viewModelHolder.get().Model.formatDate(Date)">12/09/2016</span>
+                <br>
+            </span>
+        </p>
+        <p>            
+            <strong data-bind="text: Name">January 2017</strong>
+            <br>
+            <span data-bind=" if: TermDates.length == 0">
+                <span data-bind="text: sg.viewModelHolder.get().Model.formatDate(Date)">09/01/2017</span>
+                <br>
+            </span>
+        </p>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <h1>News components:</h1>
+    <div class="row">
+        <div class="col-md-5">
+            <h4>News feed:</h4>
+            <!-- NEWS FEED COMPONENT START -->
+<div class="news_feed">
+	<div class="news_listing">
+		<ul class="news_items">
+			<li class="news_item"> <!-- Option to control number of news items in news feed -->
+				<div class="news_heading">
+					<h3>Item title</h3> <!-- Option for content editors to choose heading tag -->
+				</div>
+				<div class="news_date">
+					<em>March 20 2016</em>
+				</div>
+				<div class="news_details">
+					<img src="http://placehold.it/350x250">
+					<div class="news_snippet"><!-- Richtext field copy -->
+						<p>Guardian University Guide 2017 confirms Sussex is a leading university with outstanding career prospects</p>
+					</div>
+					<div class="button">
+					    <a href="#">Read more</a>
+					</div>
+				</div>
+			</li>
+			<li class="news_item">
+				<div class="news_heading">
+					<h3>Item title</h3> <!-- Option for content editors to choose heading tag -->
+				</div>
+				<div class="news_date">
+					<em>March 20 2016</em>
+				</div>
+				<div class="news_details">
+					<img src="http://placehold.it/350x250">
+					<div class="news_snippet"><!-- Richtext field copy -->
+						<p>Guardian University Guide 2017 confirms Sussex is a leading university with outstanding career prospects</p>
+					</div>
+					<div class="button">
+					    <a href="#">Read more</a>
+					</div>
+				</div>
+			</li>
+			<li class="news_item">
+				<div class="news_heading">
+					<h3>Item title</h3> <!-- Option for content editors to choose heading tag -->
+				</div>
+				<div class="news_date">
+					<em>March 20 2016</em>
+				</div>
+				<div class="news_details">
+					<img src="http://placehold.it/350x250">
+					<div class="news_snippet"><!-- Richtext field copy -->
+						<p>Guardian University Guide 2017 confirms Sussex is a leading university with outstanding career prospects</p>
+					</div>
+					<div class="button">
+					    <a href="#">Read more</a>
+					</div>
+				</div>
+			</li>
 		</ul>
-	</li>
-	<li><a href="#">link two</a></li>
-	<li><a href="#">link three</a></li>
-	<li><a href="#">link four</a></li>
-</ul>
-<!-- SIDEBAR NAV COMPONENT END -->
+	</div>
+</div>
+<!-- NEWS FEED COMPONENT END -->
+        </div>
+        <div class="col-md-5">
+            <h4>News listing:</h4>
+            <!-- NEWS LISTING COMPONENT START -->
+<div class="news_listing">
+	<ul class="news_items">
+		<li class="news_item">
+			<div class="news_heading">
+				<h3>Item title</h3> <!-- Option for content editors to choose heading tag -->
+			</div>
+			<div class="news_date">
+				<em>March 20 2016</em>
+			</div>
+			<div class="news_details">
+				<img src="http://placehold.it/350x250">
+				<div class="news_snippet"><!-- Richtext field copy -->
+					<p>Guardian University Guide 2017 confirms Sussex is a leading university with outstanding career prospects</p>
+				</div>
+				<div class="button">
+					<a href="#">Read more</a>
+				</div>
+			</div>
+		</li>
+		<li class="news_item">
+			<div class="news_heading">
+				<h3>Item title</h3> <!-- Option for content editors to choose heading tag -->
+			</div>
+			<div class="news_date">
+				<em>March 20 2016</em>
+			</div>
+			<div class="news_details">
+				<img src="http://placehold.it/350x250">
 
-            <Br><br>
+				<div class="news_snippet"><!-- Richtext field copy -->
+					<p>Guardian University Guide 2017 confirms Sussex is a leading university with outstanding career prospects</p>
+				</div>
+				<div class="button">
+					<a href="#">Read more</a>
+				</div>
+			</div>
+		</li>
+		<li class="news_item">
+			<div class="news_heading">
+				<h3>Item title</h3> <!-- Option for content editors to choose heading tag -->
+			</div>
+			<div class="news_date">
+				<em>March 20 2016</em>
+			</div>
+			<div class="news_details">
+				<img src="http://placehold.it/350x250">
+				<div class="news_snippet"><!-- Richtext field copy -->
+					<p>Guardian University Guide 2017 confirms Sussex is a leading university with outstanding career prospects</p>
+				</div>
+				<div class="button">
+					<a href="#">Read more</a>
+				</div>
+			</div>
+		</li>
+	</ul>
 
+	<div class="button">
+		<a href="#">Read more</a>
+	</div>
+
+	<ul class="pagination">
+		<li class="active"><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#">»</a></li>
+	</ul>
+
+</div>
+<!-- NEWS LISTING COMPONENT END -->
+        </div>
+        <div class="col-md-2">
+            <h4>News archive:</h4>
             <!-- NEWS ARCHIVE COMPONENT START -->
 <div class="news_archive">
 	<h3>News archive</h3> <!-- Option for content editors to choose heading tag -->
@@ -320,58 +1223,17 @@
 </div>
 <!-- NEWS ARCHIVE COMPONENT END --> 
         </div>
-        <div class="col-md-9">
-            <div class="row">
-                <div class="col-md-4">
-                    <!-- WIDGET COMPONENT START -->
-<div class="widget">
-    <h3>Widget</h3> <!-- Option for content editors to choose heading tag -->
-    <p>
-        lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-    <p>
-        Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-    <!-- BUTTON COMPONENT START -->
-<div class="button">
-    <a href="#">Apply now</a>
-</div>
-<!-- BUTTON COMPONENT START -->
-</div>
-<!-- WIDGET COMPONENT END -->
-                </div>
-                <div class="col-md-4">
-        			<!-- MAPS COMPONENT START -->
-<div class="map">
-    <h3>Map</h3> <!-- Option for content editors to choose heading tag -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40314.597521627686!2d-0.10618970000002341!3d50.83741795000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758509f6294167%3A0x9cc6af7a727d0ef9!2sBrighton%2C+The+City+of+Brighton+and+Hove!5e0!3m2!1sen!2suk!4v1418750835816" width="100%" height="250" frameborder="0" style="border:0"></iframe>
-    <p>About the location...</p>
-</div>
-<!-- MAPS COMPONENT END -->
-                </div>
-                <div class="col-md-4">
-                	<!-- TESTIMONIAL COMPONENT START -->
-<div class="testimonial">
-    <h3>Testimonial</h3> <!-- Option for content editors to choose heading tag -->
-    <img src="http://placehold.it/375x211">
-    <div class="testimonial_content">
-        <p>
-            "The style of the education is completely different. For example, during the class, the tutors are more focused on what you think and what your opinion is. There is a lot of opportunity for you to express yourself."
-        </p>
-    </div>
-    <div class="testimonial_info">
-        <p>
-            <em>Xyuing (Shelly)</em>
-            from China studied business
-        </p>
     </div>
 </div>
-<!-- TESTIMONIAL COMPONENT END -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- SEARCH RESULTS COMPONENT START -->
+
+<hr>
+
+<div class="container">
+    <h1>Search components:</h1>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Search results:</h4>
+            <!-- SEARCH RESULTS COMPONENT START -->
 <div class="search_results">
 	<ul class="listing">
 		<li>
@@ -402,157 +1264,1122 @@ criteria...</p>
 	</ul>
 </div>
 <!-- SEARCH RESULTS COMPONENT END -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- NEWS LISTING COMPONENT START -->
-<div class="news_listing">
-	<ul class="news_items">
-		<li class="news_item">
-			<div class="news_heading">
-				<h3>Item title</h3> <!-- Option for content editors to choose heading tag -->
-			</div>
-
-			<div class="news_date">
-				<em>March 20 2016</em>
-			</div>
-
-			<div class="news_details">
-				<img src="http://placehold.it/350x250">
-
-				<div class="news_snippet"><!-- Richtext field copy -->
-					<p>Guardian University Guide 2017 confirms Sussex is a leading university with outstanding career prospects</p>
-				</div>
-
-				<!-- BUTTON COMPONENT START -->
-<div class="button">
-    <a href="#">Apply now</a>
-</div>
-<!-- BUTTON COMPONENT START -->
-			</div>
-		</li>
-		<li class="news_item">
-			<div class="news_heading">
-				<h3>Item title</h3>
-			</div>
-
-			<div class="news_date">
-				<em>March 20 2016</em>
-			</div>
-
-			<div class="news_details">
-				<img src="http://placehold.it/350x250">
-
-				<div class="news_snippet"><!-- Richtext field copy -->
-					<p>Guardian University Guide 2017 confirms Sussex is a leading university with outstanding career prospects</p>
-				</div>
-
-				<!-- BUTTON COMPONENT START -->
-<div class="button">
-    <a href="#">Apply now</a>
-</div>
-<!-- BUTTON COMPONENT START -->
-			</div>
-		</li>
-		<li class="news_item">
-			<div class="news_heading">
-				<h3>Item title</h3>
-			</div>
-
-			<div class="news_date">
-				<em>March 20 2016</em>
-			</div>
-
-			<div class="news_details">
-				<img src="http://placehold.it/350x250">
-
-				<div class="news_snippet"><!-- Richtext field copy -->
-					<p>Guardian University Guide 2017 confirms Sussex is a leading university with outstanding career prospects</p>
-				</div>
-
-				<!-- BUTTON COMPONENT START -->
-<div class="button">
-    <a href="#">Apply now</a>
-</div>
-<!-- BUTTON COMPONENT START -->
-			</div>
-		</li>
-	</ul>
-
-	<!-- BUTTON COMPONENT START -->
-<div class="button">
-    <a href="#">Apply now</a>
-</div>
-<!-- BUTTON COMPONENT START -->
-
-	<ul class="pagination">
-		<li class="active"><a href="#">1</a></li>
-		<li><a href="#">2</a></li>
-		<li><a href="#">3</a></li>
-		<li><a href="#">4</a></li>
-		<li><a href="#">5</a></li>
-		<li><a href="#">»</a></li>
-	</ul>
-
-</div>
-<!-- NEWS LISTING COMPONENT END -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- TABS COMPONENT START -->
-<div class="tab_wrapper">
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Tab 1</a></li>
-        <li role="presentation"><a href="#1" aria-controls="1" role="tab" data-toggle="tab">Tab 2</a></li>
-        <li role="presentation"><a href="#2" aria-controls="2" role="tab" data-toggle="tab">Tab 3</a></li>
-        <li role="presentation"><a href="#3" aria-controls="3" role="tab" data-toggle="tab">Tab 4</a></li>
-    </ul>
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div role="tabpanel" class="tab-pane fade in active" id="home">
-            <!-- Richtext field copy -->
-            Tab 1 content
-        </div>
-        <div role="tabpanel" class="tab-pane fade" id="1">
-            <!-- Richtext field copy -->
-            Tab 2 content
-        </div>
-        <div role="tabpanel" class="tab-pane fade" id="2">
-            <!-- Richtext field copy -->
-            Tab 3 content
-        </div>
-        <div role="tabpanel" class="tab-pane fade" id="3">
-            <!-- Richtext field copy -->
-            Tab 4 content
         </div>
     </div>
 </div>
-<!-- CAROUSEL COMPONENT END -->
+
+<hr>
+
+<div class="container">
+    <h1>Form components:</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Brochure download form:</h4>
+            <div id="brochureForm" class="form brochure-download-form">
+    <!-- Hidden input fields -->
+    <input name="name" id="cultureCode" value="en-GB" type="hidden">
+    <input name="name" id="successUrl" type="hidden">
+    <input name="name" id="showTelFields" value="false" type="hidden">
+
+    <div id="form-container">
+
+        <div id="error-container" class="ui-state-error" style="display: none">
+            <span class="fl ui-icon ui-icon-alert"></span><span id="errorText"></span>
+        </div>
+
+        <div class="form-summary">
+            Form summary text form summary text form summary text form summary text form summary text form summary text
+        </div>
+
+        <div style="" id="form-loading">
+            <div style="" id="overlay-text">
+                <p>Loading Enquiry Form</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active"></div>
                 </div>
             </div>
         </div>
-	</div>
 
+        <div class="row" id="submitting" style="display: none">
+            <div class="">
+                <p class="wait-message">
+                    Submitting form...
+                </p>
+                <div class="loader"></div>
+            </div>
+        </div>
 
+        <fieldset class="form-horizontal">
+            <div id="notificationArea">
+                <div class="alert alert-error" style="">
+                    <span class="glyphicon glyphicon-exclamation-sign"></span> You have not filled in all required fields
+                </div>
+            </div>
 
-<!-- FOOTER COMPONENT START -->
-<footer>
-	<div class="container">
-	    <div class="row">
-	        <div class="col-md-6">
-	        	<!-- FOOTER LINKS COMPONENT START -->
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="firstName">
+                        First Name
+                        <sup class="required">&nbsp;*</sup>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <div class="controls">
+                        <input data-sg-unique-elem-seq="1" maxlength="50" id="firstName" name="nameGiven" data-bind="field: Model.FirstNames" class="form-control required" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="lastName">
+                        Last Name
+                        <sup class="required">&nbsp;*</sup>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <div class="controls">
+                        <input data-sg-unique-elem-seq="2" maxlength="50" id="lastName" name="lastName" data-bind="field: Model.LastName" class="form-control required" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="emailAddress">
+                        Email
+                        <sup class="required">&nbsp;*</sup>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <div class="controls">
+                        <input data-sg-unique-elem-seq="3" maxlength="100" id="emailAddress" name="emailAddress" data-bind="field: Model.Email" class="form-control required" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="countryOfResidence">
+                        Country of residence
+                        <sup class="required">&nbsp;*</sup>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <div class="controls">
+                        <select data-sg-unique-elem-seq="4" class="form-control  required" id="countryOfResidence" name="countryOfResidence" data-bind="field: Model.CountryOfResidenceId, options: ViewBag.Countries, optionsText: 'Name', optionsValue: 'Id', optionsCaption: sg.strings.pleaseSelectCaption">
+                            <option value="">-- Please Select --</option>
+                            <option value="1">Afghanistan</option>
+                            <option value="239">Zimbabwe</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+                        
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="subscribe">
+                        Subscribe
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <div class="checkbox">
+                        <label class="subscribe">
+                            <input data-bind="field: Model.NewsletterSubscribe" name="subscribe" id="subscribe" type="checkbox">
+                            Please check this box if you would like to periodically receive special offers and news from us. You can unsubscribe at any time, and your e-mail address will remain confidential.
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8">
+                    <button class="pull-right" type="button" id="submit-button">
+                        Download brochure
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8">
+                    <span data-bind="text: sg.BrochureRequest.BrochureLink.url"></span>
+                </div>
+            </div>
+        </fieldset>
+        
+        <!-- display brochure links after form submitted: -->
+        <div id="download-links" class="brochure-link-fields row" style="">
+            <div class="form-group">
+                <div class="col-md-12">
+                    <h3>Thank you for submitting your details.</h3>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-12 brochure-link">
+                    <div>
+                        <p>Please click the image below to download the brochure.</p>
+                    </div>
+                    <a id="brochureLink1" href="#" target="_blank" rel="nofollow" title="View a pdf file of XXXX University ISC brochure" alt="">
+                        <img src="http://placehold.it/300x425">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+        </div>
+        <div class="col-md-4">
+            <h4>Enquiry form:</h4>
+            <div id="enquiry-form" class="form enquiry-form">
+    <!-- Hidden input fields -->
+    <input name="" id="startDates" value="" type="hidden">
+    <input value="" id="iscFormConfig" type="hidden">
+    <input id="SC_Visit_Id" name="SC_Visit_Id" value="" type="hidden">
+    <input id="SC_Visitor_Id" name="SC_Visitor_Id" value="" type="hidden">
+        
+    <div id="form-container">
+        <div id="error-container" class="ui-state-error" style="display: none">
+            <span class="fl ui-icon ui-icon-alert"></span>
+            <span id="errorText"></span>
+        </div>
+            
+        <div class="form-summary">
+            Form summary text form summary text form summary text form summary text form summary text form summary text
+        </div>
+
+        <div style="" id="form-loading">
+            <div style="" id="overlay-text">
+                <p>Loading Enquiry Form</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active"></div>
+                </div>
+            </div>
+        </div>
+
+        <fieldset id="iscFields" class="form-horizontal">
+
+            <div id="notificationArea">
+                <!-- This div only displays if form is submitted without all required fields completed -->
+                <div class="alert alert-error" style="">
+                    <span class="glyphicon glyphicon-exclamation-sign"></span> You have not filled in all required fields
+                </div>
+            </div>
+
+            <div class="form-group genericFormField">
+                <div class="col-md-4">
+                    <label class="control-label" for="centreId">
+                        Which Study Centre are you interested in?
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <select class="form-control" id="centreId" data-bind="field: Model.CentreId, options: isc.Centres, optionsValue: 'value', optionsText: 'name', optionsCaption: sg.strings.pleaseSelectCaption">
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group landingPageFormField">
+                <div class="col-md-4">
+                    <label class="control-label" for="preferredCourse">
+                        Preferred Course
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <select class="form-control" id="preferredCourse" name="preferredCourse" data-bind="field: Model.PreferredCourse, options: ViewBag.Programmes, optionsText: 'Name', optionsValue: 'Id', optionsCaption: sg.strings.pleaseSelectCaption">
+                        <option value="">-- Please Select --</option>
+                        <option value="607">Foundation: Business, Management and Economics</option>
+                        <option value="1485">Foundation: Computing </option>
+                        <option value="1486">Foundation: Engineering and Mathematics</option>
+                        <option value="2657">Foundation: Law, International Relations and Sociology</option>
+                        <option value="609">Foundation: Life Sciences and Psychology</option>
+                        <option value="610">Foundation: Media and Communications</option>
+                        <option value="2458">International Year 1 Business and Management</option>
+                        <option value="2459">International Year 1 Computing</option>
+                        <option value="4936">International Year 1 Electrical and Electronic Engineering</option>
+                        <option value="6734">International Year 1 Finance and Accounting</option>
+                        <option value="2847">International Year 1 International Relations and International Development</option>
+                        <option value="2848">International Year 1 Media and Film Studies</option>
+                        <option value="1683">Pre-Masters : Computing</option>
+                        <option value="2801">Pre-Masters : International Relations and International Development</option>
+                        <option value="2849">Pre-Masters : Law</option>
+                        <option value="2658">Pre-Masters : Management and Finance</option>
+                        <option value="2463">Pre-Masters : Media, Journalism and Film</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label for="nameFamily" class="control-label">
+                        Family name 
+                    <sup class="required">&nbsp;*</sup></label>
+                </div>
+                <div class="col-md-8">
+                    <input data-sg-unique-elem-seq="1" maxlength="50" id="nameFamily" name="nameFamily" data-bind="field: Model.FamilyName" class="form-control required" type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="nameGiven">
+                        Given names
+                    <sup class="required">&nbsp;*</sup></label>
+                </div>
+                <div class="col-md-8">
+                    <input data-sg-unique-elem-seq="2" maxlength="50" id="nameGiven" name="nameGiven" data-bind="field: Model.GivenNames" class="form-control required" type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="studentEmail">
+                        Email
+                    <sup class="required">&nbsp;*</sup></label>
+                </div>
+                <div class="col-md-8">
+                    <input data-sg-unique-elem-seq="3" maxlength="100" id="studentEmail" name="studentEmail" data-bind="field: Model.Email" class="form-control required" type="email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="telephonePrimary">
+                        1<sup>st</sup> contact telephone/mobile
+                    <sup class="required">&nbsp;*</sup></label>
+                </div>
+                <div class="col-md-8">
+                    <input data-sg-unique-elem-seq="4" maxlength="30" id="telephonePrimary" name="telephonePrimary" data-bind="field: Model.Telephone" class="form-control required" type="tel">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="telephoneSecondary">
+                        2<sup>nd</sup> contact telephone/mobile
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <input maxlength="30" id="telephoneSecondary" name="telephoneSecondary" data-bind="field: Model.Telephone2" class="form-control" type="tel">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="contactPreference">
+                        Contact me by
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <div class="radio">
+                        <label class="radio">
+                          <input data-sg-unique-elem-seq="5" maxlength="50" class="required" id="contactPreferenceEmail" name="contactPreference" data-bind="field: Model.ContactPreference" value="email" type="radio">
+                          Email
+                        </label>
+                        <label class="radio">
+                          <input data-sg-unique-elem-seq="6" maxlength="50" class="required" id="contactPreferencePhone" name="contactPreference" data-bind="field: Model.ContactPreference" value="telephone" type="radio">
+                          Telephone
+                        </label>                    
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="birthDate">
+                        Date of birth
+                    <sup class="required">&nbsp;*</sup></label>
+                </div>
+                <div class="col-md-8">
+                    <div class="controls">
+                        <div class="input-group small">
+                            <input id="date_picker" type="text" class="date-picker form-control" />
+                            <label for="date_picker" class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="nationality">
+                        Nationality
+                    <sup class="required">&nbsp;*</sup></label>
+                </div>
+                <div class="col-md-8">
+                    <select data-sg-unique-elem-seq="8" class="form-control required" id="nationality" name="nationality" data-bind="field: Model.NationalityId, options: ViewBag.Countries, optionsText: 'Name', optionsValue: 'Id', optionsCaption: sg.strings.pleaseSelectCaption">
+                            <option value="">-- Please Select --</option>
+                            <option value="1">Afghanistan</option>
+                            <option value="2">Albania</option>
+                            <option value="3">Algeria</option>
+                            <option value="4">American Samoa</option>
+                            <option value="5">Andorra</option>
+                            <option value="6">Angola</option>
+                            <option value="7">Anguilla</option>
+                            <option value="8">Antarctica</option>
+                            <option value="9">Antigua &amp; Barbuda</option>
+                            <option value="10">Argentina</option>
+                            <option value="11">Armenia</option>
+                            <option value="12">Aruba</option>
+                            <option value="13">Australia</option>
+                            <option value="14">Austria</option>
+                            <option value="15">Azerbaijan</option>
+                            <option value="16">Bahamas</option>
+                            <option value="17">Bahrain</option>
+                            <option value="18">Bangladesh</option>
+                            <option value="19">Barbados</option>
+                            <option value="20">Belarus</option>
+                            <option value="21">Belgium</option>
+                            <option value="22">Belize</option>
+                            <option value="23">Benin</option>
+                            <option value="24">Bermuda</option>
+                            <option value="25">Bhutan</option>
+                            <option value="26">Bolivia</option>
+                            <option value="27">Bosnia &amp; Herzegovina</option>
+                            <option value="28">Botswana</option>
+                            <option value="29">Brazil</option>
+                            <option value="30">British Indian Ocean Terr</option>
+                            <option value="31">British Virgin Islands</option>
+                            <option value="32">Brunei</option>
+                            <option value="33">Bulgaria</option>
+                            <option value="34">Burkina</option>
+                            <option value="35">Burundi</option>
+                            <option value="36">Cambodia</option>
+                            <option value="37">Cameroon</option>
+                            <option value="38">Canada</option>
+                            <option value="39">Cape Verde</option>
+                            <option value="40">Cayman Islands</option>
+                            <option value="41">Central African Republic</option>
+                            <option value="42">Chad</option>
+                            <option value="43">Chile</option>
+                            <option value="44">China PRC</option>
+                            <option value="45">Christmas Island</option>
+                            <option value="46">Cocos (Keeling) Islands</option>
+                            <option value="47">Colombia</option>
+                            <option value="48">Comoros</option>
+                            <option value="51">Cook Islands</option>
+                            <option value="52">Costa Rica</option>
+                            <option value="53">Croatia</option>
+                            <option value="54">Cuba</option>
+                            <option value="55">Cyprus</option>
+                            <option value="56">Czech Republic</option>
+                            <option value="50">Democratic Republic of the Congo</option>
+                            <option value="57">Denmark</option>
+                            <option value="58">Djibouti</option>
+                            <option value="59">Dominica</option>
+                            <option value="60">Dominican Republic</option>
+                            <option value="242">East Timor</option>
+                            <option value="61">Ecuador</option>
+                            <option value="62">Egypt</option>
+                            <option value="63">El Salvador</option>
+                            <option value="64">Equatorial Guinea</option>
+                            <option value="65">Eritrea</option>
+                            <option value="66">Estonia</option>
+                            <option value="67">Ethiopia</option>
+                            <option value="69">Falkland Islands</option>
+                            <option value="68">Faroe Islands</option>
+                            <option value="70">Fiji</option>
+                            <option value="71">Finland</option>
+                            <option value="72">France</option>
+                            <option value="73">French Guiana</option>
+                            <option value="74">French Polynesia</option>
+                            <option value="75">Gabon</option>
+                            <option value="76">Gambia</option>
+                            <option value="77">Georgia</option>
+                            <option value="78">Germany</option>
+                            <option value="79">Ghana</option>
+                            <option value="80">Gibraltar</option>
+                            <option value="81">Greece</option>
+                            <option value="82">Greenland</option>
+                            <option value="83">Grenada</option>
+                            <option value="84">Guadeloupe</option>
+                            <option value="85">Guam</option>
+                            <option value="86">Guatemala</option>
+                            <option value="87">Guernsey</option>
+                            <option value="88">Guinea</option>
+                            <option value="89">Guinea-Bissau</option>
+                            <option value="90">Guyana</option>
+                            <option value="91">Haiti</option>
+                            <option value="92">Heard &amp; Mcdonald Is</option>
+                            <option value="93">Honduras</option>
+                            <option value="240">Hong Kong SAR</option>
+                            <option value="94">Hungary</option>
+                            <option value="95">Iceland</option>
+                            <option value="96">India</option>
+                            <option value="97">Indonesia</option>
+                            <option value="98">Iran</option>
+                            <option value="99">Iraq</option>
+                            <option value="100">Ireland</option>
+                            <option value="101">Isle of Man</option>
+                            <option value="102">Israel</option>
+                            <option value="103">Italy</option>
+                            <option value="104">Ivory Coast</option>
+                            <option value="105">Jamaica</option>
+                            <option value="106">Japan</option>
+                            <option value="107">Jersey</option>
+                            <option value="109">Jordan</option>
+                            <option value="110">Kazakhstan</option>
+                            <option value="111">Kenya</option>
+                            <option value="112">Kiribati</option>
+                            <option value="241">Kosovo</option>
+                            <option value="113">Kuwait</option>
+                            <option value="114">Kyrgyzstan</option>
+                            <option value="115">Laos</option>
+                            <option value="116">Latvia</option>
+                            <option value="117">Lebanon</option>
+                            <option value="118">Lesotho</option>
+                            <option value="119">Liberia</option>
+                            <option value="120">Libya</option>
+                            <option value="121">Liechtenstein</option>
+                            <option value="122">Lithuania</option>
+                            <option value="123">Luxembourg</option>
+                            <option value="124">Macau</option>
+                            <option value="125">Macedonia</option>
+                            <option value="126">Madagascar</option>
+                            <option value="127">Malawi</option>
+                            <option value="128">Malaysia</option>
+                            <option value="129">Maldives</option>
+                            <option value="130">Mali</option>
+                            <option value="131">Malta</option>
+                            <option value="132">Marshall Islands</option>
+                            <option value="133">Martinique</option>
+                            <option value="134">Mauritania</option>
+                            <option value="135">Mauritius</option>
+                            <option value="136">Mayotte</option>
+                            <option value="137">Mexico</option>
+                            <option value="138">Micronesia</option>
+                            <option value="140">Moldova</option>
+                            <option value="141">Monaco</option>
+                            <option value="142">Mongolia</option>
+                            <option value="243">Montenegro</option>
+                            <option value="143">Montserrat</option>
+                            <option value="144">Morocco</option>
+                            <option value="145">Mozambique</option>
+                            <option value="146">Myanmar (Burma)</option>
+                            <option value="147">Namibia</option>
+                            <option value="148">Nauru</option>
+                            <option value="149">Nepal</option>
+                            <option value="150">Netherlands</option>
+                            <option value="151">Netherlands Antilles</option>
+                            <option value="152">New Caledonia</option>
+                            <option value="153">New Zealand</option>
+                            <option value="154">Nicaragua</option>
+                            <option value="155">Niger</option>
+                            <option value="156">Nigeria</option>
+                            <option value="157">Niue</option>
+                            <option value="158">Norfolk Island</option>
+                            <option value="159">North Korea</option>
+                            <option value="160">Northern Mariana Islands</option>
+                            <option value="161">Norway</option>
+                            <option value="162">Oman</option>
+                            <option value="163">Pakistan</option>
+                            <option value="164">Palau</option>
+                            <option value="165">Panama</option>
+                            <option value="166">Papua New Guinea</option>
+                            <option value="167">Paraguay</option>
+                            <option value="168">Peru</option>
+                            <option value="169">Philippines</option>
+                            <option value="170">Pitcairn Island</option>
+                            <option value="171">Poland</option>
+                            <option value="172">Portugal</option>
+                            <option value="173">Puerto Rico</option>
+                            <option value="174">Qatar</option>
+                            <option value="49">Republic of the Congo</option>
+                            <option value="175">Reunion</option>
+                            <option value="176">Romania</option>
+                            <option value="177">Russian Federation</option>
+                            <option value="178">Rwanda</option>
+                            <option value="179">Samoa</option>
+                            <option value="180">San Marino</option>
+                            <option value="181">Sao Tome &amp; Principe</option>
+                            <option value="182">Saudi Arabia</option>
+                            <option value="183">Senegal</option>
+                            <option value="237">Serbia</option>
+                            <option value="184">Seychelles</option>
+                            <option value="185">Sierra Leone</option>
+                            <option value="186">Singapore</option>
+                            <option value="187">Slovakia</option>
+                            <option value="188">Slovenia</option>
+                            <option value="189">Solomon Islands</option>
+                            <option value="190">Somalia</option>
+                            <option value="191">South Africa</option>
+                            <option value="192">South Korea</option>
+                            <option value="245">South Sudan</option>
+                            <option value="193">Spain</option>
+                            <option value="195">Sri Lanka</option>
+                            <option value="196">St. Helena</option>
+                            <option value="197">St. Kitts &amp; Nevis</option>
+                            <option value="198">St. Lucia</option>
+                            <option value="199">St. Pierre &amp; Miquelon</option>
+                            <option value="200">St. Vincent &amp; Grenadines</option>
+                            <option value="201">Sudan</option>
+                            <option value="202">Suriname</option>
+                            <option value="203">Svalbard</option>
+                            <option value="204">Swaziland</option>
+                            <option value="205">Sweden</option>
+                            <option value="206">Switzerland</option>
+                            <option value="207">Syria</option>
+                            <option value="208">Taiwan ROC</option>
+                            <option value="209">Tajikistan</option>
+                            <option value="210">Tanzania</option>
+                            <option value="211">Thailand</option>
+                            <option value="212">Togo</option>
+                            <option value="213">Tokelau</option>
+                            <option value="214">Tonga</option>
+                            <option value="215">Trinidad &amp; Tobago</option>
+                            <option value="216">Tunisia</option>
+                            <option value="217">Turkey</option>
+                            <option value="218">Turkmenistan</option>
+                            <option value="219">Turks &amp; Caicos Islands</option>
+                            <option value="220">Tuvalu</option>
+                            <option value="221">Uganda</option>
+                            <option value="222">Ukraine</option>
+                            <option value="223">United Arab Emirates</option>
+                            <option value="224">United Kingdom</option>
+                            <option value="225">United States</option>
+                            <option value="226">Uruguay</option>
+                            <option value="227">Uzbekistan</option>
+                            <option value="228">Vanuatu</option>
+                            <option value="229">Vatican City</option>
+                            <option value="230">Venezuela</option>
+                            <option value="231">Vietnam</option>
+                        <option value="232">Virgin Islands (US)</option>
+                        <option value="234">Wallis &amp; Futuna</option>
+                        <option value="235">West Bank &amp; Gaza</option>
+                        <option value="236">Yemen</option><option value="238">Zambia</option>
+                        <option value="239">Zimbabwe</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="addressCountry">
+                        Where do you currently live?
+                        <sup class="required">&nbsp;*</sup>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <select data-sg-unique-elem-seq="9" class="form-control required" id="addressCountry" name="addressCountry" data-bind="field: Model.AddressCountryId, options: ViewBag.Countries, optionsText: 'Name', optionsValue: 'Id', optionsCaption: sg.strings.pleaseSelectCaption">
+                            <option value="">-- Please Select --</option>
+                            <option value="1">Afghanistan</option>
+                            <option value="2">Albania</option>
+                            <option value="3">Algeria</option>
+                            <option value="4">American Samoa</option>
+                            <option value="5">Andorra</option>
+                            <option value="6">Angola</option>
+                            <option value="7">Anguilla</option>
+                            <option value="8">Antarctica</option>
+                            <option value="9">Antigua &amp; Barbuda</option>
+                            <option value="10">Argentina</option>
+                            <option value="11">Armenia</option>
+                            <option value="12">Aruba</option>
+                            <option value="13">Australia</option>
+                            <option value="14">Austria</option>
+                            <option value="15">Azerbaijan</option>
+                            <option value="16">Bahamas</option>
+                            <option value="17">Bahrain</option>
+                            <option value="18">Bangladesh</option>
+                            <option value="19">Barbados</option>
+                            <option value="20">Belarus</option>
+                            <option value="21">Belgium</option>
+                            <option value="22">Belize</option>
+                            <option value="23">Benin</option>
+                            <option value="24">Bermuda</option>
+                            <option value="25">Bhutan</option>
+                            <option value="26">Bolivia</option>
+                            <option value="27">Bosnia &amp; Herzegovina</option>
+                            <option value="28">Botswana</option>
+                            <option value="29">Brazil</option>
+                            <option value="30">British Indian Ocean Terr</option>
+                            <option value="31">British Virgin Islands</option>
+                            <option value="32">Brunei</option>
+                            <option value="33">Bulgaria</option>
+                            <option value="34">Burkina</option>
+                            <option value="35">Burundi</option>
+                            <option value="36">Cambodia</option>
+                            <option value="37">Cameroon</option>
+                            <option value="38">Canada</option>
+                            <option value="39">Cape Verde</option>
+                            <option value="40">Cayman Islands</option>
+                            <option value="41">Central African Republic</option>
+                            <option value="42">Chad</option>
+                            <option value="43">Chile</option>
+                            <option value="44">China PRC</option>
+                            <option value="45">Christmas Island</option>
+                            <option value="46">Cocos (Keeling) Islands</option>
+                            <option value="47">Colombia</option>
+                            <option value="48">Comoros</option>
+                            <option value="51">Cook Islands</option>
+                            <option value="52">Costa Rica</option>
+                            <option value="53">Croatia</option>
+                            <option value="54">Cuba</option>
+                            <option value="55">Cyprus</option>
+                            <option value="56">Czech Republic</option>
+                            <option value="50">Democratic Republic of the Congo</option>
+                            <option value="57">Denmark</option>
+                            <option value="58">Djibouti</option>
+                            <option value="59">Dominica</option>
+                            <option value="60">Dominican Republic</option>
+                            <option value="242">East Timor</option>
+                            <option value="61">Ecuador</option>
+                            <option value="62">Egypt</option>
+                            <option value="63">El Salvador</option>
+                            <option value="64">Equatorial Guinea</option>
+                            <option value="65">Eritrea</option>
+                            <option value="66">Estonia</option>
+                            <option value="67">Ethiopia</option>
+                            <option value="69">Falkland Islands</option>
+                            <option value="68">Faroe Islands</option>
+                            <option value="70">Fiji</option>
+                            <option value="71">Finland</option>
+                            <option value="72">France</option>
+                            <option value="73">French Guiana</option>
+                            <option value="74">French Polynesia</option>
+                            <option value="75">Gabon</option>
+                            <option value="76">Gambia</option>
+                            <option value="77">Georgia</option>
+                            <option value="78">Germany</option>
+                            <option value="79">Ghana</option>
+                            <option value="80">Gibraltar</option>
+                            <option value="81">Greece</option>
+                            <option value="82">Greenland</option>
+                            <option value="83">Grenada</option>
+                            <option value="84">Guadeloupe</option>
+                            <option value="85">Guam</option>
+                            <option value="86">Guatemala</option>
+                            <option value="87">Guernsey</option>
+                            <option value="88">Guinea</option>
+                            <option value="89">Guinea-Bissau</option>
+                            <option value="90">Guyana</option>
+                            <option value="91">Haiti</option>
+                            <option value="92">Heard &amp; Mcdonald Is</option>
+                            <option value="93">Honduras</option>
+                            <option value="240">Hong Kong SAR</option>
+                            <option value="94">Hungary</option>
+                            <option value="95">Iceland</option>
+                            <option value="96">India</option>
+                            <option value="97">Indonesia</option>
+                            <option value="98">Iran</option>
+                            <option value="99">Iraq</option>
+                            <option value="100">Ireland</option>
+                            <option value="101">Isle of Man</option>
+                            <option value="102">Israel</option>
+                            <option value="103">Italy</option>
+                            <option value="104">Ivory Coast</option>
+                            <option value="105">Jamaica</option>
+                            <option value="106">Japan</option>
+                            <option value="107">Jersey</option>
+                            <option value="109">Jordan</option>
+                            <option value="110">Kazakhstan</option>
+                            <option value="111">Kenya</option>
+                            <option value="112">Kiribati</option>
+                            <option value="241">Kosovo</option>
+                            <option value="113">Kuwait</option>
+                            <option value="114">Kyrgyzstan</option>
+                            <option value="115">Laos</option>
+                            <option value="116">Latvia</option>
+                            <option value="117">Lebanon</option>
+                            <option value="118">Lesotho</option>
+                            <option value="119">Liberia</option>
+                            <option value="120">Libya</option>
+                            <option value="121">Liechtenstein</option>
+                            <option value="122">Lithuania</option>
+                            <option value="123">Luxembourg</option>
+                            <option value="124">Macau</option>
+                            <option value="125">Macedonia</option>
+                            <option value="126">Madagascar</option>
+                            <option value="127">Malawi</option>
+                            <option value="128">Malaysia</option>
+                            <option value="129">Maldives</option>
+                            <option value="130">Mali</option>
+                            <option value="131">Malta</option>
+                            <option value="132">Marshall Islands</option>
+                            <option value="133">Martinique</option>
+                            <option value="134">Mauritania</option>
+                            <option value="135">Mauritius</option>
+                            <option value="136">Mayotte</option>
+                            <option value="137">Mexico</option>
+                            <option value="138">Micronesia</option>
+                            <option value="140">Moldova</option>
+                            <option value="141">Monaco</option>
+                            <option value="142">Mongolia</option>
+                            <option value="243">Montenegro</option>
+                            <option value="143">Montserrat</option>
+                            <option value="144">Morocco</option>
+                            <option value="145">Mozambique</option>
+                            <option value="146">Myanmar (Burma)</option>
+                            <option value="147">Namibia</option>
+                            <option value="148">Nauru</option>
+                            <option value="149">Nepal</option>
+                            <option value="150">Netherlands</option>
+                            <option value="151">Netherlands Antilles</option>
+                            <option value="152">New Caledonia</option>
+                            <option value="153">New Zealand</option>
+                            <option value="154">Nicaragua</option>
+                            <option value="155">Niger</option>
+                            <option value="156">Nigeria</option>
+                            <option value="157">Niue</option>
+                            <option value="158">Norfolk Island</option>
+                            <option value="159">North Korea</option>
+                            <option value="160">Northern Mariana Islands</option>
+                            <option value="161">Norway</option>
+                            <option value="162">Oman</option>
+                            <option value="163">Pakistan</option>
+                            <option value="164">Palau</option>
+                            <option value="165">Panama</option>
+                            <option value="166">Papua New Guinea</option>
+                            <option value="167">Paraguay</option>
+                            <option value="168">Peru</option>
+                            <option value="169">Philippines</option>
+                            <option value="170">Pitcairn Island</option>
+                            <option value="171">Poland</option>
+                            <option value="172">Portugal</option>
+                            <option value="173">Puerto Rico</option>
+                            <option value="174">Qatar</option>
+                            <option value="49">Republic of the Congo</option>
+                            <option value="175">Reunion</option>
+                            <option value="176">Romania</option>
+                            <option value="177">Russian Federation</option>
+                            <option value="178">Rwanda</option>
+                            <option value="179">Samoa</option>
+                            <option value="180">San Marino</option>
+                            <option value="181">Sao Tome &amp; Principe</option>
+                            <option value="182">Saudi Arabia</option>
+                            <option value="183">Senegal</option>
+                            <option value="237">Serbia</option>
+                            <option value="184">Seychelles</option>
+                            <option value="185">Sierra Leone</option>
+                            <option value="186">Singapore</option>
+                            <option value="187">Slovakia</option>
+                            <option value="188">Slovenia</option>
+                            <option value="189">Solomon Islands</option>
+                            <option value="190">Somalia</option>
+                            <option value="191">South Africa</option>
+                            <option value="192">South Korea</option>
+                            <option value="245">South Sudan</option>
+                            <option value="193">Spain</option>
+                            <option value="195">Sri Lanka</option>
+                            <option value="196">St. Helena</option>
+                            <option value="197">St. Kitts &amp; Nevis</option>
+                            <option value="198">St. Lucia</option>
+                            <option value="199">St. Pierre &amp; Miquelon</option>
+                            <option value="200">St. Vincent &amp; Grenadines</option>
+                            <option value="201">Sudan</option>
+                            <option value="202">Suriname</option>
+                            <option value="203">Svalbard</option>
+                            <option value="204">Swaziland</option>
+                            <option value="205">Sweden</option>
+                            <option value="206">Switzerland</option>
+                            <option value="207">Syria</option>
+                            <option value="208">Taiwan ROC</option>
+                            <option value="209">Tajikistan</option>
+                            <option value="210">Tanzania</option>
+                            <option value="211">Thailand</option>
+                            <option value="212">Togo</option>
+                            <option value="213">Tokelau</option>
+                            <option value="214">Tonga</option>
+                            <option value="215">Trinidad &amp; Tobago</option>
+                            <option value="216">Tunisia</option>
+                            <option value="217">Turkey</option>
+                            <option value="218">Turkmenistan</option>
+                            <option value="219">Turks &amp; Caicos Islands</option>
+                            <option value="220">Tuvalu</option>
+                            <option value="221">Uganda</option>
+                            <option value="222">Ukraine</option>
+                            <option value="223">United Arab Emirates</option>
+                            <option value="224">United Kingdom</option>
+                            <option value="225">United States</option>
+                            <option value="226">Uruguay</option>
+                        <option value="227">Uzbekistan</option>
+                        <option value="228">Vanuatu</option>
+                        <option value="229">Vatican City</option>
+                        <option value="230">Venezuela</option>
+                        <option value="231">Vietnam</option>
+                        <option value="232">Virgin Islands (US)</option>
+                        <option value="234">Wallis &amp; Futuna</option>
+                        <option value="235">West Bank &amp; Gaza</option>
+                        <option value="236">Yemen</option>
+                        <option value="238">Zambia</option>
+                        <option value="239">Zimbabwe</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="englishLevel">
+                        English level
+                        <sup class="required">&nbsp;*</sup>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <select data-sg-unique-elem-seq="10" id="englishLevel" name="englishLevel" data-bind="field: Model.EnglishLevel" class="form-control required">
+                        <option value="" data-bind="text: sg.strings.pleaseSelectCaption">-- Please Select --</option>
+                        <option value="Beginner">
+                            Beginner
+                        </option>
+                        <option value="Elementary">
+                            Elementary
+                        </option>
+                        <option value="Intermediate">
+                            Intermediate
+                        </option>
+                        <option value="Advanced">
+                            Advanced
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group genericFormField">
+                <div class="col-md-4">
+                    <label class="control-label">
+                        What level of study are you interested in?
+                    </label>                    
+                </div>
+                <div class="col-md-8">
+                    <div class="radio">
+                        <label class="radio">
+                          <input maxlength="50" id="UniversityDegreeWantedUG" name="UniversityDegreeWanted" data-bind="field: Model.UniversityDegreeWanted" value="Undergraduate" type="radio">
+                          Undergraduate
+                        </label>
+                        <label class="radio">
+                          <input maxlength="50" id="UniversityDegreeWantedPG" name="UniversityDegreeWanted" data-bind="field: Model.UniversityDegreeWanted" value="Postgraduate" type="radio">
+                          Postgraduate
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group genericFormField">
+
+                <div class="col-md-4">
+                    <label class="control-label" for="subjectInterest">
+                        What subject area are you interested in?
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <select maxlength="50" class="form-control" id="subjectInterest" name="subjectInterest" data-bind="options: Model.SubjectInterestOptions , field: Model.SubjectInterest, optionsCaption: sg.strings.pleaseSelectCaption">
+                    </select>
+                    <p class="text-info">
+                        <small>
+                            <strong>
+                                Please note, we do not offer teaching for the following qualifications: GCSE, A Level, International Baccalaureate, Doctoral Degrees (PHD)
+                            </strong>
+                        </small>
+                    </p>
+                </div>
+            </div>
+
+             <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="startDate">
+                         Preferred Start Date
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <select data-sg-unique-elem-seq="11" id="startdate" class="form-control required" name="startdate" data-bind="field: Model.StudyStartDate, options: ViewBag.StartDates, optionsText: 'Name', optionsValue: 'Value', optionsCaption: sg.strings.pleaseSelectCaption">
+                        <option value="">-- Please Select --</option>
+                        <option value="01/04/2015">April 2015</option>
+                        <option value="01/09/2015">September 2015</option>
+                        <option value="01/01/2016">January 2016</option>
+                        <option value="don't know">Don't know</option>
+                    </select>
+                </div>                
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="subscribeNewsOffers">
+                        Subscribe
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <div class="checkbox">
+                        <label class="checkbox" for="subscribeNewsOffers">
+                            <input id="subscribeNewsOffers" name="subscribeNewsOffers" class="checkbox" data-bind="field: Model.Subscribe" type="checkbox">
+                            Check this box if you would like to receive periodic special offers and news from us. You can unsubscribe at any time and your e-mail remains confidential.
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="marketingHearAbout">
+                        Where did you first hear about the ISC?
+                        <span id="iscrlayout_0_sussexv2innerlayout_0_sussexv2middlesectioncontainer_0_sussexv2ninecolumns_0_sussexv2eightcolumns_1_sussexv2maincontent_1_whereDidYouHearAboutUsDropDownLabelOverride"></span>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <select maxlength="100" class="form-control" id="marketingHearAbout" data-bind="field: Model.WhereDidYouHearAboutUs, options: isc.HowDidYouHearAboutUsOptions,optionsValue: 'value', optionsText: 'name', optionsCaption: sg.strings.pleaseSelectCaption">
+                        <option value="">-- Please Select --</option>
+                        <option value="Online advert">Online advert</option>
+                        <option value="Print Advertising">Print Advertising</option>
+                        <option value="E-mail">E-mail</option>
+                        <option value="Regional office">Regional office</option>
+                        <option value="Educational agent">Educational agent</option>
+                        <option value="Fair/Exhibition">Fair/Exhibition</option>
+                        <option value="University representative">University representative</option>
+                        <option value="University Referral">University Referral</option>
+                        <option value="School Referral">School Referral</option>
+                        <option value="Retail outlet">Retail outlet</option>
+                        <option value="Word of mouth">Word of mouth</option>
+                        <option value="University website">University website</option>
+                        <option value="Google sponsored link">Google sponsored link</option>
+                        <option value="Google search result">Google search result</option>
+                        <option value="Yahoo">Yahoo</option>
+                        <option value="Baidu">Baidu</option>
+                        <option value="Search engine - other">Search engine - other</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Twitter">Twitter</option>
+                        <option value="YouTube">YouTube</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group" data-bind="fadeVisible: Model.WhereDidYouHearAboutUs() == 'Other'">
+                <div class="col-md-4">
+                    <label class="control-label" for="whereDidYouHearAboutUs">
+                        Where did you first hear about the ISC?
+                        <span id="iscrlayout_0_sussexv2innerlayout_0_sussexv2middlesectioncontainer_0_sussexv2ninecolumns_0_sussexv2eightcolumns_1_sussexv2maincontent_1_whereDidYouHearAboutUsTextBoxLabelOverride"></span>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <input maxlength="100" id="whereDidYouHearAboutUs" data-bind="field: Model.OtherWhereDidYouHearAboutUs, showErrorsFor: Model.WhereDidYouHearAboutUs" class="form-control" type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label class="control-label" for="questions">
+                        Questions or comments
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <textarea maxlength="800" id="questions" name="questions" data-bind="field: Model.Question, valueUpdate: 'afterkeydown'" cols="52" rows="4" class="form-control"></textarea>
+                    <p>
+                        <small class="char-count">
+                            Characters left:
+                            <span data-bind="text: 800 - Model.Question().length">800</span> 
+                        </small>
+                    </p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8">
+                    <button type="submit" class="pull-right" id="btn-submit">
+                        Submit
+                    </button>
+                </div>
+            </div>
+
+        </fieldset>
+    </div>
+</div>
+        </div>
+        <div class="col-md-4">
+            <h4>Find local agent form:</h4>
+            <div class="fla-country">
+    <p>The University of Sussex  ISC works alongside a network of authorised agents who are able to help you through the application process for our programmes.</p>
+    <p>Select your country using the box below to find available agents. If your country isn't on the list, or you need further assistance, please 
+    <a href="/contact/enquire-online">contact us</a> and a Student Enrolment Advisor will be happy to help.</p>
+</div>
+<div id="iscrlayout_0_susmaincontent_0_suscentrecolumn_2_countrySearch" class="form-horizontal">
+    <div class="form-group">
+       <label class="col-sm-2 control-label" for="agentCountry">Country</label>
+       <div class="col-sm-10">
+            <select id="agentCountry" name="agentCountry" class="form-control agent-country-list">
+                <option value="0">Australia</option>
+            </select> 
+        </div>
+    </div>
+</div>
+<div id="agentsList" class="row agents-list">
+    <div class="col-md-12">
+        <address>
+            <strong>JJL International Education Exchange Promotion Ltd. - Jilin</strong><br/>
+            Room 803 - 807<br/>
+            Building B of Fortune Square<br/>
+            Changyi District<br/>
+            Jilin City,<br/>
+            Jilin<br/>
+            Australia<br/>
+            <strong>Contact Person: Contact Person: Na HUO</strong><br/>
+            Website: <a href="http://www.jjl.cn" target="_blank">www.jjl.cn</a>
+        </address>
+    </div>
+    <div class="col-md-12">
+        <address>
+            <strong>JJL International Education Exchange Promotion Ltd. - Jilin</strong><br/>
+            Room 803 - 807<br/>
+            Building B of Fortune Square<br/>
+            Changyi District<br/>
+            Jilin City,<br/>
+            Jilin<br/>
+            Australia<br/>
+            <strong>Contact Person: Contact Person: Na HUO</strong><br/>
+            Website: <a href="http://www.jjl.cn" target="_blank">www.jjl.cn</a>
+        </address>
+    </div>
+    <div class="col-md-12">
+        <address>
+            <strong>JJL International Education Exchange Promotion Ltd. - Jilin</strong><br/>
+            Room 803 - 807<br/>
+            Building B of Fortune Square<br/>
+            Changyi District<br/>
+            Jilin City,<br/>
+            Jilin<br/>
+            Australia<br/>
+            <strong>Contact Person: Contact Person: Na HUO</strong><br/>
+            Website: <a href="http://www.jjl.cn" target="_blank">www.jjl.cn</a>
+        </address>
+    </div>
+    <div class="col-md-12">
+        <address>
+            <strong>JJL International Education Exchange Promotion Ltd. - Jilin</strong><br/>
+            Room 803 - 807<br/>
+            Building B of Fortune Square<br/>
+            Changyi District<br/>
+            Jilin City,<br/>
+            Jilin<br/>
+            Australia<br/>
+            <strong>Contact Person: Contact Person: Na HUO</strong><br/>
+            Website: <a href="http://www.jjl.cn" target="_blank">www.jjl.cn</a>
+        </address>
+    </div>
+</div>
+        </div>
+    </div>  
+</div>
+
+<hr>
+
+<div class="container">
+    <h1>Footer components:</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Footer links:</h4>
+            <!-- FOOTER LINKS COMPONENT START -->
 <ul class="footer_links">
 	<li><a href="#">Terms &amp; Conditions</a></li>
 	<li><a href="#">Privacy Policy</a></li>
 	<li><a href="#">Other footer link</a></li>
 </ul>
 <!-- FOOTER LINKS COMPONENT END -->
-	        </div>
-	        <div class="col-md-6">
-	        	<!-- SOCIAL MEDIA COMPONENT START -->
+        </div>
+        <div class="col-md-4">
+            <h4>Social media:</h4>
+            <!-- SOCIAL MEDIA COMPONENT START -->
 <ul class="social_media">
 	<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 	<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -561,16 +2388,22 @@ criteria...</p>
 	<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 </ul>
 <!-- SOCIAL MEDIA COMPONENT END -->
-	        	<!-- SG LOGO COMPONENT START -->
+        </div>
+        <div class="col-md-4">
+            <h4>Study Group logo:</h4>
+            <!-- SG LOGO COMPONENT START -->
 <div class="sg_logo">
-	<p>Maintained by <a href="http://www.studygroup.com" target="_blank"><img src="img/sg_logo.png"></a></p>
+	<p>
+		Maintained by<!-- Richtext field copy --> 
+		<a href="http://www.studygroup.com" target="_blank">
+			<img src="img/sg_logo.png">
+		</a>
+	</p>
 </div>
 <!-- SG LOGO COMPONENT END -->
-	        </div>
-		</div>
-	</div>
-</footer>
-<!-- FOOTER COMPONENT END -->
+        </div>
+    </div>    
+</div>
 
 
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

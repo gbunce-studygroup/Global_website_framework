@@ -1,0 +1,20 @@
+/* PAGINATION COMPONENT */
+.pagination{
+	li{
+		a{
+			color: $form_colour;
+			border-color: $form_colour_s;
+			&:hover{
+				color: $form_colour;
+				background: $form_colour_s;
+			}
+		}
+		&.active{
+			a{
+				border-color: $form_colour;
+				background: $form_colour;
+				color: #fff;
+			}
+		}
+	}
+}
