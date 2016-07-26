@@ -1,18 +1,18 @@
-# Global_website_framework
+# University_website_framework
 Frontend framework for creating SG websites<br />
 <br />
-How to use the Global Website Framework:<br />
+How to use the University Website Framework:<br />
 <br />
-The Global Website Framework is a frond-end framework that uses Grunt to compile SCSS & JS and to run .liquid files.<br />
+The University Website Framework is a frond-end framework that uses Grunt to compile SCSS & JS and to run .liquid files.<br />
 <br />
 Folder structure:<br />
 There are a number of node modules that are required for the framework to run, these are all located in the ‘node_modules’ folder.<br />
 <br />
-Any project that uses the Global Website Framework will only run if the ‘node_modules’ folder is located at the parent root. This is so that multiple projects can use the same node modules avoid them having to be replicated for every instance of the Global Website Framework.<br />
+Any project that uses the University Website Framework will only run if the ‘node_modules’ folder is located at the parent root. This is so that multiple projects can use the same node modules avoid them having to be replicated for every instance of the University Website Framework.<br />
 <br />
 Example of local folder structure:<br />
 	Websites<br />
-	|-- Global_website_framework<br />
+	|-- University_website_framework<br />
 	|-- node_modules<br />
 
 Node modules that need to be installed to run the framework:<br />
@@ -51,7 +51,7 @@ All the webiste components are located at templates > includes. The components a
 <br />
 Output files are all located in the html distory<br />
 	Websites<br />
-	|-- Global_website_framework<br />
+	|-- University_website_framework<br />
     |---- assets<br />
     |---- html<br />
     |---- templates<br />
