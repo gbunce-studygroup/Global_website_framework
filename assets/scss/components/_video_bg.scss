@@ -1,17 +1,44 @@
-/* HERO COMPONENT */
+/* BACKGROUND VIDEO COMPONENT */
 .video_bg{
 	height: 450px;
-	// background: url(http://placehold.it/1800x450) no-repeat center top;
 	background-size: cover;
 	.video_wrapper{
 		position: relative;
 		video {
 			width: 100%;
-		}	
-		.video_content{
 			position: absolute;
+			z-index: 1;
+		}
+	    .fallback_carousel{ // TO MAKE THIS WORK, MAKE SURE 'video_fallback_carousel.js' IS ENABLED IN 'scripts.mix.js'
+			position: relative;
+	        z-index: 0;
 			top: 0;
 			left: 0;
+	        & span{
+	            position: absolute;
+	            display: none;
+	            & img{
+	                width: 100%;
+	                height: auto;
+	            }
+	        }
+	    }
+		.video_content{
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+
+@media (max-width: $screen-md-max){
+	/* BACKGROUND VIDEO COMPONENT */
+	.video_bg{
+		.video_wrapper{
+			video {
+				display: none;
+			}
 		}
 	}
 }

@@ -1,8 +1,8 @@
 /* HERO COMPONENT */
-.hero{
+.hero{ // BACKGROUND IMAGE GET ADDED TO '.hero' DIV VIA SITECORE
 	height: 450px;
-	background: url(http://placehold.it/1800x450) no-repeat center top;
+	background-repeat: no-repeat;
+	background-position: center top;
 	background-size: cover;
-	.hero_content{
-	}
+	.hero_content{}
 }

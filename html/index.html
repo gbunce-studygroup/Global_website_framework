@@ -299,19 +299,24 @@
         </div>
         <div class="col-md-4">
             <h4>Background video:</h4>
-            <!-- VIDEO BACKGROUND COMPONENT START -->
+            <!-- BACKGROUND VIDEO COMPONENT START -->
 <div class="video_bg">
 	<div class="video_wrapper">
 		<video autoplay loop poster="video/video.jpg" id="bgvid">
 			<source src="video/video.mp4" type="video/mp4">
 			<source src="video/video.webm" type="video/webm">
 		</video>
+        <div class="fallback_carousel">
+            <span><img src="http://lorempixel.com/output/cats-q-c-1024-577-8.jpg"></span>
+            <span><img src="http://lorempixel.com/output/cats-q-c-1024-577-6.jpg"></span>
+            <span><img src="http://lorempixel.com/output/cats-q-c-1024-577-5.jpg"></span>
+        </div>
 		<div class="video_content">
 			Video content
 		</div>
 	</div>
 </div>
-<!-- VIDEO BACKGROUND COMPONENT END -->
+<!-- BACKGROUND VIDEO COMPONENT END -->
         </div>
     </div>
 </div>
@@ -320,6 +325,22 @@
 
 <div class="container">
     <h1>Display components:</h1>
+    <h4>Hero:</h4>
+</div>
+<!-- HERO COMPONENT START -->
+<div class="hero" style="background-image: url('http://placehold.it/1600x450');"> <!-- BACKGROUND IMAGE ADDED VIA SITECORE  -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="hero_content">
+    				Hero content
+    			</div>
+    		</div>
+    	</div>
+	</div>
+</div>
+<!-- HERO COMPONENT END -->
+<div class="container">
     <div class="row">
         <div class="col-md-6">
             <h4>Carousel:</h4>

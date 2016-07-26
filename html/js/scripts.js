@@ -1,3 +1,4 @@
+// TO KEEP THE OUTPUT FILE SIZE DOWN COMMENT OUT COMPONENTS THAT DON'T GET USED
 /* ========================================================================
  * Bootstrap: affix.js v3.2.0
  * http://getbootstrap.com/javascript/#affix
@@ -138,6 +139,99 @@
       Plugin.call($spy, data)
     })
   })
+
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: alert.js v3.2.0
+ * http://getbootstrap.com/javascript/#alerts
+ * ========================================================================
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // ALERT CLASS DEFINITION
+  // ======================
+
+  var dismiss = '[data-dismiss="alert"]'
+  var Alert   = function (el) {
+    $(el).on('click', dismiss, this.close)
+  }
+
+  Alert.VERSION = '3.2.0'
+
+  Alert.prototype.close = function (e) {
+    var $this    = $(this)
+    var selector = $this.attr('data-target')
+
+    if (!selector) {
+      selector = $this.attr('href')
+      selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
+    }
+
+    var $parent = $(selector)
+
+    if (e) e.preventDefault()
+
+    if (!$parent.length) {
+      $parent = $this.hasClass('alert') ? $this : $this.parent()
+    }
+
+    $parent.trigger(e = $.Event('close.bs.alert'))
+
+    if (e.isDefaultPrevented()) return
+
+    $parent.removeClass('in')
+
+    function removeElement() {
+      // detach from parent, fire event then clean up data
+      $parent.detach().trigger('closed.bs.alert').remove()
+    }
+
+    $.support.transition && $parent.hasClass('fade') ?
+      $parent
+        .one('bsTransitionEnd', removeElement)
+        .emulateTransitionEnd(150) :
+      removeElement()
+  }
+
+
+  // ALERT PLUGIN DEFINITION
+  // =======================
+
+  function Plugin(option) {
+    return this.each(function () {
+      var $this = $(this)
+      var data  = $this.data('bs.alert')
+
+      if (!data) $this.data('bs.alert', (data = new Alert(this)))
+      if (typeof option == 'string') data[option].call($this)
+    })
+  }
+
+  var old = $.fn.alert
+
+  $.fn.alert             = Plugin
+  $.fn.alert.Constructor = Alert
+
+
+  // ALERT NO CONFLICT
+  // =================
+
+  $.fn.alert.noConflict = function () {
+    $.fn.alert = old
+    return this
+  }
+
+
+  // ALERT DATA-API
+  // ==============
+
+  $(document).on('click.bs.alert.data-api', dismiss, Alert.prototype.close)
 
 }(jQuery);
 
@@ -2014,6 +2108,14 @@
 
 // RUN THE DATEPICKER
 $(".date-picker").datepicker();
+// RUN THE BACKGROUND VIDEO FALLBACK CAROUSEL
+var el = $('.fallback_carousel span'),
+	n = el.length,
+	c = 0;
+el.eq(c).show();
+(function loop() {
+	el.delay(5000).fadeOut(800).eq(++c%n).fadeIn(800, loop);
+}());
 
 // THIS MAKES THE SEARCH BAR TOGGLE ON CLICK
 $('#searchToggle').click(function () {
@@ -2029,12 +2131,12 @@ $(".dropdown-toggle-2").click(function(e){
 	return false;
 });
 
-// MAKES THE YOUTUBE VIDEO IN THE LIGHTBOX STOP PLAYING WHEN THE LIGHTBOX IS CLOSED
-$(".modal").on('hidden.bs.modal', function (e) {
-    $(".modal iframe").attr("src", $(".modal iframe").attr("src"));
-});
-
 // ADDS CLASS 'show' TO THE 'second-level' UL SO THE 3RD LEVEL NAVIGATION SHOWS IF THE PARENT IS ACTIVE
 $(".sidebar-nav li a.active").siblings("ul").addClass("show");
 // ADDS CLASS 'show' TO THE 'second-level' UL SO THE 3RD LEVEL NAVIGATION SHOWS IF A CHILD IS ACTIVE
-$(".second-level li a.active").closest("ul").addClass("show"); // Custom scripts for project
+$(".second-level li a.active").closest("ul").addClass("show");
+
+// MAKES THE YOUTUBE VIDEO IN THE LIGHTBOX STOP PLAYING WHEN THE LIGHTBOX IS CLOSED
+$(".modal").on('hidden.bs.modal', function (e) {
+    $(".modal iframe").attr("src", $(".modal iframe").attr("src"));
+}); // Custom scripts for project
