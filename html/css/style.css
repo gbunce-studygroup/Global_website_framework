@@ -9640,31 +9640,6 @@ label[for="date_picker"] span {
   content: "/ ";
 }
 
-/* ACCORDION COMPONENT */
-#accordion .panel .panel-heading {
-  padding: 0;
-}
-#accordion .panel .panel-heading .panel-title h1, #accordion .panel .panel-heading .panel-title h2, #accordion .panel .panel-heading .panel-title h3, #accordion .panel .panel-heading .panel-title h4, #accordion .panel .panel-heading .panel-title h5, #accordion .panel .panel-heading .panel-title h6 {
-  margin: 0;
-}
-#accordion .panel .panel-heading .panel-title a {
-  display: block;
-  padding: 15px;
-}
-#accordion .panel .panel-heading .panel-title a:after {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\f068";
-  float: right;
-}
-#accordion .panel .panel-heading .panel-title a.collapsed:after {
-  content: "\f067";
-}
-
 /* BUTTON COMPONENT */
 /* BUTTON GROUP COMPONENT */
 /* CAROUSEL COMPONENT */
@@ -9793,7 +9768,8 @@ label[for="date_picker"] span {
 /* HERO COMPONENT */
 .hero {
   height: 450px;
-  background: url(http://placehold.it/1800x450) no-repeat center top;
+  background-repeat: no-repeat;
+  background-position: center top;
   background-size: cover;
 }
 
@@ -9887,7 +9863,7 @@ label[for="date_picker"] span {
   width: 100%;
 }
 
-/* HERO COMPONENT */
+/* BACKGROUND VIDEO COMPONENT */
 .video_bg {
   height: 450px;
   background-size: cover;
@@ -9897,13 +9873,36 @@ label[for="date_picker"] span {
 }
 .video_bg .video_wrapper video {
   width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.video_bg .video_wrapper .fallback_carousel {
+  position: relative;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+.video_bg .video_wrapper .fallback_carousel span {
+  position: absolute;
+  display: none;
+}
+.video_bg .video_wrapper .fallback_carousel span img {
+  width: 100%;
+  height: auto;
 }
 .video_bg .video_wrapper .video_content {
   position: absolute;
+  z-index: 2;
   top: 0;
   left: 0;
 }
 
+@media (max-width: 1199px) {
+  /* BACKGROUND VIDEO COMPONENT */
+  .video_bg .video_wrapper video {
+    display: none;
+  }
+}
 /* VIDEO COMPONENT */
 .video {
   padding: 0px;

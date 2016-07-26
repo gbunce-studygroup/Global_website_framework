@@ -3,11 +3,11 @@
     @include fa-icon;
     font-size: 20px;
 	&:after {
-		content: '\f002';
+		content: '\f002'; // Font Awesome close icon http://fontawesome.io/cheatsheet/
 	}
 	&.close_image {
 		&:after {
-			content: '\f00d';
+			content: '\f00d'; // Font Awesome close icon http://fontawesome.io/cheatsheet/
 		}
 	}
 	&:hover, &:focus {

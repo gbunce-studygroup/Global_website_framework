@@ -1,19 +1,19 @@
 /* VIDEO COMPONENT */
-.video {
+.video{
 	padding: 0px;
 	position: relative;
-	& img {
+	& img{
 		width: 100%;
 		height: auto;
 	}
-	& .playButton {
+	& .playButton{
 		position: absolute;
 		top: 55%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 	    &:before{
 	    	@include fa-icon;
-	    	content: '\f01d';
+	    	content: '\f01d'; // Font Awesome close icon http://fontawesome.io/cheatsheet/
 	    	font-size: 65px;
 	    	color: #fff;
 	    }
