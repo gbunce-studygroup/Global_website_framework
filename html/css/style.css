@@ -9861,6 +9861,7 @@ label[for="date_picker"] span {
 /* TESTIMONIAL COMPONENT */
 .testimonial img {
   width: 100%;
+  height: auto;
 }
 
 /* BACKGROUND VIDEO COMPONENT */
@@ -9934,6 +9935,10 @@ label[for="date_picker"] span {
 /* WIDGET COMPONENT */
 .widget h1:first-of-type, .widget h2:first-of-type, .widget h3:first-of-type, .widget h4:first-of-type, .widget h5:first-of-type, .widget h6:first-of-type {
   margin-top: 0;
+}
+.widget img {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 991px) {
