@@ -47,9 +47,9 @@ What each task does:<br />
 <br />      
 To run the framework, open terminal at the project root and run the default 'grunt' task followed by the 'grunt server' task.<br />
 All SCSS & Scripts are located in corosponding folders in the assets directory.<br />
-All the webiste components are located at templates > includes. The components are liquid files so they can be easily dropped into the grid template files.<br />
+All the webiste components are located at templates > includes > components. The components are liquid files so they can be easily dropped into the grid template files when building page templates.<br />
 <br />
-Output files are all located in the html distory<br />
+Output files are all located in the html directory<br />
 	Websites<br />
 	|-- University_website_framework<br />
     |---- assets<br />
