@@ -1,8 +1,10 @@
 /* BUTTON GROUP COMPONENT */
 .button-group{
-	& ul{
-		& li{
-			& a{}
+	ul{
+		li{
+			a{
+				&:hover{}
+			}
 		}
 	}
 }
