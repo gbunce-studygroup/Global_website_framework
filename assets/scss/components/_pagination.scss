@@ -14,6 +14,11 @@
 				border-color: $form_colour;
 				background: $form_colour;
 				color: #fff;
+				&:hover, &:focus, &:active{
+					border-color: $form_colour;
+					background: $form_colour;
+					outline: 0;
+				}
 			}
 		}
 	}

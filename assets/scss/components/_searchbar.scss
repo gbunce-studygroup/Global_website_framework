@@ -1,29 +1,33 @@
 /* SEARCHBAR COMPONENT */
-.search_toggle {
+.search_toggle{
     @include fa-icon;
     font-size: 20px;
-	&:after {
+	&:after{
 		content: '\f002'; // Font Awesome close icon http://fontawesome.io/cheatsheet/
 	}
-	&.close_image {
-		&:after {
+	&.close_image{
+		&:after{
 			content: '\f00d'; // Font Awesome close icon http://fontawesome.io/cheatsheet/
 		}
 	}
-	&:hover, &:focus {
+	&:hover, &:focus{
 		text-decoration: none;
 	}
 }
 
-.siteSearch { 
+.siteSearch{ 
 	height: 0px;
     @include app-transition(all, .4s, ease);
 	overflow: hidden;
-	legend, label {
-		display: none;
-	}
-	&.appear {
+	&.appear{
 		padding: 10px 0px;
 		height: auto;
+	}	
+	fieldset{
+		legend, label{
+			display: none;
+		}
+		.searchInput{}
+		.searchButton{}
 	}
 }

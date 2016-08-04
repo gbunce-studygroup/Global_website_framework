@@ -3,15 +3,11 @@
 @import "animate"; 					// _animate.scss
 @import "font-awesome";             // _font-awesome.scss
 
-body{
-	// font-family: $main_font;
-}
+body{}
 
 #pageBody{}
 
-h1, h2, h3, h4, h5, h6{
-	// font-family: $secondary_font;
-}
+h1, h2, h3, h4, h5, h6{}
 
 h1{}
 
@@ -28,32 +24,24 @@ h6{}
 p, ul, ol{}
 
 a{
-	&:hover{}
-	&:active{}
-	&:focus{}
+	&:hover, &:active, &:focus{}
 }
+
+strong, b{}
+
+small{}
 
 table{
 	tr{
-		&:first-child{
-
-		}
+		&:first-child{}
 	}
 	td{
-		&:nth-child(odd){
-
-		}
-		&:nth-child(even)
-		{
-
-		}
+		&:nth-child(odd){}
+		&:nth-child(even){}
 	}
 }
 
 header{}
-
-// INTERNAL PAGES
-.main_content{}
 
 footer{}
 
