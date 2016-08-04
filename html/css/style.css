@@ -9802,6 +9802,11 @@ label[for="date_picker"] span {
   background: #B61A29;
   color: #fff;
 }
+.pagination li.active a:hover, .pagination li.active a:focus, .pagination li.active a:active {
+  border-color: #B61A29;
+  background: #B61A29;
+  outline: 0;
+}
 
 /* PROGRESSION ROUTES COMPONENT */
 /* SEARCHBAR COMPONENT */
@@ -9841,12 +9846,12 @@ label[for="date_picker"] span {
   transition: all 0.4s ease;
   overflow: hidden;
 }
-.siteSearch legend, .siteSearch label {
-  display: none;
-}
 .siteSearch.appear {
   padding: 10px 0px;
   height: auto;
+}
+.siteSearch fieldset legend, .siteSearch fieldset label {
+  display: none;
 }
 
 /* SG LOGO COMPONENT */
@@ -9909,18 +9914,18 @@ label[for="date_picker"] span {
   padding: 0px;
   position: relative;
 }
-.video img {
+.video a img {
   width: 100%;
   height: auto;
 }
-.video .playButton {
+.video a .playButton {
   position: absolute;
   top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-.video .playButton:before {
+.video a .playButton:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -9932,6 +9937,7 @@ label[for="date_picker"] span {
   color: #fff;
 }
 
+/* VIDEO LIGHTBOX */
 /* WIDGET COMPONENT */
 .widget h1:first-of-type, .widget h2:first-of-type, .widget h3:first-of-type, .widget h4:first-of-type, .widget h5:first-of-type, .widget h6:first-of-type {
   margin-top: 0;

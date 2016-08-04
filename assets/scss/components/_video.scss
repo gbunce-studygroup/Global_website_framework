@@ -2,20 +2,38 @@
 .video{
 	padding: 0px;
 	position: relative;
-	& img{
-		width: 100%;
-		height: auto;
+	h3{}
+	a{
+		img{
+			width: 100%;
+			height: auto;
+		}
+		.playButton{
+			position: absolute;
+			top: 55%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		    &:before{
+		    	@include fa-icon;
+		    	content: '\f01d'; // Font Awesome close icon http://fontawesome.io/cheatsheet/
+		    	font-size: 65px;
+		    	color: #fff;
+		    }
+		}
 	}
-	& .playButton{
-		position: absolute;
-		top: 55%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	    &:before{
-	    	@include fa-icon;
-	    	content: '\f01d'; // Font Awesome close icon http://fontawesome.io/cheatsheet/
-	    	font-size: 65px;
-	    	color: #fff;
-	    }
+}
+
+/* VIDEO LIGHTBOX */
+.modal{
+	.modal-dialog{
+		.modal-content{
+			.modal-header{
+				.close{}
+				.modal-title{}
+			}
+			.modal-body{
+				iframe{}
+			}
+		}
 	}
 }

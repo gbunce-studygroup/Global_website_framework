@@ -1,8 +1,16 @@
 /* TESTIMONIAL COMPONENT */
-.testimonial {
+.testimonial{
 	h1, h2, h3, h4, h5, h6{}
-	img {
+	img{
 		width: 100%;
 		height: auto;
+	}
+	.testimonial_content{
+		p{}
+	}
+	.testimonial_info{
+		p{
+			em{}
+		}
 	}
 }
