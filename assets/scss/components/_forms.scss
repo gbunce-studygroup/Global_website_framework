@@ -74,21 +74,7 @@
 			}
 		}
 		button{
-			border: none;
-			border-radius: 0;
-			padding: 10px 15px;
-			background: $form_colour;
-			font-weight: bold;
-			color: #fff;
-			&:hover{
-				background: lighten($form_colour, 5%);
-			}
-			&:after {
-		        font-family: 'Glyphicons Halflings';
-				font-size: 12px;
-				content:"\e080";
-				margin: 0 0 0 7px;
-			}
+			@include form_button;
 		}
 	}	
 }

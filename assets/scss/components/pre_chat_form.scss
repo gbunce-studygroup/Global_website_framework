@@ -1,0 +1,35 @@
+@import "../variables";
+@import "../mixins";
+/* PRE-CHAT FORM COMPONENT */
+body{}
+.from_wrapper{
+	width: 100%;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding: 20px;
+	h1{
+		color: $form_colour;
+		margin: 0 0 20px 0;
+		font-size: 20px;
+	}
+	img{ // logo
+		margin: 0 0 20px;
+	}
+	input, select{
+		width: 63%;
+	}
+	label{
+		width: 35%;
+		color: $main_colour;
+		display: inline-block;
+		font-size: 14px;
+		margin-bottom:10px;
+		span{
+			color: red;
+			padding-left: 5px;
+		}
+	}
+	#prechat_submit{
+		@include form_button;
+		margin: 10px 0 0 35%;
+	}
+}

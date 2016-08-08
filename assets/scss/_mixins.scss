@@ -45,3 +45,25 @@ $animate-scss-speed: 1s !default;
     height: 30px;
     cursor: pointer;
 }
+
+// FORM BUTTON STYLES
+@mixin form_button {
+    border: none;
+    width: auto;
+    border-radius: 0;
+    padding: 10px 15px;
+    background: $form_colour;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    &:hover{
+        background: lighten($form_colour, 5%);
+    }
+    &:after {
+        font-family: 'Glyphicons Halflings';
+        font-size: 12px;
+        content:"\e080";
+        margin: 0 0 0 7px;
+    }
+}

@@ -1,0 +1,40 @@
+/* CHAT BUTTON COMPONENT */
+.live_chat_button{
+	position: fixed;
+	z-index: 9999;
+	left: -60px;
+	left: 0px \0/IE9; // IE9 hack
+	top: 30%;
+	margin: 0;
+	color: #fff;
+    background: $form_colour;
+    font-size: 20px;
+    padding: 6px 20px 8px 18px;
+    border: 1px solid #fff;
+    border: 0;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); // 0=default, 1=90degrees, 2=180degrees, 3=270degrees.
+	-webkit-transform: rotate(270deg);
+      	-ms-transform: rotate(270deg);
+          	transform: rotate(270deg);
+    &.right{ // when this class is added the button will align to the right
+		right: -60px;
+		right: -117px \0/IE9; // IE9 hack
+		left: auto;
+		left: auto \0/IE9; // IE9 hack
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); // 0=default, 1=90degrees, 2=180degrees, 3=270degrees.
+		-webkit-transform: rotate(90deg);
+	      	-ms-transform: rotate(90deg);
+	          	transform: rotate(90deg);
+    }
+    &:hover, &:focus, &:active{
+    	color: #fff;
+    	text-decoration: none;
+        background: lighten($form_colour, 5%); // Font Awesome close icon http://fontawesome.io/cheatsheet/
+    }
+    &:after{
+    	@include fa-icon;
+    	content: '\f0e6';
+    	padding-left: 5px;
+    	font-size: 23px;
+    }
+}

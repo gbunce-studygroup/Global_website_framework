@@ -1,6 +1,8 @@
 {% include "layout/head" %}
 {% comment %} // DO NOT ADD CODE ABOVE THIS LINE // {% endcomment %}
 
+<link href="css/pre_chat_form.css" media="all" rel="stylesheet" /> 
+
 <div class="container">
     <h1>Header components:</h1>
     <div class="row">
@@ -101,6 +103,8 @@
             {% include "components/button" %}
             <h4>Button group:</h4>
             {% include "components/button_group" %}
+            <h4>Content box:</h4>
+            {% include "components/content_box" %}
         </div>
     </div>
 </div>
@@ -171,10 +175,12 @@
             {% include "components/enquiry_form" %}
         </div>
         <div class="col-md-4">
+            <!-- Chat from buttom -->
+            {% include "components/chat_button" %}
             <h4>Find local agent form:</h4>
             {% include "components/find_local_agent" %}
         </div>
-    </div>  
+    </div>
 </div>
 
 <hr>
