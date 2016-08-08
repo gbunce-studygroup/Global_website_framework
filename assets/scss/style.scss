@@ -3,7 +3,9 @@
 @import "animate"; 					// _animate.scss
 @import "font-awesome";             // _font-awesome.scss
 
-body{}
+body{
+	color: $main_colour;
+}
 
 #pageBody{}
 

@@ -13,7 +13,8 @@ module.exports = function(grunt) {
                     sourcemap: 'none',
                 },
                 files: {
-                    'html/css/style.css':'assets/scss/style.scss'
+                    'html/css/style.css':'assets/scss/style.scss',
+                    'html/css/pre_chat_form.css':'assets/scss/components/pre_chat_form.scss' // COMPILED SCSS FOR THE PRE-CHAT FORM AS SEPARATE STYLESHEET
                 }
             }
         },
@@ -39,10 +40,10 @@ module.exports = function(grunt) {
 	  	/* JS */
         import: {
             options: {},
-                dist: {
-                    src: 'assets/scripts/scripts.mix.js',
-                    dest: 'html/js/scripts.js',
-                }
+            dist: {
+                src: 'assets/scripts/scripts.mix.js',
+                dest: 'html/js/scripts.js',
+            }
         },
         
         
@@ -114,12 +115,10 @@ module.exports = function(grunt) {
                 files: 'assets/scss/**/*.scss',
                 tasks: ['sass', 'autoprefixer']
             },
-            
             js: {
                 files: 'assets/scripts/**/*.js',
                 tasks: ['import']
             },
-            
             liquidTemplate: {
                 options: {
                     spawn: true
@@ -127,7 +126,6 @@ module.exports = function(grunt) {
                 files: "templates/**/*.liquid",
                 tasks: ['liquid']
             }  
-            
 		},
 
 
@@ -139,9 +137,10 @@ module.exports = function(grunt) {
                 {
                     expand: true, 
                     flatten: true,
-                src: ['html/css/style.css'], 
-                dest: '<%= build_dir %>/Volumes/Websites/Designer/css/', // CHANGE TO MATCH THE CSS LOCATION ON STAGING
-                filter: 'isFile'},
+                    src: ['html/css/style.css'], 
+                    dest: '<%= build_dir %>/Volumes/Websites/Designer/css/', // CHANGE TO MATCH THE CSS LOCATION ON STAGING
+                    filter: 'isFile'
+                },
             ],
           },
         },
@@ -153,11 +152,11 @@ module.exports = function(grunt) {
             src: ['<%= build_dir %>/Volumes/Websites/Designer/css/'], // CHANGE TO MATCH THE CSS LOCATION ON STAGING
             overwrite: true, // overwrite matched source files 
             replacements: [{
-                  from: '../fonts/',
-                  to: "/fonts/" // CHANGE TO MATCH THE FONTS LOCATION ON STAGING
-              }, {
-                  from: '../img/',
-                  to: "/images/" // CHANGE TO MATCH THE IMAGE LOCATION ON STAGING
+                from: '../fonts/',
+                to: "/fonts/" // CHANGE TO MATCH THE FONTS LOCATION ON STAGING
+            }, {
+                from: '../img/',
+                to: "/images/" // CHANGE TO MATCH THE IMAGE LOCATION ON STAGING
             }]
           }
         }
