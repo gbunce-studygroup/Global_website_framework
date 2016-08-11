@@ -26,6 +26,12 @@
 	      	-ms-transform: rotate(90deg);
 	          	transform: rotate(90deg);
     }
+    &.other_colour{
+        background: $form_colour_s;
+            &:hover, &:focus, &:active{
+            background: lighten($form_colour_s, 5%); // Font Awesome close icon http://fontawesome.io/cheatsheet/
+        }
+    }
     &:hover, &:focus, &:active{
     	color: #fff;
     	text-decoration: none;

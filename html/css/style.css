@@ -9674,6 +9674,12 @@ body {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+.live_chat_button.other_colour {
+  background: #E0DED8;
+}
+.live_chat_button.other_colour:hover, .live_chat_button.other_colour:focus, .live_chat_button.other_colour:active {
+  background: #ebeae6;
+}
 .live_chat_button:hover, .live_chat_button:focus, .live_chat_button:active {
   color: #fff;
   text-decoration: none;

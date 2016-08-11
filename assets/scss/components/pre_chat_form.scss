@@ -1,7 +1,9 @@
 @import "../variables";
 @import "../mixins";
 /* PRE-CHAT FORM COMPONENT */
-body{}
+body{
+	background: url('http://placehold.it/200x280') no-repeat bottom right;	
+}
 .from_wrapper{
 	width: 100%;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -15,14 +17,15 @@ body{}
 		margin: 0 0 20px;
 	}
 	input, select{
-		width: 63%;
+		width: 55%;
+		margin-bottom: 10px;
 	}
 	label{
-		width: 35%;
+		width: 53%;
 		color: $main_colour;
 		display: inline-block;
 		font-size: 14px;
-		margin-bottom:10px;
+		margin-bottom: 0px;
 		span{
 			color: red;
 			padding-left: 5px;
@@ -30,6 +33,17 @@ body{}
 	}
 	#prechat_submit{
 		@include form_button;
-		margin: 10px 0 0 35%;
+		margin: 8px 0 0 0;
+	}
+}
+
+@media (max-width: 380px){
+	body{
+		background: none;
+	}
+	.from_wrapper{
+		input, select, label{
+			width: 100%;
+		}
 	}
 }
