@@ -1,4 +1,8 @@
 /* PRE-CHAT FORM COMPONENT */
+body {
+  background: url("http://placehold.it/200x280") no-repeat bottom right;
+}
+
 .from_wrapper {
   width: 100%;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -13,14 +17,15 @@
   margin: 0 0 20px;
 }
 .from_wrapper input, .from_wrapper select {
-  width: 63%;
+  width: 55%;
+  margin-bottom: 10px;
 }
 .from_wrapper label {
-  width: 35%;
+  width: 53%;
   color: #000000;
   display: inline-block;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 .from_wrapper label span {
   color: red;
@@ -36,7 +41,7 @@
   font-weight: bold;
   color: #fff;
   cursor: pointer;
-  margin: 10px 0 0 35%;
+  margin: 8px 0 0 0;
 }
 .from_wrapper #prechat_submit:hover {
   background: #cc1d2e;
@@ -46,4 +51,14 @@
   font-size: 12px;
   content: "\e080";
   margin: 0 0 0 7px;
+}
+
+@media (max-width: 380px) {
+  body {
+    background: none;
+  }
+
+  .from_wrapper input, .from_wrapper select, .from_wrapper label {
+    width: 100%;
+  }
 }
