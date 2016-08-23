@@ -5,6 +5,8 @@
 	.news_listing{
 		h1, h2, h3, h4, h5, h6{}
 		.news_items{
+			list-style: none;
+			padding: 0;
 			.news_item{
 				.news_heading{
 					h1, h2, h3, h4, h5, h6{}
@@ -17,14 +19,14 @@
 					.news_snippet{
 						p{}
 					}
-				}
-				.button{
-					a{}
+					.button{
+						a{}
+					}
 				}
 			}
-			.button{
-				a{}
-			}
+		}
+		.button{ // SEE ALL NEWS
+			a{}
 		}
 	}	
 }
@@ -32,6 +34,8 @@
 /* News listing */
 .news_listing{
 	.news_items{
+		list-style: none;
+		padding: 0;
 		.news_item{
 			.news_heading{
 				h1, h2, h3, h4, h5, h6{}
@@ -57,6 +61,7 @@
 
 /* News archive menu*/
 .news_archive{
+	h3{}
 	ul{
 		li{
 			a{}

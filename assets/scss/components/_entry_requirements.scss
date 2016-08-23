@@ -4,7 +4,9 @@
 		label.control-label{}
 	}
 	.controls{
-		select.form-control{}
+		select.form-control{
+			margin-bottom: 15px;
+		}
 	}
 }
 .entry-requirements{
@@ -12,7 +14,11 @@
 	thead{
 		tr{
 			.requirementHeading{}
-			th{}
+			th{
+            	background: $form_colour;
+            	color: #fff;
+            	border-bottom: 1px solid #fff;
+			}
 		}
 	}
 	tbody{

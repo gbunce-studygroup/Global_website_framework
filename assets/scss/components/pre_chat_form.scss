@@ -2,30 +2,34 @@
 @import "../mixins";
 /* PRE-CHAT FORM COMPONENT */
 body{
-	background: url('http://placehold.it/200x280') no-repeat bottom right;	
+	margin: 0;
+	padding: 10px;
 }
 .from_wrapper{
-	width: 100%;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	padding: 20px;
+	padding: 10px 14px 14px 14px;
+	background: url('http://placehold.it/200x280') no-repeat bottom right;
+	border: 2px solid $form_colour;	
 	h1{
 		color: $form_colour;
-		margin: 0 0 20px 0;
+		margin: 5px 0 10px 0;
 		font-size: 20px;
 	}
 	img{ // logo
-		margin: 0 0 20px;
+		margin: 0 0 6px;
 	}
 	input, select{
 		width: 55%;
 		margin-bottom: 10px;
+		padding: 3px;
+		font-size: 12px;
 	}
 	label{
 		width: 53%;
 		color: $main_colour;
 		display: inline-block;
 		font-size: 14px;
-		margin-bottom: 0px;
+		margin-bottom: 0;
 		span{
 			color: red;
 			padding-left: 5px;
@@ -38,12 +42,10 @@ body{
 }
 
 @media (max-width: 380px){
-	body{
-		background: none;
-	}
 	.from_wrapper{
+		background: none;
 		input, select, label{
-			width: 100%;
+			width: 94%;
 		}
 	}
 }

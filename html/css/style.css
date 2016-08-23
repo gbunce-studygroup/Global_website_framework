@@ -6662,7 +6662,8 @@ label[for="date_picker"] span {
 .ui-datepicker .ui-datepicker-title {
   font-weight: 700;
 }
-.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
   cursor: default;
   font-family: 'Glyphicons Halflings';
   -webkit-font-smoothing: antialiased;
@@ -6699,12 +6700,17 @@ label[for="date_picker"] span {
   text-align: center;
   padding: 4px 0;
 }
+.ui-datepicker .ui-datepicker-calendar th {
+  background: #B61A29;
+  color: #fff;
+  border-left: 1px solid #fff;
+}
 .ui-datepicker .ui-datepicker-calendar td {
   border-radius: 4px;
   transition: all 0.1s ease-in-out;
 }
 .ui-datepicker .ui-datepicker-calendar td:hover {
-  background-color: #eee;
+  background-color: #E0DED8;
   cursor: pointer;
 }
 .ui-datepicker .ui-datepicker-calendar td a {
@@ -9699,7 +9705,25 @@ body {
 
 /* CONTENT BOX COMPONENT */
 /* ENTRY REQUIREMENTS COMPONENT */
+#form .controls select.form-control {
+  margin-bottom: 15px;
+}
+
+.entry-requirements thead tr th {
+  background: #B61A29;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
 /* FIND LOCAL AGENT COMPONENT */
+.fla-country p a {
+  color: #B61A29;
+}
+
+.agents-list address a {
+  color: #B61A29;
+}
+
 /* ENQUIRY & BROCHURE DOWNLOAD FORM COMPONENTS */
 .form #form-loading {
   border: 1px solid #000000;
@@ -9844,7 +9868,17 @@ body {
 
 /* ALL NEWS COMPONENTS */
 /* News feed */
+.news_feed .news_listing .news_items {
+  list-style: none;
+  padding: 0;
+}
+
 /* News listing */
+.news_listing .news_items {
+  list-style: none;
+  padding: 0;
+}
+
 /* News archive menu*/
 /* PAGINATION COMPONENT */
 .pagination li a {
@@ -9867,6 +9901,15 @@ body {
 }
 
 /* PROGRESSION ROUTES COMPONENT */
+.progRoutes .standard thead tr th {
+  background: #B61A29;
+  color: #fff;
+  padding: 8px;
+}
+.progRoutes .standard tbody tr td {
+  padding: 8px;
+}
+
 /* SEARCHBAR COMPONENT */
 .search_results .listing {
   padding-left: 15px;
