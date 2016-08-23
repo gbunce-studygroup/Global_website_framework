@@ -1,2 +1,5 @@
 // RUN THE DATEPICKER
-$(".date-picker").datepicker();
+$(".date-picker").datepicker({
+    changeMonth: true,
+    changeYear: true
+});

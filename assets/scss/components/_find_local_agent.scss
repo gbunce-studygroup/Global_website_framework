@@ -1,7 +1,9 @@
 /* FIND LOCAL AGENT COMPONENT */
 .fla-country{
 	p{
-		a{}
+		a{
+            color: $form_colour;
+		}
 	}
 }
 .form-horizontal{
@@ -13,6 +15,8 @@
 .agents-list{
 	address{
 		strong{}
-		a{}
+		a{
+            color: $form_colour;
+		}
 	}
 }

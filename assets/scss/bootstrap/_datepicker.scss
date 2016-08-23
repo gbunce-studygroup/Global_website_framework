@@ -8,7 +8,7 @@ label[for="date_picker"]{ // datapicker icon
     }
 }
 
-.ui-datepicker {
+.ui-datepicker{
     background-color: #fff;
     border: 1px solid $form_colour;
     border-radius: 4px;
@@ -17,28 +17,28 @@ label[for="date_picker"]{ // datapicker icon
     margin-top: 4px;
     padding: 10px;
     width: 240px;
-    & a {
-        &:hover {
+    a{
+        &:hover{
             text-decoration: none;
             @include app-transition(color, 0.1s, ease-in-out);
         }
     }
-    & td {
-        &:hover {
+    td{
+        &:hover{
             color: #2A6496;
             @include app-transition(color, 0.1s, ease-in-out);
         }
     }
-    & .ui-datepicker-header {
+    .ui-datepicker-header{
         margin-bottom: 4px;
         text-align: center;
     }
-    & .ui-datepicker-title {
+    .ui-datepicker-title{
         font-weight: 700;
     }
 
-    & .ui-datepicker-prev,
-    & .ui-datepicker-next {
+    .ui-datepicker-prev,
+    .ui-datepicker-next{
         cursor: default;
         font-family: 'Glyphicons Halflings';
         -webkit-font-smoothing: antialiased;
@@ -50,50 +50,55 @@ label[for="date_picker"]{ // datapicker icon
         width: 30px;
         color: $form_colour;
     }
-    & .ui-datepicker-prev {
+    .ui-datepicker-prev{
         float: left;
         text-align: left;
-        &:before {
+        &:before{
             content: "\e079";
         }
     }
-    & .ui-datepicker-next {
+    .ui-datepicker-next{
         float: right;
         text-align: right;
-        &:before {
+        &:before{
             content: "\e080";
         }
     }
-    & .ui-icon {
+    .ui-icon{
         display: none;
     }
-    & .ui-datepicker-calendar {
+    .ui-datepicker-calendar{
         table-layout: fixed;
         width: 100%;
-        & th, & td {
+        th, td{
             text-align: center;
             padding: 4px 0;
         }
-        & td {
+        th{
+            background: $form_colour;
+            color: #fff;
+            border-left: 1px solid #fff;
+        }
+        td{
             border-radius: 4px;
             @include app-transition(all, 0.1s, ease-in-out);
-            &:hover {
-                background-color: #eee;
+            &:hover{
+                background-color: $form_colour_s;
                 cursor: pointer;
             }
-            & a {
+            a{
                 text-decoration: none;
                 color: $main_colour;
             }
-            &.ui-datepicker-current-day {
+            &.ui-datepicker-current-day{
                 background-color: $form_colour;
-                & a {
+                a{
                     color: #fff;
                 }
             }
         }
-        & .ui-datepicker-unselectable {
-            &:hover {
+        .ui-datepicker-unselectable{
+            &:hover{
                 background-color: #fff;
                 cursor: default;
             }

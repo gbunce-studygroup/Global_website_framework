@@ -3,7 +3,11 @@
 	.standard{
 		thead{
 			tr{
-				th{}
+				th{
+	            	background: $form_colour;
+	            	color: #fff;
+	            	padding: 8px;
+				}
 			}
 		}
 		tbody{
@@ -11,7 +15,9 @@
 				&.alternate{
 					td{}
 				}
-				td{}
+				td{
+	            	padding: 8px;					
+				}
 			}
 		}
 	}

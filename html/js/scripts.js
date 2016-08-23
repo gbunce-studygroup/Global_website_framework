@@ -2107,7 +2107,10 @@
 }(jQuery);
 
 // RUN THE DATEPICKER
-$(".date-picker").datepicker();
+$(".date-picker").datepicker({
+    changeMonth: true,
+    changeYear: true
+});
 // RUN THE BACKGROUND VIDEO FALLBACK CAROUSEL
 var el = $('.fallback_carousel span'),
 	n = el.length,
