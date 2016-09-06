@@ -5,6 +5,7 @@
 		& + li{
 			&:before{
 				content: "/ ";
+				display: inline-block;
 			}
 		}
 	}

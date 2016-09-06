@@ -8,6 +8,7 @@
 @import "components/tab.js";
 @import "components/transition.js";
 @import "components/scrollspy.js";
+//@import "components/sticky_header.js";
 @import "components/modal.js";
 @import "components/tooltip.js";
 @import "components/popover.js";

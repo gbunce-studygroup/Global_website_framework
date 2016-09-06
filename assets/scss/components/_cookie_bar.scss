@@ -1,0 +1,14 @@
+/* COOKIE BAR COMPONENT */
+.cookie_bar{
+	.row{
+		.col-md-10{
+			strong{}
+			a.cookie{}
+		}
+		.col-md-2{
+			a.cookie_btn{
+				span{}
+			}
+		}
+	}
+}
