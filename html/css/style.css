@@ -9648,6 +9648,7 @@ body {
 /* BREADCRUMB COMPONENT */
 .breadcrumb li + li:before {
   content: "/ ";
+  display: inline-block;
 }
 
 /* BUTTON COMPONENT */
@@ -9704,6 +9705,7 @@ body {
 }
 
 /* CONTENT BOX COMPONENT */
+/* COOKIE BAR COMPONENT */
 /* ENTRY REQUIREMENTS COMPONENT */
 #form .controls select.form-control {
   margin-bottom: 15px;
@@ -9817,6 +9819,12 @@ body {
 }
 
 /* FOOTER LINKS */
+/* FOOTER NAV COMPONENT */
+.footer_nav .column {
+  width: 20%;
+  float: left;
+}
+
 /* GALLERY COMPONENT */
 .gallery {
   padding: 0 15px;
@@ -9961,6 +9969,7 @@ body {
   display: none;
 }
 
+/* SITEMAP COMPONENT */
 /* SOCIAL MEDIA COMPONENT */
 /* START DATES COMPONENT */
 /* TABS WIDGET COMPONENT */

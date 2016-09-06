@@ -1,0 +1,20 @@
+/* FOOTER NAV COMPONENT */
+.footer_nav{
+	.column{ //UL
+		width: 20%;
+		float: left;
+		li{ // TOP LEVEL PAGES
+			a{}
+			ul{
+				li{ // SECOND LEVEL PAGES
+					a{}
+					ul{
+						li{ // THIRD LEVEL PAGES
+							a{}
+						}
+					}
+				}
+			}
+		}
+	}
+}

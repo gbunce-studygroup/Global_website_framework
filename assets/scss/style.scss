@@ -41,6 +41,15 @@ table{
 		&:nth-child(odd){}
 		&:nth-child(even){}
 	}
+	&.unstyled{ // Class for unstyled tables
+		tr{
+			&:first-child{}
+		}
+		td{
+			&:nth-child(odd){}
+			&:nth-child(even){}
+		}
+	}
 }
 
 header{}
