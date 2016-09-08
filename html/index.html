@@ -1280,6 +1280,164 @@
 </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Fees Calculator:</h4>
+            <div class="price-calculator-main form-section">
+    <div class="apply-form-part1">
+        <div class="row">
+            <div class="col-md-12 apply-field-header">
+                Fees Calculator
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="row apply-field-row">
+                    <div class="col-md-3 apply-field-cell">
+                        <label for="college">College:</label>
+                    </div>
+                    <div class="col-md-7 apply-field-cell">
+                        <select class="form-control" id="college" data-bind="field: Model.College, options: ViewBag.Centres, optionsText: 'Name', optionsValue: 'Id', optionsCaption: sg.strings.pleaseSelectCaption">
+                            <option>data<option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 apply-field-empty-cost">
+                    </div>
+                </div>
+
+                <div class="row apply-field-row">
+                    <div class="col-md-3 apply-field-cell">
+                        <label for="course">Course:</label>
+                    </div>
+                    <div class="col-md-5 apply-field-cell">
+                        <select class="form-control" id="course" data-bind="field: Model.Course, options: Model.Courses, optionsText: 'Name', optionsValue: 'ArticleId', optionsCaption: sg.strings.pleaseSelectCaption">
+                            <option>data<option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 apply-field-cell">
+                        <span data-bind="visible: Model.CourseTerms().length > 1">
+                            <select class="form-control" id="course_length_select" data-bind="field: Model.CourseLength, options: Model.CourseTerms, optionsText: 'Name', optionsValue: 'Value'">
+                                <option>data<option>
+                            </select>
+                        </span>
+                        <span data-bind="visible: Model.CourseTerms().length <= 1">
+                            <input class="form-control" type="text" id="course_length_input" maxlength="256" data-bind="field: Model.CourseLengthDisplay" readonly />
+                        </span>
+                    </div>
+                    <div class="col-md-2 apply-field-cost">
+                        £&nbsp;<span data-bind="text: Model.addCommas(Model.CourseCostDisplay())">XXXX</span>
+                    </div>
+                </div>
+
+                <div class="row apply-field-row apply-fill-outer" data-bind="visible: Model.SubCourses().length > 0">
+                    <div class="col-md-3 apply-field-cell apply-fill-inner">
+                        <label>Subjects available at your chosen college:</label>
+                    </div>
+                    <div class="col-md-7 apply-field-cell">
+                        <select class="form-control" data-bind="field: Model.SubCourse1, options: Model.SubCourses, optionsText: 'Name', optionsValue: 'Name', optionsCaption: sg.strings.pleaseSelectCaption">
+                            <option>data<option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 apply-field-empty-cost apply-fill-inner">
+                    </div>
+                </div>
+
+                <div class="row apply-field-row">
+                    <div class="col-md-3 apply-field-cell">
+                        <label for="start_date">Start date:</label>
+                    </div>
+                    <div class="col-md-7 apply-field-cell">
+                        <select class="form-control" id="start_date" data-bind="field: Model.StartDate, options: Model.StartDates, optionsText: 'Name', optionsValue: 'Value', optionsCaption: sg.strings.pleaseSelectCaption">
+                            <option>data<option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 apply-field-empty-cost">
+                    </div>
+                </div>
+
+                <div class="row apply-field-row" data-bind="visible: Model.ElpCourses().length > 0">
+                    <div class="col-md-3 apply-field-cell">
+                        <label for="elp">English Language Preparation:</label>
+                    </div>
+                    <div class="col-md-5 apply-field-cell">
+                        <select class="form-control" id="elp" data-bind="field: Model.ElpCourse, options: Model.ElpCourses, optionsText: 'Name', optionsValue: 'ArticleId', optionsCaption: sg.strings.pleaseSelectCaption">
+                            <option>data<option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 apply-field-cell">
+                        <select class="form-control" id="elp_length" data-bind="field: Model.ElpLength, options: Model.ElpCourseTerms, optionsText: 'Name', optionsValue: 'Value', enable: Model.Accommodation() && Model.Accommodation() != 475">
+                            <option>data<option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 apply-field-cost">
+                        £&nbsp;<span data-bind="text: Model.addCommas(Model.ElpCostDisplay())">XXXX</span>
+                    </div>
+                </div>
+
+                <div class="row apply-field-row">
+                    <div class="col-md-3 apply-field-cell">
+                        <label for="accommodation">Accommodation:</label>
+                    </div>
+                    <div class="col-md-5 apply-field-cell">
+                        <select class="form-control" id="accommodation" data-bind="field: Model.Accommodation, options: Model.Accommodations, optionsText: 'Name', optionsValue: 'ArticleId', optionsCaption: sg.strings.pleaseSelectCaption">
+                            <option>data<option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 apply-field-cell">
+                        <select class="form-control" id="accommodation_length" data-bind="field: Model.AccommodationLength, options: Model.AccommodationTerms, optionsText: 'Name', optionsValue: 'Value', enable: Model.Accommodation() && Model.Accommodation() != 475">
+                            <option>data<option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 apply-field-cost">
+                        £&nbsp;<span data-bind="text: Model.addCommas(Model.AccommodationCostDisplay())">XXXX</span>
+                    </div>
+                </div>
+
+                <div class="row apply-field-row">
+                    <div class="col-md-3 apply-field-cell">
+                        <label for="transfer">Transfer:</label>
+                    </div>
+                    <div class="col-md-7 apply-field-cell">
+                        <select class="form-control" id="transfer" data-bind="field: Model.Transfer, options: Model.Transfers, optionsText: 'Name', optionsValue: 'Id', optionsCaption: sg.strings.pleaseSelectCaption">
+                            <option>data<option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 apply-field-cost">
+                        £&nbsp;<span data-bind="text: Model.addCommas(Model.TransfersCostDisplay())">XXXX</span>
+                    </div>
+                </div>
+
+                <div data-bind="foreach: Model.SundriesDisplay">
+                    <div class="row apply-field-row">
+                        <div class="col-md-3 apply-field-cell">
+                            <label data-bind="visible: $index() == 0">Sundries:</label>
+                        </div>
+                        <div class="col-md-7 apply-field-cell">
+                            <input class="form-control" type="text" maxlength="256" data-bind="value: $data.Name" readonly />
+                        </div>
+                        <div class="col-md-2 apply-field-cost">
+                            £&nbsp;<span data-bind="text: $parent.Model.addCommas($data.Price)">XXXX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row apply-field-total">
+                    <div class="col-md-10 apply-field-cell">
+                        Total
+                    </div>
+                    <div class="col-md-2 apply-field-total-cost">
+                        £&nbsp;<span data-bind="text: Model.addCommas(Model.TotalCostDisplay())">XXXX</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
 </div>
 
 <hr>
