@@ -9717,6 +9717,28 @@ body {
   border-bottom: 1px solid #fff;
 }
 
+/* FEES CALCULATOR COMPONENT */
+.price-calculator-main .apply-field-row .apply-field-cell {
+  padding-right: 0;
+}
+.price-calculator-main .apply-field-row .apply-field-cell select {
+  padding: 6px;
+}
+.price-calculator-main .apply-field-row .apply-field-cell input[readonly] {
+  border: 0;
+}
+.price-calculator-main .apply-field-row .apply-field-cell select, .price-calculator-main .apply-field-row .apply-field-cell input {
+  margin-bottom: 15px;
+}
+.price-calculator-main .apply-field-total {
+  font-weight: bold;
+}
+
+@media (max-width: 1199px) {
+  .price-calculator-main .apply-field-row .apply-field-cell {
+    padding-right: 15px;
+  }
+}
 /* FIND LOCAL AGENT COMPONENT */
 .fla-country p a {
   color: #B61A29;

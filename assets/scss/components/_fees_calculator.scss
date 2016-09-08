@@ -1,0 +1,39 @@
+/* FEES CALCULATOR COMPONENT */
+// NOT RECOMMENDED TO BE USED IN A COLUMN THAT SPANS LESS THAN 6.
+.price-calculator-main{
+	.apply-field-header{}
+	.apply-field-row{
+		.apply-field-cell{
+			padding-right: 0;
+			label{}
+			select{
+				padding: 6px;
+			}
+			input{
+				&[readonly]{
+					border: 0;
+				}
+			}
+			select, input{
+				margin-bottom: 15px;
+			}
+		}
+		.apply-field-cost{}
+		.apply-field-empty-cost{}
+	}
+	.apply-field-total{
+		font-weight: bold;
+		.apply-field-cell{}
+		.apply-field-total-cost{}
+	}
+}
+
+@media (max-width: $screen-md-max){
+	.price-calculator-main{
+		.apply-field-row{
+			.apply-field-cell{
+				padding-right: 15px;
+			}
+		}
+	}
+}
