@@ -1,81 +1,13 @@
 @import "variables";
 
-@media (min-width: $screen-lg-min) {
+@media (min-width: $screen-lg-min){
 }
 
-@media (max-width: $screen-md-max) {
+@media (max-width: $screen-md-max){
 }
 
-@media (max-width: $screen-sm-max) {
-	/* NAVBAR COMPONENT */
-	.navbar{
-		.navbar-header{
-			.navbar-toggle{
-				border: 1px solid #333;
-				.icon-bar{
-					background: #333;
-				}
-			}
-		}
-		.navbar-collapse{
-			.nav{ // UL
-				li{
-					position: relative;
-					&.active{}
-					a{
-						display: block;
-					}
-					&.dropdown{
-						.dropdown-toggle{
-							@include nav-toggle-styles;
-							&:after {
-								content: '\f078';
-							}
-						}
-						&.open {
-							.dropdown-toggle{
-								&:after {
-									content: '\f077';
-								}
-							}
-						}
-						.dropdown-menu{ // SECOND LEVEL UL
-							li {
-								&.active{}
-								a{
-									padding: 10px 10px 10px 15px;
-								}
-								&.open{
-									.dropdown-toggle-2{
-										&:after{
-											content: '\f068';
-										}
-									}
-									.dropdown-menu-2{ // THIRD LEVEL UL
-										display: block;
-										li {
-											&.active{}
-											a{}
-										}
-									}
-								}
-								.dropdown-toggle-2{
-									@include nav-toggle-styles;
-									&:after{
-										content: '\f067';
-									}
-								}
-								.dropdown-menu-2{ // UL THIRD LEVEL UL
-									display: none;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+@media (max-width: $screen-sm-max){
 }
 
-@media (max-width: $screen-xs-max) {
+@media (max-width: $screen-xs-max){
 }

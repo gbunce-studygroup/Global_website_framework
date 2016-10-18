@@ -28,6 +28,10 @@
 	}
 }
 
+
+@media (min-width: $screen-lg-min){
+}
+
 @media (max-width: $screen-md-max){
 	.price-calculator-main{
 		.apply-field-row{
@@ -36,4 +40,10 @@
 			}
 		}
 	}
+}
+
+@media (max-width: $screen-sm-max){
+}
+
+@media (max-width: $screen-xs-max){
 }

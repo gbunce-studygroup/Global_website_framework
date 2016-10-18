@@ -1,6 +1,8 @@
 /* TESTIMONIAL COMPONENT */
 .testimonial{
-	h1, h2, h3, h4, h5, h6{}
+	h1, h2, h3, h4, h5, h6{
+		&:first-child{}
+	}
 	img{
 		width: 100%;
 		height: auto;
@@ -13,4 +15,16 @@
 			em{}
 		}
 	}
+}
+
+@media (min-width: $screen-lg-min){
+}
+
+@media (max-width: $screen-md-max){
+}
+
+@media (max-width: $screen-sm-max){
+}
+
+@media (max-width: $screen-xs-max){
 }
