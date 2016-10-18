@@ -8,24 +8,53 @@
 		margin-left: -15px;
 		margin-right: -15px;
 	}
-	img{
-		width: 100%;
-		height: auto;
-	}
-	.carousel{
-		.carousel-control{
-			position: relative;
-			top: 0;
-			left: 0;
-			img{
-				width: auto;
+	.row{
+		@include after-first(3){
+		}
+		.col-md-6, .col-sm-6, .col-xs-6{
+			a{
+				img{
+					width: 100%;
+					height: auto;
+					&:hover{}
+				}
 			}
 		}
-		.item{
-			text-align: center;
-		}
-		.controls{
-			text-align: center;
+	}
+	/* GALLERY LIGHTBOX */
+	.modal{
+		.modal-dialog{
+			.modal-content{
+				.modal-header{
+					min-height: 50px;
+				}
+				.modal-body{
+					/* GALLERY CAROUSEL COMPONENT */
+					.carousel{
+						.carousel-inner{
+							.item{
+								&.active{}
+								.carousel-caption{}
+							}
+						}
+						.carousel-control{
+							i{}
+						}
+					}
+				}
+			}
 		}
 	}
+}
+
+@media (min-width: $screen-lg-min){
+}
+
+@media (max-width: $screen-md-max){
+}
+
+@media (max-width: $screen-sm-max){
+}
+
+@media (max-width: $screen-xs-max){
 }

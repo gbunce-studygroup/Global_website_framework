@@ -1,7 +1,7 @@
 /* WIDGET COMPONENT */
 .widget{
 	h1, h2, h3, h4, h5, h6{
-		&:first-of-type{
+		&:first-child{
 			margin-top: 0;
 		}
 	}
@@ -12,4 +12,16 @@
 	.button{
 		a{}
 	}
+}
+
+@media (min-width: $screen-lg-min){
+}
+
+@media (max-width: $screen-md-max){
+}
+
+@media (max-width: $screen-sm-max){
+}
+
+@media (max-width: $screen-xs-max){
 }

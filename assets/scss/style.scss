@@ -35,19 +35,19 @@ small{}
 
 table{
 	tr{
-		&:first-child{}
-	}
-	td{
-		&:nth-child(odd){}
-		&:nth-child(even){}
-	}
-	&.unstyled{ // Class for unstyled tables
-		tr{
-			&:first-child{}
-		}
+		th{}
 		td{
 			&:nth-child(odd){}
 			&:nth-child(even){}
+		}
+	}
+	&.unstyled{ // Class for unstyled tables
+		tr{
+			th{}
+			td{
+				&:nth-child(odd){}
+				&:nth-child(even){}
+			}
 		}
 	}
 }
@@ -55,6 +55,12 @@ table{
 header{}
 
 footer{}
+
+.home{}
+
+.hub{}
+
+.internal{}
 
 @import "components"; 				// Website Components
 @import "mediaqueries"; 			// Media queries
