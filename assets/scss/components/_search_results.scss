@@ -1,17 +1,19 @@
 /* SEARCHBAR COMPONENT */
-.search_results{
+#searchresult{
 	.listing{
-		padding-left: 15px;
-		li{
-			.type{}
-			p{
-				.highlight{
-					color: $form_colour;
-					font-weight: bold;
+		ul{
+			padding: 0 0 15px 15px;
+			li{
+				.type{}
+				p{
+					.highlight{
+						color: $form_colour;
+						font-weight: bold;
+					}
 				}
-			}
-			a{
-				color: $form_colour;
+				a{
+					color: $form_colour;
+				}
 			}
 		}
 	}
