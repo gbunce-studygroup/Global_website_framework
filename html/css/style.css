@@ -9998,14 +9998,14 @@ body {
 }
 
 /* SEARCHBAR COMPONENT */
-.search_results .listing {
-  padding-left: 15px;
+#searchresult .listing ul {
+  padding: 0 0 15px 15px;
 }
-.search_results .listing li p .highlight {
+#searchresult .listing ul li p .highlight {
   color: #B61A29;
   font-weight: bold;
 }
-.search_results .listing li a {
+#searchresult .listing ul li a {
   color: #B61A29;
 }
 
