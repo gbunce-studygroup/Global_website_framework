@@ -10,6 +10,14 @@
 				a{
 					&.active{}
 				}
+				.third-level{ //UL
+					display: none; // HIDE UL BY DEFAULT UNLESS SIBLING HAS ACTIVE CLASS
+					li{
+						a{
+							&.active{}
+						}
+					}
+				}
 			}
 		}
 	}
