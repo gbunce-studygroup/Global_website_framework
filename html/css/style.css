@@ -10047,6 +10047,9 @@ body {
 .sidebar-nav li .second-level {
   display: none;
 }
+.sidebar-nav li .second-level li .third-level {
+  display: none;
+}
 
 /* SITEMAP COMPONENT */
 /* SOCIAL MEDIA COMPONENT */
