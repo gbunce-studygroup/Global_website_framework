@@ -138,7 +138,7 @@ module.exports = function(grunt) {
                     expand: true, 
                     flatten: true,
                     src: ['html/css/style.css'], 
-                    dest: '<%= build_dir %>/Volumes/Websites/Designer/css/', // CHANGE TO MATCH THE CSS LOCATION ON STAGING
+                    dest: '///Volumes/Designer/css/', // CHANGE TO MATCH THE CSS LOCATION ON STAGING
                     filter: 'isFile'
                 },
             ],
@@ -149,7 +149,7 @@ module.exports = function(grunt) {
         /* REPLACE NEW VERSION ON STAGING WITH UPDATED URL VERSION SO THAT IMAGES AND FONTS WILL WORK*/
         replace: {
           another_example: {
-            src: ['<%= build_dir %>/Volumes/Websites/Designer/css/'], // CHANGE TO MATCH THE CSS LOCATION ON STAGING
+            src: ['///Volumes/Designer/css/ ____ /style.css'], // CHANGE TO MATCH THE CSS LOCATION ON STAGING
             overwrite: true, // overwrite matched source files 
             replacements: [{
                 from: '../fonts/',
