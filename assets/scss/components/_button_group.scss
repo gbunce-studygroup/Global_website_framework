@@ -1,5 +1,6 @@
 /* BUTTON GROUP COMPONENT */
 .button-group{
+	@include component_margin;
 	ul{
 		li{
 			a{

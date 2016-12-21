@@ -1,5 +1,6 @@
 /* ACCORDION COMPONENT */
 #accordion{
+	@include component_margin;
 	.panel{
 		.panel-heading{
 			padding: 0;
