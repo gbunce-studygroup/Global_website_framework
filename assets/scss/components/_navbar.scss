@@ -44,11 +44,11 @@
 					&.dropdown{
 						.dropdown-toggle{
 							@include nav-toggle-styles;
-							&:after {
+							&:after{
 								content: '\f078';
 							}
 						}
-						&.open {
+						&.open{
 							.dropdown-toggle{
 								&:after{
 									content: '\f077';
@@ -69,7 +69,7 @@
 									}
 									.dropdown-menu-2{ // THIRD LEVEL UL
 										display: block;
-										li {
+										li{
 											&.active{}
 											a{}
 										}

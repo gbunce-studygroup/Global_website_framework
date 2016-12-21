@@ -1,8 +1,14 @@
 /* TABS WIDGET COMPONENT */
 .tab_wrapper{
+	@include component_margin;
 	.nav-tabs{ // UL
 		li{
 			&.active{}
+			h1, h2, h3, h4, h5, h6{
+				a{
+					padding: 5px 10px;
+				}
+			}
 		}
 	}
 	.tab-content{

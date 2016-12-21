@@ -32,6 +32,10 @@
 	}
 }
 
+
+@media (min-width: $screen-lg-min){
+}
+
 @media (max-width: $screen-md-max){
 	/* BACKGROUND VIDEO COMPONENT */
 	.video_bg{
@@ -41,12 +45,6 @@
 			}
 		}
 	}
-}
-
-@media (min-width: $screen-lg-min){
-}
-
-@media (max-width: $screen-md-max){
 }
 
 @media (max-width: $screen-sm-max){

@@ -9621,6 +9621,9 @@ body {
 }
 
 /* ACCORDION COMPONENT */
+#accordion {
+  margin: 0 0 15px 0;
+}
 #accordion .panel .panel-heading {
   padding: 0;
 }
@@ -9653,6 +9656,10 @@ body {
 
 /* BUTTON COMPONENT */
 /* BUTTON GROUP COMPONENT */
+.button-group {
+  margin: 0 0 15px 0;
+}
+
 /* CAROUSEL COMPONENT */
 /* CHAT BUTTON COMPONENT */
 .live_chat_button {
@@ -9849,6 +9856,7 @@ body {
 
 /* GALLERY COMPONENT */
 .gallery {
+  margin: 0 0 15px 0;
   padding: 0 15px;
   /* GALLERY LIGHTBOX */
 }
@@ -9881,6 +9889,10 @@ body {
 /* LANGUAGE LINKS COMPONENT */
 /* MAIN LOGO COMPONENT */
 /* MAP COMPONENT */
+.map {
+  margin: 0 0 15px 0;
+}
+
 /* NAVBAR COMPONENT */
 .navbar {
   margin: 0;
@@ -10055,7 +10067,17 @@ body {
 /* SOCIAL MEDIA COMPONENT */
 /* START DATES COMPONENT */
 /* TABS WIDGET COMPONENT */
+.tab_wrapper {
+  margin: 0 0 15px 0;
+}
+.tab_wrapper .nav-tabs li h1 a, .tab_wrapper .nav-tabs li h2 a, .tab_wrapper .nav-tabs li h3 a, .tab_wrapper .nav-tabs li h4 a, .tab_wrapper .nav-tabs li h5 a, .tab_wrapper .nav-tabs li h6 a {
+  padding: 5px 10px;
+}
+
 /* TESTIMONIAL COMPONENT */
+.testimonial {
+  margin: 0 0 15px 0;
+}
 .testimonial img {
   width: 100%;
   height: auto;
@@ -10103,7 +10125,8 @@ body {
 }
 /* VIDEO COMPONENT */
 .video {
-  padding: 0px;
+  margin: 0 0 15px 0;
+  padding: 0;
   position: relative;
 }
 .video a img {
@@ -10131,6 +10154,9 @@ body {
 
 /* VIDEO LIGHTBOX */
 /* WIDGET COMPONENT */
+.widget {
+  margin: 0 0 15px 0;
+}
 .widget h1:first-child, .widget h2:first-child, .widget h3:first-child, .widget h4:first-child, .widget h5:first-child, .widget h6:first-child {
   margin-top: 0;
 }

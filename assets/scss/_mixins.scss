@@ -67,3 +67,8 @@ $animate-scss-speed: 1s !default;
         margin: 0 0 0 7px;
     }
 }
+
+// COMPONENT MARGIN
+@mixin component_margin {
+    margin: 0 0 15px 0; 
+}

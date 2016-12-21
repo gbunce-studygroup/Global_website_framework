@@ -1,5 +1,6 @@
 /* GALLERY COMPONENT */
 .gallery{
+	@include component_margin;
 	padding: 0 15px;
 	.col-md-6, .col-sm-6, .col-xs-6{
 		padding: 0;
