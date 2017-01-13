@@ -2107,11 +2107,7 @@
 
 }(jQuery);
 
-// RUN THE DATEPICKER
-$(".date-picker").datepicker({
-    changeMonth: true,
-    changeYear: true
-});
+//@import "components/datepicker.js"; // this should be added back in when the new app form has been developed using jquery 1.10.2
 // RUN THE BACKGROUND VIDEO FALLBACK CAROUSEL
 var el = $('.fallback_carousel span'),
 	n = el.length,
