@@ -12,7 +12,7 @@
 @import "components/modal.js";
 @import "components/tooltip.js";
 @import "components/popover.js";
-@import "components/datepicker.js";
+//@import "components/datepicker.js"; // this should be added back in when the new app form has been developed using jquery 1.10.2
 @import "components/video_fallback_carousel.js";
 
 @import "application.js"; // Custom scripts for project
