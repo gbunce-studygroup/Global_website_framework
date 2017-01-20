@@ -52,6 +52,18 @@
 }
 
 @media (max-width: $screen-sm-max){
+    .live_chat_button{
+        text-align: center;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 8px 10px 5px 18px;
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0); // 0=default, 1=90degrees, 2=180degrees, 3=270degrees.
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
 }
 
 @media (max-width: $screen-xs-max){

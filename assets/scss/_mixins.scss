@@ -72,3 +72,49 @@ $animate-scss-speed: 1s !default;
 @mixin component_margin {
     margin: 0 0 15px 0; 
 }
+
+// CONTENT BOX, TABS & ACCORDION TEXT STYLES
+@mixin content_text_styles{
+    h1, h2, h3, h4, h5, h6{}
+
+    h1{}
+
+    h2{}
+
+    h3{}
+
+    h4{}
+
+    h5{}
+
+    h6{}
+
+    p, ul, ol{}
+
+    a{
+        &:hover, &:active, &:focus{}
+    }
+
+    strong, b{}
+
+    small{}
+
+    table{
+        tr{
+            th{}
+            td{
+                &:nth-child(odd){}
+                &:nth-child(even){}
+            }
+        }
+        &.unstyled{ // Class for unstyled tables
+            tr{
+                th{}
+                td{
+                    &:nth-child(odd){}
+                    &:nth-child(even){}
+                }
+            }
+        }
+    }
+}
