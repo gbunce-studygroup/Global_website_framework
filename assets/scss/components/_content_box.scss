@@ -1,5 +1,7 @@
 /* CONTENT BOX COMPONENT */
-.content_box{}
+.content_box{
+	@include content_text_styles;
+}
 
 @media (min-width: $screen-lg-min){
 }
