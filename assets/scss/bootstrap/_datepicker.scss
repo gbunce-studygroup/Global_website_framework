@@ -8,99 +8,212 @@ label[for="date_picker"]{ // datapicker icon
     }
 }
 
-.ui-datepicker{
-    background-color: #fff;
-    border: 1px solid $form_colour;
-    border-radius: 4px;
-    box-shadow: 0 0 8px rgba(102,102,102,.3);
-    display: none;
-    margin-top: 4px;
-    padding: 10px;
-    width: 240px;
-    a{
-        &:hover{
-            text-decoration: none;
-            @include app-transition(color, 0.1s, ease-in-out);
-        }
-    }
-    td{
-        &:hover{
-            color: #2A6496;
-            @include app-transition(color, 0.1s, ease-in-out);
-        }
-    }
-    .ui-datepicker-header{
-        margin-bottom: 4px;
-        text-align: center;
-    }
-    .ui-datepicker-title{
-        font-weight: 700;
-    }
+//.ui-datepicker{
+//    background-color: #fff;
+//    border: 1px solid $form_colour;
+//    border-radius: 4px;
+//    box-shadow: 0 0 8px rgba(102,102,102,.3);
+//   display: none;
+//    margin-top: 4px;
+//    padding: 10px;
+//    width: 240px;
+//   a{
+//        &:hover{
+//            text-decoration: none;
+//            @include app-transition(color, 0.1s, ease-in-out);
+//        }
+//    }
+//    td{
+//        &:hover{
+//            color: #2A6496;
+//            @include app-transition(color, 0.1s, ease-in-out);
+//        }
+//    }
+//    .ui-datepicker-header{
+//        margin-bottom: 4px;
+//        text-align: center;
+//    }
+//    .ui-datepicker-title{
+//        font-weight: 700;
+//    }
+//    .ui-datepicker-prev,
+//    .ui-datepicker-next{
+//        cursor: default;
+//        font-family: 'Glyphicons Halflings';
+//        -webkit-font-smoothing: antialiased;
+//        font-style: normal;
+//        font-weight: normal;
+//        height: 20px;
+//       line-height: 1;
+//        margin-top: 2px;
+//        width: 30px;
+//        color: $form_colour;
+//    }
+//    .ui-datepicker-prev{
+//        float: left;
+//        text-align: left;
+//        &:before{
+//            content: "\e079";
+//        }
+//    }
+//    .ui-datepicker-next{
+//        float: right;
+//        text-align: right;
+//        &:before{
+//            content: "\e080";
+//        }
+//    }
+//    .ui-icon{
+//        display: none;
+//    }
+//    .ui-datepicker-calendar{
+//        table-layout: fixed;
+//        width: 100%;
+//        th, td{
+//            text-align: center;
+//            padding: 4px 0;
+//        }
+//        th{
+//            background: $form_colour;
+//            color: #fff;
+//            border-left: 1px solid #fff;
+//        }
+//        td{
+//            border-radius: 4px;
+//            @include app-transition(all, 0.1s, ease-in-out);
+//            &:hover{
+//                background-color: $form_colour_s;
+//                cursor: pointer;
+//            }
+//            a{
+//                text-decoration: none;
+//                color: $main_colour;
+//            }
+//            &.ui-datepicker-current-day{
+//                background-color: $form_colour;
+//                a{
+//                    color: #fff;
+//                }
+//            }
+//        }
+//        .ui-datepicker-unselectable{
+//            &:hover{
+//                background-color: #fff;
+//                cursor: default;
+//            }
+//        }
+//    }
+//}
 
-    .ui-datepicker-prev,
-    .ui-datepicker-next{
-        cursor: default;
-        font-family: 'Glyphicons Halflings';
-        -webkit-font-smoothing: antialiased;
-        font-style: normal;
-        font-weight: normal;
-        height: 20px;
-        line-height: 1;
-        margin-top: 2px;
-        width: 30px;
-        color: $form_colour;
-    }
-    .ui-datepicker-prev{
-        float: left;
-        text-align: left;
-        &:before{
-            content: "\e079";
-        }
-    }
-    .ui-datepicker-next{
-        float: right;
-        text-align: right;
-        &:before{
-            content: "\e080";
-        }
-    }
-    .ui-icon{
-        display: none;
-    }
-    .ui-datepicker-calendar{
-        table-layout: fixed;
-        width: 100%;
-        th, td{
-            text-align: center;
-            padding: 4px 0;
-        }
-        th{
-            background: $form_colour;
-            color: #fff;
-            border-left: 1px solid #fff;
-        }
-        td{
-            border-radius: 4px;
-            @include app-transition(all, 0.1s, ease-in-out);
-            &:hover{
-                background-color: $form_colour_s;
-                cursor: pointer;
+
+
+// NON JQUERY UI DATEPICKER - BELLERBYS APP & ENQUIRY FORM FOR EXAMPLE
+.datepicker{
+    min-width: 240px;
+    display: none;
+    .datepicker-days,
+    .datepicker-months,
+    .datepicker-years{
+        padding: 5px 5px 0 5px;
+        .table-condensed{ //table
+            width: 100%;
+            thead{
+                tr{
+                    &:first-child{
+                        th{
+                            padding-bottom: 5px;
+                        }
+                    }
+                    th{
+                        &.prev{
+                            color: $form_colour;
+                            .glyphicon{}
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                        &.switch{
+                            text-align: center;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                        &.next{
+                            color: $form_colour;
+                            text-align: right;
+                            .glyphicon{}
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                        &.dow{
+                            background: $form_colour;
+                            color: #fff;
+                            padding: 3px 5px;
+                            text-align: center;
+                            border-right: 1px solid #fff;
+                            border-bottom: 1px solid #fff;
+                        }
+                    }
+                }
             }
-            a{
-                text-decoration: none;
-                color: $main_colour;
-            }
-            &.ui-datepicker-current-day{
-                background-color: $form_colour;
-                a{
-                    color: #fff;
+            tbody{
+                tr{
+                    td{
+                        &.day{
+                            padding: 5px 5px 2px 5px;
+                            text-align: center;
+                            &.active{
+                                background: $form_colour;
+                                color: #fff;
+                                &:hover{
+                                    background: $form_colour;
+                                }
+                            }
+                            &.new{}
+                            &:hover{
+                                background: $form_colour_s;
+                                cursor: pointer;
+                            }
+                        }
+                        span.month,
+                        span.year{
+                            padding: 5px 5px 2px 5px;
+                            display: inline-block;
+                            text-align: center;
+                            width: 33.33%;
+                            text-align: center;
+                            &.active{
+                                background: $form_colour;
+                                color: #fff;
+                                &:hover{
+                                    background: $form_colour;
+                                }
+                            }
+                            &:hover{
+                                background: $form_colour_s;
+                                cursor: pointer;
+                            }
+                        }
+                    }
                 }
             }
         }
-        .ui-datepicker-unselectable{
-            &:hover{
-                background-color: #fff;
-                cursor: default;
+    }
+    .datepicker-months,       
+    .datepicker-years{
+        max-width: 240px;
+    }
+    .datepicker-years{
+        .table-condensed{ //table
+            thead{
+                tr{
+                    th{
+                        &.switch{
+                            pointer-events: none;
+                        }
+                    }
+                }
             }
         }
     }

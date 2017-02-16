@@ -74,6 +74,24 @@
 	}
 }
 
+/* News article page*/
+.news-article-page{
+	.top-row{
+		.news-article-date{}
+		.news-article-title{
+			h1, h2, h3, h4, h5, h6{}
+		}
+	}
+	.middle-row{
+		.news-article-image{
+			img{}
+		}
+		.news-article-content{
+			@include content_text_styles;
+		}
+	}
+}
+
 @media (min-width: $screen-lg-min){
 }
 
