@@ -1,14 +1,14 @@
 // APP MIXINS
 // --------------------------------------------------
 
-@mixin border-radius($radius) {
+@mixin border-radius($radius){
     -webkit-border-radius: $radius;
         -moz-border-radius: $radius;
             -ms-border-radius: $radius;
                 border-radius: $radius;
 }
 
-@mixin app-transition($property, $duration, $function) {
+@mixin app-transition($property, $duration, $function){
     -webkit-transition: $property $duration $function;
         -moz-transition: $property $duration $function;
             -ms-transition: $property $duration $function;
@@ -18,7 +18,7 @@
 
 // ANIMATE.CSS 
 $animate-scss-speed: 1s !default;
-@mixin animate($animation: none, $speed: $animate-scss-speed) {
+@mixin animate($animation: none, $speed: $animate-scss-speed){
   @if $animation != none {
     -webkit-animation-name: $animation;
        -moz-animation-name: $animation;
@@ -36,7 +36,7 @@ $animate-scss-speed: 1s !default;
 }
 
 // MAIN NAV TOGGLE ICON STYLES
-@mixin nav-toggle-styles {
+@mixin nav-toggle-styles{
     @include fa-icon;
     position: absolute;
     top: 12px;
@@ -47,7 +47,7 @@ $animate-scss-speed: 1s !default;
 }
 
 // FORM BUTTON STYLES
-@mixin form_button {
+@mixin form_button{
     border: none;
     width: auto;
     border-radius: 0;
@@ -69,11 +69,11 @@ $animate-scss-speed: 1s !default;
 }
 
 // COMPONENT MARGIN
-@mixin component_margin {
+@mixin component_margin{
     margin: 0 0 15px 0; 
 }
 
-// CONTENT BOX, TABS & ACCORDION TEXT STYLES
+// CONTENT BOX, TABS, ACCORDION & BLOG ARTICLE TEXT STYLES
 @mixin content_text_styles{
     h1, h2, h3, h4, h5, h6{}
 

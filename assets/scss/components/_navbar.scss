@@ -5,10 +5,15 @@
 		.nav{ // UL
 			li{
 				&.active{}
-				a{}
+				a{
+					&:active, &:focus, &:hover{}
+				}
 				&.dropdown{
 					.dropdown-toggle{
 						display: none;
+					}
+					.dropdown-menu{
+						visibility: hidden;
 					}
 				}
 			}
@@ -40,6 +45,13 @@
 					&.active{}
 					a{
 						display: block;
+						padding: 10px;
+						background: red;
+						margin-bottom: 1px; // gap under each menu item
+						color: black;
+						&:active, &:focus, &:hover{
+							background: yellow !important;
+						}
 					}
 					&.dropdown{
 						.dropdown-toggle{
@@ -56,10 +68,14 @@
 							}
 						}
 						.dropdown-menu{ // SECOND LEVEL UL
+							padding: 0;
+							visibility: visible;
 							li {
 								&.active{}
 								a{
-									padding: 10px 10px 10px 15px;
+									padding: 10px 10px 10px 20px;
+									background: lime;
+									&:active, &:focus, &:hover{}
 								}
 								&.open{
 									.dropdown-toggle-2{
@@ -71,7 +87,13 @@
 										display: block;
 										li{
 											&.active{}
-											a{}
+											a{
+												padding: 10px 10px 10px 30px;
+												background: green;
+												&:active, &:focus, &:hover{
+													text-decoration: none;
+												}
+											}
 										}
 									}
 								}
@@ -83,6 +105,8 @@
 								}
 								.dropdown-menu-2{ // UL THIRD LEVEL UL
 									display: none;
+									list-style: none;
+									padding: 0;
 								}
 							}
 						}

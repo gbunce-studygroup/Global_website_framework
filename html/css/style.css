@@ -6637,95 +6637,133 @@ label[for="date_picker"] span {
   color: #B61A29;
 }
 
-.ui-datepicker {
-  background-color: #fff;
-  border: 1px solid #B61A29;
-  border-radius: 4px;
-  box-shadow: 0 0 8px rgba(102, 102, 102, 0.3);
-  display: none;
-  margin-top: 4px;
-  padding: 10px;
-  width: 240px;
-}
-.ui-datepicker a:hover {
-  text-decoration: none;
-  transition: color 0.1s ease-in-out;
-}
-.ui-datepicker td:hover {
-  color: #2A6496;
-  transition: color 0.1s ease-in-out;
-}
-.ui-datepicker .ui-datepicker-header {
-  margin-bottom: 4px;
-  text-align: center;
-}
-.ui-datepicker .ui-datepicker-title {
-  font-weight: 700;
-}
-.ui-datepicker .ui-datepicker-prev,
-.ui-datepicker .ui-datepicker-next {
-  cursor: default;
-  font-family: 'Glyphicons Halflings';
-  -webkit-font-smoothing: antialiased;
-  font-style: normal;
-  font-weight: normal;
-  height: 20px;
-  line-height: 1;
-  margin-top: 2px;
-  width: 30px;
-  color: #B61A29;
-}
-.ui-datepicker .ui-datepicker-prev {
-  float: left;
-  text-align: left;
-}
-.ui-datepicker .ui-datepicker-prev:before {
-  content: "\e079";
-}
-.ui-datepicker .ui-datepicker-next {
-  float: right;
-  text-align: right;
-}
-.ui-datepicker .ui-datepicker-next:before {
-  content: "\e080";
-}
-.ui-datepicker .ui-icon {
+.datepicker {
+  min-width: 240px;
   display: none;
 }
-.ui-datepicker .ui-datepicker-calendar {
-  table-layout: fixed;
+.datepicker .datepicker-days,
+.datepicker .datepicker-months,
+.datepicker .datepicker-years {
+  padding: 5px 5px 0 5px;
+}
+.datepicker .datepicker-days .table-condensed,
+.datepicker .datepicker-months .table-condensed,
+.datepicker .datepicker-years .table-condensed {
   width: 100%;
 }
-.ui-datepicker .ui-datepicker-calendar th, .ui-datepicker .ui-datepicker-calendar td {
-  text-align: center;
-  padding: 4px 0;
+.datepicker .datepicker-days .table-condensed thead tr:first-child th,
+.datepicker .datepicker-months .table-condensed thead tr:first-child th,
+.datepicker .datepicker-years .table-condensed thead tr:first-child th {
+  padding-bottom: 5px;
 }
-.ui-datepicker .ui-datepicker-calendar th {
-  background: #B61A29;
-  color: #fff;
-  border-left: 1px solid #fff;
+.datepicker .datepicker-days .table-condensed thead tr th.prev,
+.datepicker .datepicker-months .table-condensed thead tr th.prev,
+.datepicker .datepicker-years .table-condensed thead tr th.prev {
+  color: #B61A29;
 }
-.ui-datepicker .ui-datepicker-calendar td {
-  border-radius: 4px;
-  transition: all 0.1s ease-in-out;
-}
-.ui-datepicker .ui-datepicker-calendar td:hover {
-  background-color: #E0DED8;
+.datepicker .datepicker-days .table-condensed thead tr th.prev:hover,
+.datepicker .datepicker-months .table-condensed thead tr th.prev:hover,
+.datepicker .datepicker-years .table-condensed thead tr th.prev:hover {
   cursor: pointer;
 }
-.ui-datepicker .ui-datepicker-calendar td a {
-  text-decoration: none;
-  color: #000000;
+.datepicker .datepicker-days .table-condensed thead tr th.switch,
+.datepicker .datepicker-months .table-condensed thead tr th.switch,
+.datepicker .datepicker-years .table-condensed thead tr th.switch {
+  text-align: center;
 }
-.ui-datepicker .ui-datepicker-calendar td.ui-datepicker-current-day {
-  background-color: #B61A29;
+.datepicker .datepicker-days .table-condensed thead tr th.switch:hover,
+.datepicker .datepicker-months .table-condensed thead tr th.switch:hover,
+.datepicker .datepicker-years .table-condensed thead tr th.switch:hover {
+  cursor: pointer;
 }
-.ui-datepicker .ui-datepicker-calendar td.ui-datepicker-current-day a {
+.datepicker .datepicker-days .table-condensed thead tr th.next,
+.datepicker .datepicker-months .table-condensed thead tr th.next,
+.datepicker .datepicker-years .table-condensed thead tr th.next {
+  color: #B61A29;
+  text-align: right;
+}
+.datepicker .datepicker-days .table-condensed thead tr th.next:hover,
+.datepicker .datepicker-months .table-condensed thead tr th.next:hover,
+.datepicker .datepicker-years .table-condensed thead tr th.next:hover {
+  cursor: pointer;
+}
+.datepicker .datepicker-days .table-condensed thead tr th.dow,
+.datepicker .datepicker-months .table-condensed thead tr th.dow,
+.datepicker .datepicker-years .table-condensed thead tr th.dow {
+  background: #B61A29;
+  color: #fff;
+  padding: 3px 5px;
+  text-align: center;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.datepicker .datepicker-days .table-condensed tbody tr td.day,
+.datepicker .datepicker-months .table-condensed tbody tr td.day,
+.datepicker .datepicker-years .table-condensed tbody tr td.day {
+  padding: 5px 5px 2px 5px;
+  text-align: center;
+}
+.datepicker .datepicker-days .table-condensed tbody tr td.day.active,
+.datepicker .datepicker-months .table-condensed tbody tr td.day.active,
+.datepicker .datepicker-years .table-condensed tbody tr td.day.active {
+  background: #B61A29;
   color: #fff;
 }
-.ui-datepicker .ui-datepicker-calendar .ui-datepicker-unselectable:hover {
-  background-color: #fff;
-  cursor: default;
+.datepicker .datepicker-days .table-condensed tbody tr td.day.active:hover,
+.datepicker .datepicker-months .table-condensed tbody tr td.day.active:hover,
+.datepicker .datepicker-years .table-condensed tbody tr td.day.active:hover {
+  background: #B61A29;
+}
+.datepicker .datepicker-days .table-condensed tbody tr td.day:hover,
+.datepicker .datepicker-months .table-condensed tbody tr td.day:hover,
+.datepicker .datepicker-years .table-condensed tbody tr td.day:hover {
+  background: #E0DED8;
+  cursor: pointer;
+}
+.datepicker .datepicker-days .table-condensed tbody tr td span.month,
+.datepicker .datepicker-days .table-condensed tbody tr td span.year,
+.datepicker .datepicker-months .table-condensed tbody tr td span.month,
+.datepicker .datepicker-months .table-condensed tbody tr td span.year,
+.datepicker .datepicker-years .table-condensed tbody tr td span.month,
+.datepicker .datepicker-years .table-condensed tbody tr td span.year {
+  padding: 5px 5px 2px 5px;
+  display: inline-block;
+  text-align: center;
+  width: 33.33%;
+  text-align: center;
+}
+.datepicker .datepicker-days .table-condensed tbody tr td span.month.active,
+.datepicker .datepicker-days .table-condensed tbody tr td span.year.active,
+.datepicker .datepicker-months .table-condensed tbody tr td span.month.active,
+.datepicker .datepicker-months .table-condensed tbody tr td span.year.active,
+.datepicker .datepicker-years .table-condensed tbody tr td span.month.active,
+.datepicker .datepicker-years .table-condensed tbody tr td span.year.active {
+  background: #B61A29;
+  color: #fff;
+}
+.datepicker .datepicker-days .table-condensed tbody tr td span.month.active:hover,
+.datepicker .datepicker-days .table-condensed tbody tr td span.year.active:hover,
+.datepicker .datepicker-months .table-condensed tbody tr td span.month.active:hover,
+.datepicker .datepicker-months .table-condensed tbody tr td span.year.active:hover,
+.datepicker .datepicker-years .table-condensed tbody tr td span.month.active:hover,
+.datepicker .datepicker-years .table-condensed tbody tr td span.year.active:hover {
+  background: #B61A29;
+}
+.datepicker .datepicker-days .table-condensed tbody tr td span.month:hover,
+.datepicker .datepicker-days .table-condensed tbody tr td span.year:hover,
+.datepicker .datepicker-months .table-condensed tbody tr td span.month:hover,
+.datepicker .datepicker-months .table-condensed tbody tr td span.year:hover,
+.datepicker .datepicker-years .table-condensed tbody tr td span.month:hover,
+.datepicker .datepicker-years .table-condensed tbody tr td span.year:hover {
+  background: #E0DED8;
+  cursor: pointer;
+}
+.datepicker .datepicker-months,
+.datepicker .datepicker-years {
+  max-width: 240px;
+}
+.datepicker .datepicker-years .table-condensed thead tr th.switch {
+  pointer-events: none;
 }
 
 @-webkit-keyframes bounce {
@@ -9769,6 +9807,9 @@ body {
 }
 
 /* ENQUIRY & BROCHURE DOWNLOAD FORM COMPONENTS */
+.form {
+  margin: 0 0 15px 0;
+}
 .form #form-loading {
   border: 1px solid #000000;
   margin: 10px 0;
@@ -9776,7 +9817,6 @@ body {
 }
 .form #form-loading p {
   color: #B61A29;
-  font-weight: bold;
   text-align: center;
 }
 .form #form-loading .progress {
@@ -9810,31 +9850,64 @@ body {
   background-color: #B61A29;
 }
 .form fieldset #notificationArea .alert-error {
-  border-radius: 0;
-  margin-top: 20px;
-  text-align: center;
+  margin: 0 0 30px 0;
+  padding: 15px;
   border: 1px solid red;
+  border-radius: 0;
   color: red;
-  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
 }
-.form fieldset #notificationArea .alert-error .glyphicon {
-  font-size: 25px;
+.form fieldset #notificationArea .alert-error:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f071';
   display: block;
+  font-size: 30px;
   margin-bottom: 10px;
+}
+.form fieldset .form-group.has-error label {
+  color: red;
+}
+.form fieldset .form-group.has-error .form-control {
+  border-color: red;
+}
+.form fieldset .form-group.has-error .help-block {
+  color: red;
+  margin-bottom: 0;
 }
 .form fieldset .form-group .control-label {
   text-align: left;
+  font-size: 14px !important;
 }
 .form fieldset .form-group sup.required {
   color: red;
 }
-.form fieldset .form-group .form-control:focus {
+.form fieldset .form-group .form-control, .form fieldset .form-group .controls {
+  font-size: 14px !important;
+}
+.form fieldset .form-group .form-control:focus, .form fieldset .form-group .controls:focus {
   border-color: #000000;
   box-shadow: none;
+}
+.form fieldset .form-group .form-control.invalid, .form fieldset .form-group .controls.invalid {
+  border-color: red;
+}
+.form fieldset .form-group .form-control .help-inline, .form fieldset .form-group .form-control .validation-msg, .form fieldset .form-group .controls .help-inline, .form fieldset .form-group .controls .validation-msg {
+  color: red;
+  padding-top: 7px;
+  display: block;
 }
 .form fieldset .form-group .radio label.radio {
   display: inline-block;
   margin-right: 20px;
+}
+.form fieldset .form-group .checkbox label.subscribe {
+  font-size: 14px !important;
 }
 .form fieldset .form-group p.text-info small {
   color: #000000;
@@ -9859,7 +9932,30 @@ body {
   content: "\e080";
   margin: 0 0 0 7px;
 }
+.form #download-links .form-group .brochure-link .brochure-link, .form .brochure-link-fields .form-group .brochure-link .brochure-link {
+  width: 33.33%;
+}
+.form #download-links .form-group .brochure-link .brochure-link div h1, .form #download-links .form-group .brochure-link .brochure-link div h2, .form #download-links .form-group .brochure-link .brochure-link div h3, .form #download-links .form-group .brochure-link .brochure-link div h4, .form #download-links .form-group .brochure-link .brochure-link div h5, .form #download-links .form-group .brochure-link .brochure-link div h6, .form .brochure-link-fields .form-group .brochure-link .brochure-link div h1, .form .brochure-link-fields .form-group .brochure-link .brochure-link div h2, .form .brochure-link-fields .form-group .brochure-link .brochure-link div h3, .form .brochure-link-fields .form-group .brochure-link .brochure-link div h4, .form .brochure-link-fields .form-group .brochure-link .brochure-link div h5, .form .brochure-link-fields .form-group .brochure-link .brochure-link div h6 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
 
+@media (max-width: 991px) {
+  .form #download-links .form-group .brochure-link .brochure-link, .form .brochure-link-fields .form-group .brochure-link .brochure-link {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .form #download-links, .form .brochure-link-fields {
+    text-align: center;
+  }
+  .form #download-links .form-group .brochure-link, .form .brochure-link-fields .form-group .brochure-link {
+    float: none;
+  }
+  .form #download-links .form-group .brochure-link .brochure-link, .form .brochure-link-fields .form-group .brochure-link .brochure-link {
+    width: 100%;
+  }
+}
 /* FOOTER LINKS */
 /* FOOTER NAV COMPONENT */
 .footer_nav .column {
@@ -9913,6 +10009,9 @@ body {
 .navbar .navbar-collapse .nav li.dropdown .dropdown-toggle {
   display: none;
 }
+.navbar .navbar-collapse .nav li.dropdown .dropdown-menu {
+  visibility: hidden;
+}
 
 @media (max-width: 991px) {
   /* NAVBAR COMPONENT */
@@ -9927,6 +10026,13 @@ body {
   }
   .navbar .navbar-collapse .nav li a {
     display: block;
+    padding: 10px;
+    background: red;
+    margin-bottom: 1px;
+    color: black;
+  }
+  .navbar .navbar-collapse .nav li a:active, .navbar .navbar-collapse .nav li a:focus, .navbar .navbar-collapse .nav li a:hover {
+    background: yellow !important;
   }
   .navbar .navbar-collapse .nav li.dropdown .dropdown-toggle {
     display: inline-block;
@@ -9948,14 +10054,26 @@ body {
   .navbar .navbar-collapse .nav li.dropdown.open .dropdown-toggle:after {
     content: '\f077';
   }
+  .navbar .navbar-collapse .nav li.dropdown .dropdown-menu {
+    padding: 0;
+    visibility: visible;
+  }
   .navbar .navbar-collapse .nav li.dropdown .dropdown-menu li a {
-    padding: 10px 10px 10px 15px;
+    padding: 10px 10px 10px 20px;
+    background: lime;
   }
   .navbar .navbar-collapse .nav li.dropdown .dropdown-menu li.open .dropdown-toggle-2:after {
     content: '\f068';
   }
   .navbar .navbar-collapse .nav li.dropdown .dropdown-menu li.open .dropdown-menu-2 {
     display: block;
+  }
+  .navbar .navbar-collapse .nav li.dropdown .dropdown-menu li.open .dropdown-menu-2 li a {
+    padding: 10px 10px 10px 30px;
+    background: green;
+  }
+  .navbar .navbar-collapse .nav li.dropdown .dropdown-menu li.open .dropdown-menu-2 li a:active, .navbar .navbar-collapse .nav li.dropdown .dropdown-menu li.open .dropdown-menu-2 li a:focus, .navbar .navbar-collapse .nav li.dropdown .dropdown-menu li.open .dropdown-menu-2 li a:hover {
+    text-decoration: none;
   }
   .navbar .navbar-collapse .nav li.dropdown .dropdown-menu li .dropdown-toggle-2 {
     display: inline-block;
@@ -9976,6 +10094,8 @@ body {
   }
   .navbar .navbar-collapse .nav li.dropdown .dropdown-menu li .dropdown-menu-2 {
     display: none;
+    list-style: none;
+    padding: 0;
   }
 }
 /* ALL NEWS COMPONENTS */
@@ -9992,6 +10112,7 @@ body {
 }
 
 /* News archive menu*/
+/* News article page*/
 /* PAGINATION COMPONENT */
 .pagination li a {
   color: #B61A29;
