@@ -10006,6 +10006,9 @@ body {
 .navbar {
   margin: 0;
 }
+.navbar .navbar-collapse .nav li.dropdown.open a, .navbar .navbar-collapse .nav li.dropdown.open a:hover, .navbar .navbar-collapse .nav li.dropdown.open a:active, .navbar .navbar-collapse .nav li.dropdown.open a:focus {
+  background: transparent;
+}
 .navbar .navbar-collapse .nav li.dropdown .dropdown-toggle {
   display: none;
 }
