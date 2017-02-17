@@ -9,6 +9,11 @@
 					&:active, &:focus, &:hover{}
 				}
 				&.dropdown{
+					&.open{
+						a, a:hover, a:active, a:focus{
+							background: transparent;
+						}
+					}
 					.dropdown-toggle{
 						display: none;
 					}
