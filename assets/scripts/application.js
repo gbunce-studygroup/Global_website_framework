@@ -25,5 +25,5 @@ if ($('.third-level li a').hasClass('active')){
 
 // MAKES THE YOUTUBE VIDEO IN THE LIGHTBOX STOP PLAYING WHEN THE LIGHTBOX IS CLOSED
 $(".modal").on('hidden.bs.modal', function (e) {
-	$(".modal iframe").attr("src", $(".modal iframe").attr("src"));
+    $(this).find("iframe").attr("src", $(this).find("iframe").attr("src"));
 });
