@@ -1,15 +1,24 @@
 <!-- WIDGET COMPONENT START -->
 <div class="widget {{ className }}">
-    <h3>Widget</h3> <!-- Option for content editors to choose heading tag -->
-    <img src="http://placehold.it/720x400">
-    <p>
-        lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-    <p>
-        Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-	<div class="button">
-	    <a href="#">Apply now</a>
-	</div>
+    {% if title == blank %}
+        {{ title }}
+    {% else %}
+        <h3>{{ title }}</h3> <!-- Option for content editors to choose heading tag -->
+    {% endif %}
+    {% if image_size == blank %}
+        {{ image_size }}
+    {% else %}
+        <img src="http://placehold.it/{{ image_size }}">
+    {% endif %}
+    {% if content %}
+        {{ content }}
+    {% endif %}
+    {% if button == blank %}
+        {{ button }}
+    {% else %}
+        <div class="button">
+            <a href="#">{{ button }}</a>
+        </div>
+    {% endif %}
 </div>
 <!-- WIDGET COMPONENT END -->

@@ -9,6 +9,11 @@
 					&:active, &:focus, &:hover{}
 				}
 				&.dropdown{
+					&:hover{
+						.dropdown-menu{ // SECOND LEVEL UL (when parent is hovered)
+							visibility: visible;
+						}
+					}
 					&.open{
 						a, a:hover, a:active, a:focus{
 							background: transparent;
@@ -17,8 +22,14 @@
 					.dropdown-toggle{
 						display: none;
 					}
-					.dropdown-menu{
-						visibility: hidden;
+				}
+				.dropdown-menu{ // SECOND LEVEL UL
+					visibility: hidden;
+					padding: 0;
+					li{
+						.dropdown-menu-2{ // THIRD LEVEL UL (hidden on desktop)
+							display: none;
+						}
 					}
 				}
 			}
@@ -38,8 +49,11 @@
 		.navbar-header{
 			.navbar-toggle{
 				border: 1px solid #333;
+				border-radius: 0;
+				margin: 0;
 				.icon-bar{
 					background: #333;
+					border-radius: 0;
 				}
 			}
 		}
@@ -59,6 +73,11 @@
 						}
 					}
 					&.dropdown{
+						&:hover{
+							.dropdown-menu{ // SECOND LEVEL UL (when parent is hovered)
+								visibility: hidden;
+							}
+						}						
 						.dropdown-toggle{
 							@include nav-toggle-styles;
 							&:after{
@@ -66,6 +85,10 @@
 							}
 						}
 						&.open{
+							.dropdown-menu{ // SECOND LEVEL UL (when parent is toggled open)
+								visibility: visible;
+								display: block;
+							}
 							.dropdown-toggle{
 								&:after{
 									content: '\f077';
@@ -74,7 +97,7 @@
 						}
 						.dropdown-menu{ // SECOND LEVEL UL
 							padding: 0;
-							visibility: visible;
+							display: none;
 							li {
 								&.active{}
 								a{

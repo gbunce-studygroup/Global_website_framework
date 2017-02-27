@@ -3595,7 +3595,6 @@ tbody.collapse.in {
   top: 100%;
   left: 0;
   z-index: 1000;
-  display: none;
   float: left;
   min-width: 160px;
   padding: 5px 0;
@@ -10006,23 +10005,33 @@ body {
 .navbar {
   margin: 0;
 }
+.navbar .navbar-collapse .nav li.dropdown:hover .dropdown-menu {
+  visibility: visible;
+}
 .navbar .navbar-collapse .nav li.dropdown.open a, .navbar .navbar-collapse .nav li.dropdown.open a:hover, .navbar .navbar-collapse .nav li.dropdown.open a:active, .navbar .navbar-collapse .nav li.dropdown.open a:focus {
   background: transparent;
 }
 .navbar .navbar-collapse .nav li.dropdown .dropdown-toggle {
   display: none;
 }
-.navbar .navbar-collapse .nav li.dropdown .dropdown-menu {
+.navbar .navbar-collapse .nav li .dropdown-menu {
   visibility: hidden;
+  padding: 0;
+}
+.navbar .navbar-collapse .nav li .dropdown-menu li .dropdown-menu-2 {
+  display: none;
 }
 
 @media (max-width: 991px) {
   /* NAVBAR COMPONENT */
   .navbar .navbar-header .navbar-toggle {
     border: 1px solid #333;
+    border-radius: 0;
+    margin: 0;
   }
   .navbar .navbar-header .navbar-toggle .icon-bar {
     background: #333;
+    border-radius: 0;
   }
   .navbar .navbar-collapse .nav li {
     position: relative;
@@ -10036,6 +10045,9 @@ body {
   }
   .navbar .navbar-collapse .nav li a:active, .navbar .navbar-collapse .nav li a:focus, .navbar .navbar-collapse .nav li a:hover {
     background: yellow !important;
+  }
+  .navbar .navbar-collapse .nav li.dropdown:hover .dropdown-menu {
+    visibility: hidden;
   }
   .navbar .navbar-collapse .nav li.dropdown .dropdown-toggle {
     display: inline-block;
@@ -10054,12 +10066,16 @@ body {
   .navbar .navbar-collapse .nav li.dropdown .dropdown-toggle:after {
     content: '\f078';
   }
+  .navbar .navbar-collapse .nav li.dropdown.open .dropdown-menu {
+    visibility: visible;
+    display: block;
+  }
   .navbar .navbar-collapse .nav li.dropdown.open .dropdown-toggle:after {
     content: '\f077';
   }
   .navbar .navbar-collapse .nav li.dropdown .dropdown-menu {
     padding: 0;
-    visibility: visible;
+    display: none;
   }
   .navbar .navbar-collapse .nav li.dropdown .dropdown-menu li a {
     padding: 10px 10px 10px 20px;
