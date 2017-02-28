@@ -6713,6 +6713,12 @@ label[for="date_picker"] span {
 .datepicker .datepicker-years .table-condensed tbody tr td.day.active:hover {
   background: #B61A29;
 }
+.datepicker .datepicker-days .table-condensed tbody tr td.day.old,
+.datepicker .datepicker-months .table-condensed tbody tr td.day.old,
+.datepicker .datepicker-years .table-condensed tbody tr td.day.old {
+  color: #333333;
+  pointer-events: none;
+}
 .datepicker .datepicker-days .table-condensed tbody tr td.day:hover,
 .datepicker .datepicker-months .table-condensed tbody tr td.day:hover,
 .datepicker .datepicker-years .table-condensed tbody tr td.day:hover {

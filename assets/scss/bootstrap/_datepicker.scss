@@ -170,6 +170,10 @@ label[for="date_picker"]{ // datapicker icon
                                     background: $form_colour;
                                 }
                             }
+                            &.old{
+                                color: lighten($main_colour,20%);
+                                pointer-events: none;
+                            }
                             &.new{}
                             &:hover{
                                 background: $form_colour_s;
