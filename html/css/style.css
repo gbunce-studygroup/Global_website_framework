@@ -6716,7 +6716,7 @@ label[for="date_picker"] span {
 .datepicker .datepicker-days .table-condensed tbody tr td.day.old,
 .datepicker .datepicker-months .table-condensed tbody tr td.day.old,
 .datepicker .datepicker-years .table-condensed tbody tr td.day.old {
-  color: #333333;
+  color: gray;
   pointer-events: none;
 }
 .datepicker .datepicker-days .table-condensed tbody tr td.day:hover,
