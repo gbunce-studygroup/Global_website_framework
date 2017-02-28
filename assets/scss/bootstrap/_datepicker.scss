@@ -171,7 +171,7 @@ label[for="date_picker"]{ // datapicker icon
                                 }
                             }
                             &.old{
-                                color: lighten($main_colour,20%);
+                                color: lighten($main_colour,50%);
                                 pointer-events: none;
                             }
                             &.new{}
