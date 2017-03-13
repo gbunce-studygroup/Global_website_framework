@@ -9917,6 +9917,12 @@ body {
 .form fieldset .form-group p.text-info small {
   color: #000000;
 }
+.form fieldset .form-group .controls .span2 {
+  margin-bottom: 15px;
+}
+.form fieldset .form-group .help-inline {
+  color: red;
+}
 .form fieldset button {
   border: none;
   width: auto;

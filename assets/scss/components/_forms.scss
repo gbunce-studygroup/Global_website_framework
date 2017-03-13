@@ -103,6 +103,15 @@
 					strong{}
 				}
 			}
+			// Phone field spacing and validation styles
+			.controls{
+				.span2{
+					margin-bottom: 15px;
+				}
+			}
+			.help-inline{
+				color: red;
+			}
 		}
 		button{
 			@include form_button;
