@@ -1,8 +1,11 @@
 /* SOCIAL MEDIA COMPONENT */
-.social_media{ //UL
-	li{
-		a{
-			&:hover{}
+.social_media_wrapper{
+	h1, h2, h3, h4, h5, h6{}
+	.social_media{ //UL
+		li{
+			a{
+				&:hover{}
+			}
 		}
 	}
 }
