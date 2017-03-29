@@ -9902,6 +9902,9 @@ body {
 .form fieldset .form-group .form-control.invalid, .form fieldset .form-group .controls.invalid {
   border-color: red;
 }
+.form fieldset .form-group .form-control.date-picker, .form fieldset .form-group .controls.date-picker {
+  width: 100% !important;
+}
 .form fieldset .form-group .form-control .help-inline, .form fieldset .form-group .form-control .validation-msg, .form fieldset .form-group .controls .help-inline, .form fieldset .form-group .controls .validation-msg {
   color: red;
   padding-top: 7px;

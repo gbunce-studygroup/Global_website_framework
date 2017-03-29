@@ -79,6 +79,9 @@
 				&.invalid{
 					border-color: red;
 				}
+				&.date-picker{
+					width: 100% !important;
+				}
 				.help-inline, .validation-msg{ // brochure download from validation message
 					color: red;
 					padding-top: 7px;
