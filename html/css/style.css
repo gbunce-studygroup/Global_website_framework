@@ -9954,6 +9954,20 @@ body {
   margin: 10px 0 5px;
 }
 
+.telephone_small {
+  display: inline-block;
+}
+.telephone_small input {
+  width: 40px;
+}
+
+.telephone_large {
+  display: inline-block;
+}
+.telephone_large input {
+  width: auto;
+}
+
 @media (max-width: 991px) {
   .form #download-links .form-group .brochure-link .brochure-link, .form .brochure-link-fields .form-group .brochure-link .brochure-link {
     width: 50%;

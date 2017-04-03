@@ -107,11 +107,6 @@
 				}
 			}
 			// Phone field spacing and validation styles
-			.controls{
-				.span2{
-					margin-bottom: 15px;
-				}
-			}
 			.help-inline{
 				color: red;
 			}
@@ -137,6 +132,19 @@
 	}
 }
 
+// Phone field spacing and validation styles
+.telephone_small{
+    display: inline-block;
+    input{
+    	width: 40px;
+    }
+}
+.telephone_large{
+    display: inline-block;
+    input{
+    	width: auto;
+    }
+}
 
 @media (min-width: $screen-lg-min){
 }
