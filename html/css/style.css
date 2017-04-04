@@ -9664,20 +9664,23 @@ body {
 }
 
 /* ACCORDION COMPONENT */
-#accordion {
+.accordion {
   margin: 0 0 15px 0;
 }
-#accordion .panel .panel-heading {
+.accordion .panel-group {
+  margin-bottom: 0;
+}
+.accordion .panel-group .panel .panel-heading {
   padding: 0;
 }
-#accordion .panel .panel-heading .panel-title h1, #accordion .panel .panel-heading .panel-title h2, #accordion .panel .panel-heading .panel-title h3, #accordion .panel .panel-heading .panel-title h4, #accordion .panel .panel-heading .panel-title h5, #accordion .panel .panel-heading .panel-title h6 {
+.accordion .panel-group .panel .panel-heading .panel-title h1, .accordion .panel-group .panel .panel-heading .panel-title h2, .accordion .panel-group .panel .panel-heading .panel-title h3, .accordion .panel-group .panel .panel-heading .panel-title h4, .accordion .panel-group .panel .panel-heading .panel-title h5, .accordion .panel-group .panel .panel-heading .panel-title h6 {
   margin: 0;
 }
-#accordion .panel .panel-heading .panel-title h1 a, #accordion .panel .panel-heading .panel-title h2 a, #accordion .panel .panel-heading .panel-title h3 a, #accordion .panel .panel-heading .panel-title h4 a, #accordion .panel .panel-heading .panel-title h5 a, #accordion .panel .panel-heading .panel-title h6 a {
+.accordion .panel-group .panel .panel-heading .panel-title h1 a, .accordion .panel-group .panel .panel-heading .panel-title h2 a, .accordion .panel-group .panel .panel-heading .panel-title h3 a, .accordion .panel-group .panel .panel-heading .panel-title h4 a, .accordion .panel-group .panel .panel-heading .panel-title h5 a, .accordion .panel-group .panel .panel-heading .panel-title h6 a {
   display: block;
   padding: 15px;
 }
-#accordion .panel .panel-heading .panel-title h1 a:after, #accordion .panel .panel-heading .panel-title h2 a:after, #accordion .panel .panel-heading .panel-title h3 a:after, #accordion .panel .panel-heading .panel-title h4 a:after, #accordion .panel .panel-heading .panel-title h5 a:after, #accordion .panel .panel-heading .panel-title h6 a:after {
+.accordion .panel-group .panel .panel-heading .panel-title h1 a:after, .accordion .panel-group .panel .panel-heading .panel-title h2 a:after, .accordion .panel-group .panel .panel-heading .panel-title h3 a:after, .accordion .panel-group .panel .panel-heading .panel-title h4 a:after, .accordion .panel-group .panel .panel-heading .panel-title h5 a:after, .accordion .panel-group .panel .panel-heading .panel-title h6 a:after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -9687,7 +9690,7 @@ body {
   content: "\f068";
   float: right;
 }
-#accordion .panel .panel-heading .panel-title h1 a.collapsed:after, #accordion .panel .panel-heading .panel-title h2 a.collapsed:after, #accordion .panel .panel-heading .panel-title h3 a.collapsed:after, #accordion .panel .panel-heading .panel-title h4 a.collapsed:after, #accordion .panel .panel-heading .panel-title h5 a.collapsed:after, #accordion .panel .panel-heading .panel-title h6 a.collapsed:after {
+.accordion .panel-group .panel .panel-heading .panel-title h1 a.collapsed:after, .accordion .panel-group .panel .panel-heading .panel-title h2 a.collapsed:after, .accordion .panel-group .panel .panel-heading .panel-title h3 a.collapsed:after, .accordion .panel-group .panel .panel-heading .panel-title h4 a.collapsed:after, .accordion .panel-group .panel .panel-heading .panel-title h5 a.collapsed:after, .accordion .panel-group .panel .panel-heading .panel-title h6 a.collapsed:after {
   content: "\f067";
 }
 
@@ -9919,9 +9922,6 @@ body {
 }
 .form fieldset .form-group p.text-info small {
   color: #000000;
-}
-.form fieldset .form-group .controls .span2 {
-  margin-bottom: 15px;
 }
 .form fieldset .form-group .help-inline {
   color: red;
