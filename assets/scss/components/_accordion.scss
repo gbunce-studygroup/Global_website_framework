@@ -1,32 +1,35 @@
 /* ACCORDION COMPONENT */
-#accordion{
+.accordion{
 	@include component_margin;
-	.panel{
-		h1, h2, h3, h4, h5, h6{}
-		.panel-heading{
-			padding: 0;
-			.panel-title {
-				h1, h2, h3, h4, h5, h6{
-					margin: 0;
-					a{
-						display: block;
-						padding: 15px;
-						&:after{
-						    @include fa-icon;
-							content: "\f068"; // Font Awesome close icon http://fontawesome.io/cheatsheet/
-							float: right;
-						}
-						&.collapsed{
+	.panel-group{
+		margin-bottom: 0;
+		.panel{
+			h1, h2, h3, h4, h5, h6{}
+			.panel-heading{
+				padding: 0;
+				.panel-title {
+					h1, h2, h3, h4, h5, h6{
+						margin: 0;
+						a{
+							display: block;
+							padding: 15px;
 							&:after{
-								content: "\f067"; // Font Awesome open icon http://fontawesome.io/cheatsheet/
+							    @include fa-icon;
+								content: "\f068"; // Font Awesome close icon http://fontawesome.io/cheatsheet/
+								float: right;
+							}
+							&.collapsed{
+								&:after{
+									content: "\f067"; // Font Awesome open icon http://fontawesome.io/cheatsheet/
+								}
 							}
 						}
 					}
 				}
 			}
-		}
-		.panel-body{
-			@include content_text_styles;
+			.panel-body{
+				@include content_text_styles;
+			}
 		}
 	}
 }
