@@ -10024,6 +10024,29 @@ body {
 }
 
 /* LANGUAGE LINKS COMPONENT */
+.language_links_v2 {
+  margin: 0;
+  padding: 0;
+}
+.language_links_v2 li {
+  list-style-type: none;
+}
+.language_links_v2 li a img {
+  height: 18px;
+  margin-right: 5px;
+  padding: 0;
+}
+.language_links_v2 li a .caret {
+  margin-left: 5px;
+}
+.language_links_v2 li a:hover, .language_links_v2 li a:active, .language_links_v2 li a:focus {
+  text-decoration: none;
+}
+.language_links_v2 li ul {
+  display: none;
+}
+
+/* LANGUAGE LINKS COMPONENT */
 /* MAIN LOGO COMPONENT */
 /* MAP COMPONENT */
 .map {

@@ -1,0 +1,36 @@
+/* LANGUAGE LINKS COMPONENT */
+.language_links_v2{ //ul
+	margin: 0;
+	padding: 0;
+	li{ //.dropdown
+		list-style-type: none;
+		a{
+			img{
+				height:18px;
+			    margin-right: 5px;
+				padding:0;
+			}
+			.caret{
+				margin-left: 5px;
+			}
+			&:hover, &:active, &:focus{
+				text-decoration: none;
+			}
+		}
+		ul{ //.dropdown-menu
+			display: none;
+		}
+	}
+}
+
+@media (min-width: $screen-lg-min){
+}
+
+@media (max-width: $screen-md-max){
+}
+
+@media (max-width: $screen-sm-max){
+}
+
+@media (max-width: $screen-xs-max){
+}
