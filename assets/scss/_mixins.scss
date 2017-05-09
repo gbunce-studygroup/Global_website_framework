@@ -73,6 +73,12 @@ $animate-scss-speed: 1s !default;
     margin: 0 0 15px 0; 
 }
 
+// to wrap large tables so they don't break the page on mobile
+@mixin table_wrap{
+    width: 100%;
+    overflow-x: scroll;
+}
+
 // CONTENT BOX, TABS, ACCORDION & BLOG ARTICLE TEXT STYLES
 @mixin content_text_styles{
     h1, h2, h3, h4, h5, h6{}
@@ -101,20 +107,33 @@ $animate-scss-speed: 1s !default;
 
     table{
         tr{
-            th{}
-            td{
-                &:nth-child(odd){}
-                &:nth-child(even){}
+            border-bottom: 1px solid $form_colour_s;
+            &:nth-child(odd){
+                background: $form_colour_s;
             }
+            &:nth-child(even){}
+            th{
+                color: #fff;
+                background: $form_colour;
+            }
+            td{}
         }
         &.unstyled{ // Class for unstyled tables
             tr{
-                th{}
-                td{
-                    &:nth-child(odd){}
-                    &:nth-child(even){}
+                border-bottom: 0;
+                &:nth-child(odd){}
+                &:nth-child(even){}
+                th{
+                    color: $main_colour;
+                    background: none;
                 }
+                td{}
             }
         }
     }
+
+    .table_overflow{
+        @include table_wrap;
+    }
+
 }

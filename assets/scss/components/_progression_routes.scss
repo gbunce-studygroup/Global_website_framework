@@ -1,5 +1,6 @@
 /* PROGRESSION ROUTES COMPONENT */
 .progRoutes{
+	@include table_wrap;
 	.standard{
 		thead{
 			tr{
@@ -12,7 +13,9 @@
 		}
 		tbody{
 			tr{
+				border-bottom: 1px solid $form_colour_s;
 				&.alternate{
+					background: $form_colour_s;
 					td{}
 				}
 				td{
