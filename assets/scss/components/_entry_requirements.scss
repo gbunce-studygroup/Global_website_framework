@@ -1,5 +1,6 @@
 /* ENTRY REQUIREMENTS COMPONENT */
 #form{
+	@include table_wrap;
 	.requirementsCountry{
 		label.control-label{}
 	}
@@ -23,6 +24,10 @@
 	}
 	tbody{
 		tr{
+			border-bottom: 1px solid $form_colour_s;
+			&:nth-child(odd){
+				background: $form_colour_s;
+			}
 			td{}
 		}
 	}
