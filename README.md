@@ -49,7 +49,7 @@ Six pre-set grunt tasks have been setup in gruntfile.js these are:
 - grunt - runs grunt  
 - grunt server - runs the project in the browser, enables synchronised browser testing & debugging, and auto refreshes browser when changes are made to the code  
 - grunt minify - minifys js & css and creates '.min' version of the file in the output directory  
-- grunt staging - takes the compiled css from the output directory, makes a copy of it on staging at the location specified on line 143 of the gruntfile, then replaces image and font urls in the css with ones specified on lines 178, 209, 213 & 216 in the gruntfile  
+- grunt staging - takes the compiled css from the output directory, makes a copy of it on staging at the location specified on line 178 of the gruntfile, then replaces image and font urls in the css with ones specified on lines 209, 213 & 216 in the gruntfile  
 - grunt master - does the same as 'grunt staging' but also compiles the SCSS so 'grunt server' doesn't need to have been run when this task is run  
 - grunt styleguide - compiles the style guide markdown from the SCSS files to the style guide page. See below for more about the style guide
 
