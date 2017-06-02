@@ -22,3 +22,39 @@
 
 @media (max-width: $screen-xs-max){
 }
+
+/*doc
+---
+title: Hero
+name: hero
+category: Components
+---
+
+[//]: # (//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////)
+
+<div class="panel panel-primary">
+	<div class="panel-heading">
+	    <h3 class="panel-title">
+			Usage Notes:
+	    </h3>
+  	</div>
+  	<div class="panel-body">
+  		<strong>Website placement:</strong> <em>Global</em><br>
+		<strong>Image size:</strong> <em>1600x450 (<a href="https://github.com/gbunce-studygroup/image_compressor" target="_blank">compressed before upload</a>)</em><br>
+		<strong>Notes:</strong> <em>Should only be used once on a page at the top.</em>
+  	</div>
+</div>
+```html_example
+<div class="hero" style="background-image: url('http://placehold.it/1600x450');">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="hero_content">
+    				<h1>Hero content</h1>
+    			</div>
+    		</div>
+    	</div>
+	</div>
+</div>
+```
+*/

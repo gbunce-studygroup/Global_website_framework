@@ -14,3 +14,78 @@
 
 @media (max-width: $screen-xs-max){
 }
+
+/*doc
+---
+title: Content box
+name: content_box
+category: Components
+---
+
+[//]: # (//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////)
+
+<div class="panel panel-primary">
+	<div class="panel-heading">
+	    <h3 class="panel-title">
+			Usage Notes:
+	    </h3>
+  	</div>
+  	<div class="panel-body">
+		<strong>Website placement:</strong> <em>Global</em><br>
+		<strong>Notes:</strong> <em>The content box is for any HTML text content. Tables should have a width set to 100% on the &lt;table&gt; tag, and wrapped a div with the class name 'table-responsive'. Refer to the component HTML for an example.</em>
+  	</div>
+</div>
+
+```html_example_table
+<div class="content_box">
+	<h1>This is an H1</h1>
+	<h2>This is an H2</h2>
+	<h3>This is an H3</h3>
+	<h4>This is an H4</h4>
+	<h5>This is an H5</h5>
+	<h6>This is an H6</h6>
+	<p>Paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text paragraph text</p>
+	<small>Small text small text small text small text small text</small>
+	<div class="table-responsive">
+		<table width="100%">
+			<tr>
+				<th>Table header</th>
+				<th>Table header</th>
+				<th>Table header</th>
+				<th>Table header</th>
+				<th>Table header</th>
+				<th>Table header</th>
+				<th>Table header</th>
+			</tr>
+			<tr>
+				<td>Table content</td>
+				<td>Table content</td>
+				<td>Table content</td>
+				<td>Table content</td>
+				<td>Table content</td>
+				<td>Table content</td>
+				<td>Table content</td>
+			</tr>
+			<tr>
+				<td>Table content</td>
+				<td>Table content</td>
+				<td>Table content</td>
+				<td>Table content</td>
+				<td>Table content</td>
+				<td>Table content</td>
+				<td>Table content</td>
+			</tr>
+			<tr>
+				<td>Table content</td>
+				<td>Table content</td>
+				<td>Table content</td>
+				<td>Table content</td>
+				<td>Table content</td>
+				<td>Table content</td>
+				<td>Table content</td>
+			</tr>
+		</table>
+	</div>
+</div>
+```
+*/

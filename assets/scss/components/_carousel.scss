@@ -28,3 +28,59 @@
 
 @media (max-width: $screen-xs-max){
 }
+
+/*doc
+---
+title: Carousel
+name: carousel_component
+category: Components
+---
+
+[//]: # (//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////)
+
+<div class="panel panel-primary">
+	<div class="panel-heading">
+	    <h3 class="panel-title">
+			Usage Notes:
+	    </h3>
+  	</div>
+  	<div class="panel-body">
+		<strong>Website placement:</strong> <em>Global</em><br>
+        <strong>Image size:</strong> <em>1400x420 (<a href="https://github.com/gbunce-studygroup/image_compressor" target="_blank">compressed before upload</a>)</em><br>
+		<strong>Notes:</strong> <em>Should not be placed in columns of less than 6, and all images should be the smae height.</em>
+  	</div>
+</div>
+```html_example_table
+<div id="carousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="http://placehold.it/1140x420" alt="image one">
+            <div class="carousel-caption">
+                image one
+            </div>
+        </div>
+        <div class="item">
+            <img src="http://placehold.it/1140x420" alt="image two">
+            <div class="carousel-caption">
+                image two
+            </div>
+        </div>
+        <div class="item">
+            <img src="http://placehold.it/1140x420" alt="image two">
+            <div class="carousel-caption">
+                image two
+            </div>
+        </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev"></a>
+    <a class="right carousel-control" href="#carousel" role="button" data-slide="next"></a>
+</div>
+```
+*/

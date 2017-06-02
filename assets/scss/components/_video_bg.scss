@@ -52,3 +52,46 @@
 
 @media (max-width: $screen-xs-max){
 }
+
+/*doc
+---
+title: Background video
+name: background_video
+category: Components
+---
+
+[//]: # (//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////)
+
+<div class="panel panel-primary">
+	<div class="panel-heading">
+	    <h3 class="panel-title">
+			Usage Notes:
+	    </h3>
+  	</div>
+  	<div class="panel-body">
+		<strong>Website placement:</strong> <em>Homepage</em><br>
+		<strong>Video aspect ratio:</strong> <em>16x9</em><br>
+		<strong>Video size:</strong> <em>1280x720 (compressed before upload)</em><br>
+		<strong>Fallback carousel image size:</strong> <em>700x700 (<a href="https://github.com/gbunce-studygroup/image_compressor" target="_blank">compressed before upload</a>)</em><br>
+		<strong>Notes:</strong> <em>Should only be used once on the homepage. CTA buttons can be added by using the button group component HTML code.</em>
+  	</div>
+</div>
+```html_example_table
+<div class="video_bg">
+	<div class="video_wrapper">
+		<video autoplay loop poster="video/video.jpg" id="bgvid">
+			<source src="video/video.mp4" type="video/mp4">
+			<source src="video/video.webm" type="video/webm">
+		</video>
+        <div class="fallback_carousel">
+            <span><img src="http://placehold.it/700x700"></span>
+            <span><img src="http://placehold.it/700x700"></span>
+            <span><img src="http://placehold.it/700x700"></span>
+        </div>
+		<div class="video_content">
+			Video content
+		</div>
+	</div>
+</div>
+```
+*/

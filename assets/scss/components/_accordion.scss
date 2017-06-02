@@ -1,44 +1,44 @@
 /* ACCORDION COMPONENT */
 .accordion{
-	@include component_margin;
-	.panel-group{
-		margin-bottom: 0;
-		.panel{
-			h1, h2, h3, h4, h5, h6{}
-			.panel-heading{
-				padding: 0;
-				.panel-title {
-					h1, h2, h3, h4, h5, h6{
-						margin: 0;
-						a{
-							display: block;
-							padding: 15px 40px 15px 15px;
-							position: relative;
-							&:active, &:focus{
-								outline: 0;
-							}
-							&:after{
-							    @include fa-icon;
-								content: "\f068"; // Font Awesome close icon http://fontawesome.io/cheatsheet/
-								position: absolute;
-								top: 50%;
-								right: 15px;
-								transform: translateY(-50%);
-							}
-							&.collapsed{
-								&:after{
-									content: "\f067"; // Font Awesome open icon http://fontawesome.io/cheatsheet/
-								}
-							}
-						}
-					}
-				}
-			}
-			.panel-body{
-				@include content_text_styles;
-			}
-		}
-	}
+    @include component_margin;
+    .panel-group{
+        margin-bottom: 0;
+        .panel{
+            h1, h2, h3, h4, h5, h6{}
+            .panel-heading{
+                padding: 0;
+                .panel-title {
+                    h1, h2, h3, h4, h5, h6{
+                        margin: 0;
+                        a{
+                            display: block;
+                            padding: 15px 40px 15px 15px;
+                            position: relative;
+                            &:active, &:focus{
+                                outline: 0;
+                            }
+                            &:after{
+                                @include fa-icon;
+                                content: "\f068"; // Font Awesome close icon http://fontawesome.io/cheatsheet/
+                                position: absolute;
+                                top: 50%;
+                                right: 15px;
+                                transform: translateY(-50%);
+                            }
+                            &.collapsed{
+                                &:after{
+                                    content: "\f067"; // Font Awesome open icon http://fontawesome.io/cheatsheet/
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .panel-body{
+                @include content_text_styles;
+            }
+        }
+    }
 }
 
 @media (min-width: $screen-lg-min){
@@ -52,3 +52,79 @@
 
 @media (max-width: $screen-xs-max){
 }
+
+/*doc
+---
+title: Accordion
+name: accordion
+category: Components
+---
+
+[//]: # (//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////)
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            Usage Notes:
+        </h3>
+    </div>
+    <div class="panel-body">
+        <strong>Website placement:</strong> <em>Global</em><br>
+        <strong>Notes:</strong> <em>Key content should not be hidden in accordions for SEO reasions</em>
+    </div>
+</div>
+```html_example_table
+<div class="accordion">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <div class="panel-title">
+                    <h4>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Collapsible Group Item #1
+                        </a>
+                    </h4>
+                </div>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <div class="panel-title">
+                    <h4>
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Collapsible Group Item #2
+                        </a>
+                    </h4>
+                </div>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <div class="panel-title">
+                    <h4>
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Collapsible Group Item #3
+                        </a>
+                    </h4>
+                </div>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+*/ 

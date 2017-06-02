@@ -29,3 +29,43 @@
 
 @media (max-width: $screen-xs-max){
 }
+
+/*doc
+---
+title: Testimonial
+name: testimonial
+category: Components
+---
+
+[//]: # (//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////)
+
+<div class="panel panel-primary">
+	<div class="panel-heading">
+	    <h3 class="panel-title">
+			Usage Notes:
+	    </h3>
+  	</div>
+  	<div class="panel-body">
+		<strong>Website placement:</strong> <em>Global</em><br>
+		<strong>Image size:</strong> <em>720x400 (<a href="https://github.com/gbunce-studygroup/image_compressor" target="_blank">compressed before upload</a>)</em><br>
+		<strong>Notes:</strong> <em></em>
+  	</div>
+</div>
+```html_example_table
+<div class="testimonial">
+    <h3>Testimonial</h3>
+    <img src="http://placehold.it/720x400">
+    <div class="testimonial_content">
+        <p>
+            "The style of the education is completely different. For example, during the class, the tutors are more focused on what you think and what your opinion is. There is a lot of opportunity for you to express yourself."
+        </p>
+    </div>
+    <div class="testimonial_info">
+        <p>
+            <em>Xyuing (Shelly)</em>
+            from China studied business
+        </p>
+    </div>
+</div>
+```
+*/
