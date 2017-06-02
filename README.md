@@ -59,9 +59,9 @@ A living style guide has been built into the framework to generate documentation
 
 #### Style guide requirements:
 
-- Xcode command line tools: Install globally via the command line: `html xcode-select --install`
-- Hologram ruby gem: First install the ruby gem globally via the command line: `html sudo gem install hologram` then initiate the gem `html hologram init`
-- Grunt-hologram nade module: Install the grunt-hologram package: `html sudo npm install grunt-hologram --save-dev`
+- Xcode command line tools: Install globally via the command line: `xcode-select --install`
+- Hologram ruby gem: First install the ruby gem globally via the command line: `sudo gem install hologram` then initiate the gem `hologram init`
+- Grunt-hologram nade module: Install the grunt-hologram package: `sudo npm install grunt-hologram --save-dev`
 - Then move the package from the newly created node modules folder to the parent root node modules folder and remove the newly created one in the project folder.
 
 To run the framework, open terminal at the project root and run the 'grunt server' task.
