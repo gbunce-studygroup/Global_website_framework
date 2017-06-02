@@ -1,21 +1,21 @@
 # University Website Framework
-##Frontend framework for creating SG websites
+## Frontend framework for creating SG websites
 <br />
-###How to use the University Website Framework:
+### How to use the University Website Framework:
 <br />
 The University Website Framework is a front-end framework that uses Grunt to compile SCSS & JS and to run .liquid files.<br />
 <br />
-###Folder structure:
+### Folder structure:
 There are a number of node modules that are required for the framework to run, these are all located in the ‘node_modules’ folder.<br />
 <br />
 Any project that uses the University Website Framework will only run if the ‘node_modules’ folder is located at the parent root. This is so that multiple projects can use the same node modules to avoid them having to be replicated for every instance of the University Website Framework.<br />
 <br />
-####Example of local folder structure:
+#### Example of local folder structure:
 	Websites<br />
 	|-- University_website_framework project<br />
 	|-- node_modules<br />
 
-###Node modules that need to be installed to run the framework:
+### Node modules that need to be installed to run the framework:
 	- grunt                              (http://gruntjs.com/installing-grunt)<br />
 	- grunt-autoprefixer                 (https://www.npmjs.com/package/grunt-autoprefixer)<br />
 	- grunt-browser-sync                 (https://www.npmjs.com/package/grunt-browser-sync)<br />
@@ -30,7 +30,7 @@ Any project that uses the University Website Framework will only run if the ‘n
 	- load-grunt-plugins-from-parent     (https://www.npmjs.com/package/load-grunt-plugins-from-parent)<br />
 	- q                                  (https://www.npmjs.com/package/q)<br />
 
-###Grunt tasks:
+### Grunt tasks:
 Six pre-set grunt tasks have been setup in gruntfile.js these are:<br />
     - default         ('grunt' to run task)<br />
     - server          ('grunt server' to run task)<br />
@@ -39,7 +39,7 @@ Six pre-set grunt tasks have been setup in gruntfile.js these are:<br />
     - master          ('grunt master' to run task)<br />
     - styleguide      ('grunt styleguide' to run task)<br />
 
-###What each task does:
+### What each task does:
     grunt             - runs grunt<br />
     grunt server      - runs the project in the browser, enables synchronised browser testing & debugging, and auto refreshes browser when changes are made to the code<br />
     grunt minify      - minifys js & css and creates '.min' version of the file in the output directory<br />
@@ -47,10 +47,10 @@ Six pre-set grunt tasks have been setup in gruntfile.js these are:<br />
     grunt master      - does the same as 'grunt staging' but also compiles the SCSS so 'grunt server' doesn't need to have been run when this task is run<br />
     grunt styleguide  - compiles the style guide markdown from the SCSS files to the style guide page. See below for more about the style guide<br />
 
-###Styleguide:
+### Styleguide:
 A living style guide has been built into the framework to generate documentation for the content team while the front end is coded:<br />
 
-####Style guide requirements:
+#### Style guide requirements:
 	- Xcode command line tools:          Install globally via the command line: ```html xcode-select --install ``` <br />
 	- Hologram ruby gem:                 First install the ruby gem globally via the command line: ```html sudo gem install hologram ``` then initiate the gem ```html hologram init ``` <br />
     - Grunt-hologram nade module:        Install the grunt-hologram package: ```html sudo npm install grunt-hologram --save-dev ``` <br />
