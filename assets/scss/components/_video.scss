@@ -52,3 +52,49 @@
 
 @media (max-width: $screen-xs-max){
 }
+
+/*doc
+---
+title: Video
+name: video_component
+category: Components
+---
+
+[//]: # (//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////)
+
+<div class="panel panel-primary">
+	<div class="panel-heading">
+	    <h3 class="panel-title">
+			Usage Notes:
+	    </h3>
+  	</div>
+  	<div class="panel-body">
+		<strong>Website placement:</strong> <em>Global</em><br>
+		<strong>Image size:</strong> <em>800x400 (<a href="https://github.com/gbunce-studygroup/image_compressor" target="_blank">compressed before upload</a>)</em><br>
+		<strong>Notes:</strong> <em>The video component works best in columns no wider than 6.</em>
+  	</div>
+</div>
+```html_example_table
+<div class="video">
+	<h3>Video</h3>
+	<a class="video" data-toggle="modal" data-target="#video" title="" href="#">
+		<img title="ISC Video" src="http://placehold.it/800x400">
+		<div class="playButton"></div>
+	</a>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="video" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">ISC Video</h4>
+			</div>
+			<div class="modal-body">
+				<iframe width="100%" height="315" src="http://www.youtube.com/embed/ufsrgE0BYf0?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+```
+*/

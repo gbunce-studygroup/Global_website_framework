@@ -21,3 +21,33 @@
 
 @media (max-width: $screen-xs-max){
 }
+
+/*doc
+---
+title: Button group
+name: button_group
+category: Components
+---
+
+[//]: # (//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////)
+
+<div class="panel panel-primary">
+	<div class="panel-heading">
+	    <h3 class="panel-title">
+			Usage Notes:
+	    </h3>
+  	</div>
+  	<div class="panel-body">
+		<strong>Website placement:</strong> <em>Global</em><br>
+		<strong>Notes:</strong> <em>Should be used on the same place on every page to maintain consistent user experience</em>
+  	</div>
+</div>
+```html_example_table
+<div class="button-group">
+	<ul>
+		<li><a href="#">Apply now</a></li>
+		<li><a href="#">Contact us</a></li>
+	</ul>
+</div>
+```
+*/

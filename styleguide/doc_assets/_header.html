@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <title><%= title %> styleguide</title>
+        <link rel="stylesheet" href="css/styleguide_styles.css">
+        <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+        <link rel="stylesheet" href="http://promotions.studygroup.com/promotions/styleguides/css/styleguide.css">
+    </head>
+    <body>
+
+        <!--
+        <nav>
+            <ul>
+                <% @categories.each do |category, file_name| %>
+                <li><a href="<%= file_name %>"><%= category %></a></li>
+                <% end %>
+            </ul>
+        </nav>
+        -->
+
+        <div class="container">
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Brand name - style guide</h1>
+                        <hr>
+                        <h5 class="image_reminder">All component images should be compressed using the <a href="https://github.com/gbunce-studygroup/image_compressor" target="_blank">image compressor</a> before uploading to Sitecore</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="leftcol" class="col-md-3">
+                        <ul class="list-group" data-spy="affix" data-offset-top="20" data-offset-bottom="200">
+                            <% @blocks.each do |b| %>
+                            <li class="list-group-item"><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
+                            <% end %>
+                        </ul>
+                    </div>
+                    <div class="col-md-9">

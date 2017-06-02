@@ -1,3 +1,48 @@
+/*doc
+---
+title: Colours
+name: a_colours
+category: Components
+---
+
+<div class="panel panel-primary">
+	<div class="panel-heading">
+	    <h3 class="panel-title">
+			Usage Notes:
+	    </h3>
+  	</div>
+  	<div class="panel-body">
+		<strong>Notes:</strong> <em>When used together, colours should be <a href="http://webaim.org/resources/contrastchecker/" target="_blank">checked for accessibility</a> and meet at least an AA rating.</em>
+  	</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-3 col-xs-6">
+    <div class="colour colour--one"></div>
+  </div>
+  <div class="col-sm-3 col-xs-6">
+    <div class="colour colour--two"></div>
+  </div>
+  <div class="col-sm-3 col-xs-6">
+    <div class="colour colour--three"></div>
+  </div>
+  <div class="col-sm-3 col-xs-6">
+    <div class="colour colour--four"></div>
+  </div>
+  <div class="col-sm-3 col-xs-6">
+    <div class="colour colour--five"></div>
+  </div>
+</div>
+<hr>
+
+*/
+.colour--one {
+  background: #000000;
+}
+.colour--one:after {
+  content: "#000000";
+}
+
 /* PRE-CHAT FORM COMPONENT */
 body {
   margin: 0;
@@ -8,10 +53,10 @@ body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   padding: 10px 14px 14px 14px;
   background: url("http://placehold.it/200x280") no-repeat bottom right;
-  border: 2px solid #B61A29;
+  border: 2px solid #000000;
 }
 .from_wrapper h1 {
-  color: #B61A29;
+  color: #000000;
   margin: 5px 0 10px 0;
   font-size: 20px;
 }
@@ -40,7 +85,7 @@ body {
   width: auto;
   border-radius: 0;
   padding: 10px 15px;
-  background: #B61A29;
+  background: #000000;
   font-size: 14px;
   font-weight: bold;
   color: #fff;
@@ -48,7 +93,7 @@ body {
   margin: 8px 0 0 0;
 }
 .from_wrapper #prechat_submit:hover {
-  background: #cc1d2e;
+  background: #0d0d0d;
 }
 .from_wrapper #prechat_submit:after {
   font-family: 'Glyphicons Halflings';

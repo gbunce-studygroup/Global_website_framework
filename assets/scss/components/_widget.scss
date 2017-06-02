@@ -26,3 +26,65 @@
 
 @media (max-width: $screen-xs-max){
 }
+
+/*doc
+---
+title: Widget
+name: widget
+category: Components
+---
+
+[//]: # (//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////)
+
+###Default widget
+<div class="panel panel-primary">
+	<div class="panel-heading">
+	    <h3 class="panel-title">
+			Usage Notes:
+	    </h3>
+  	</div>
+  	<div class="panel-body">
+		<strong>Website placement:</strong> <em>Global</em><br>
+		<strong>Image size:</strong> <em>500x300 (<a href="https://github.com/gbunce-studygroup/image_compressor" target="_blank">compressed before upload</a>)</em><br>
+		<strong>Notes:</strong> <em></em>
+  	</div>
+</div>
+```html_example_table
+<div class="widget">
+    <h3>Title</h3>
+    <img src="http://placehold.it/500x300">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+    <div class="button">
+        <a href="#">Click here</a>
+    </div>
+</div>
+```
+
+[//]: # (//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////)
+
+
+###Pullout widget
+<div class="panel panel-primary">
+	<div class="panel-heading">
+	    <h3 class="panel-title">
+			Usage Notes:
+	    </h3>
+  	</div>
+  	<div class="panel-body">
+		<strong>Website placement:</strong> <em>Global</em><br>
+		<strong>Class name:</strong> <em>pullout</em><br>
+		<strong>Image size:</strong> <em>no image should be added</em><br>
+		<strong>Notes:</strong> <em>Not to be used with an image</em>
+  	</div>
+</div>
+```html_example_table
+<div class="pullout">
+    <h3>Title</h3>
+    <p>text text text text text text text text</p>
+    <div class="button">
+        <a href="#">Click here</a>
+    </div>
+</div>
+```
+
+*/

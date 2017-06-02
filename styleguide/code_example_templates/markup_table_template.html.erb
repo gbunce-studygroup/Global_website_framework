@@ -1,0 +1,21 @@
+<div class="codeTable">
+    <% examples.each do |example| %>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="exampleOutput">
+                    <h5>Example:</h5>
+                    <%= example.rendered_example %>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="codeBlock">
+                    <h5>Component HTML:</h5>
+                    <div class="highlight">
+                        <pre><%= example.code_example %></pre>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /row -->
+        <hr style="margin: 30px 0;">
+    <% end %>
+</div>

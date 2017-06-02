@@ -16,6 +16,15 @@ module.exports = function(grunt) {
                     'html/css/style.css':'assets/scss/style.scss',
                     'html/css/pre_chat_form.css':'assets/scss/components/pre_chat_form.scss' // COMPILED SCSS FOR THE PRE-CHAT FORM AS SEPARATE STYLESHEET
                 }
+            },
+            styleguide: {
+                options: {
+                    style: 'expanded',
+                    sourcemap: 'none',
+                },
+                files: {
+                    'html/styleguide/css/styleguide_styles.css':'html/css/style.css'
+                }
             }
         },
         
@@ -56,7 +65,7 @@ module.exports = function(grunt) {
             multiple_files: {
                 expand: true,
                 flatten: true,
-                src: 'html/css/*.css',
+                src: 'html/css/*.min.css',
                 dest: 'html/css'
             }
         },
@@ -71,7 +80,9 @@ module.exports = function(grunt) {
                     'html/*.html',
                     'html/img/*.jpg',
                     'html/img/*.png',
-                    'html/img/*.gif'
+                    'html/img/*.gif',
+                    'html/styleguide/*/**',
+                    'html/styleguide/css/*.css'
                 ],
             },
             options: {
@@ -92,15 +103,19 @@ module.exports = function(grunt) {
                 }
             }
         },
+
         
         cssmin: {
+            options: {
+                keepSpecialComments: 0
+            },            
             target: {
                 files: [{
                     expand: true,
                     cwd: 'html/css',
-                    src: ['*.css', '!*.min.css'],
+                    src: ['style.css', '!*.min.css'],
                     dest: 'html/css',
-                    ext: '.min.css'
+                    //ext: '.min.css'
                 }]
             }
         },
@@ -113,7 +128,7 @@ module.exports = function(grunt) {
             },
             scripts: {
                 files: 'assets/scss/**/*.scss',
-                tasks: ['sass', 'autoprefixer']
+                tasks: ['sass', 'autoprefixer', 'cssmin']
             },
             js: {
                 files: 'assets/scripts/**/*.js',
@@ -125,24 +140,66 @@ module.exports = function(grunt) {
                 },
                 files: "templates/**/*.liquid",
                 tasks: ['liquid']
-            }  
+            },
+            styleguide: {
+                files: 'styleguide/**/*',
+                tasks: ['hologram']
+            },
+            styleguideJs: {
+                files: 'html/js/*.js',
+                tasks: ['copy:styleguidejs']
+            },
+            styleguideFonts: {
+                files: 'html/fonts/*/**',
+                tasks: ['copy:styleguidefonts']
+            }
 		},
+
+
+        /* HOLOGRAM - STYLEGUIDE */
+        hologram: {
+            compile: {
+                options: {
+                    config: 'styleguide/hologram_config.yml'
+                }
+            }
+        },
 
 
         /* COPY COMPILED AND AUTOPREFIXED CSS FROM HTML/CSS TO LOCATION ON STAGING */
         copy: {
-          main: {
-            files: [
-              // includes files within path
+            main: {
+                files: [
+                    // includes files within path
+                    {
+                        expand: true, 
+                        flatten: true,
+                        src: ['html/css/style.css'], 
+                        dest: '///Volumes/Designer/css/', // CHANGE TO MATCH THE CSS LOCATION ON STAGING
+                        filter: 'isFile'
+                    },
+                ],
+            },
+            styleguidejs: { // automatically copy amended js to the style guide
+                files: [
                 {
                     expand: true, 
                     flatten: true,
-                    src: ['html/css/style.css'], 
-                    dest: '///Volumes/Designer/css/', // CHANGE TO MATCH THE CSS LOCATION ON STAGING
+                    src: ['html/js/scripts.js'], 
+                    dest: 'html/styleguide/js/',
                     filter: 'isFile'
-                },
-            ],
-          },
+                }],
+            },
+            styleguidefonts: { // automatically copy amended js to the style guide
+                files: [
+                {
+                    expand: true, 
+                    flatten: false,
+                    cwd: 'html/fonts/',
+                    src: ['*/**'], 
+                    dest: 'html/styleguide/fonts/'
+                }],
+            },
         },
         
 
@@ -160,8 +217,8 @@ module.exports = function(grunt) {
             }]
           }
         }
-        
 	});
+
 
     /* LOAD TASK */
     grunt.loadNpmTasksFromParent('grunt-contrib-sass')
@@ -172,6 +229,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasksFromParent('grunt-contrib-uglify');
     grunt.loadNpmTasksFromParent('grunt-contrib-cssmin');
     grunt.loadNpmTasksFromParent('grunt-contrib-watch');
+    grunt.loadNpmTasksFromParent('grunt-hologram');
 
     /* LOAD TASKS TO UPDATE CSS ON STAGING */
     grunt.loadNpmTasksFromParent('grunt-contrib-copy');
@@ -183,5 +241,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('minify',['uglify', 'cssmin']);
     grunt.registerTask('staging',['copy', 'replace']);
 
+    grunt.registerTask('styleguide',['hologram']);
     grunt.registerTask('master',['sass', 'autoprefixer', 'copy', 'replace']);
 }

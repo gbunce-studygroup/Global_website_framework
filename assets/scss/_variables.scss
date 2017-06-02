@@ -1,8 +1,76 @@
 // Own Variables
 $main_colour:            #000000 !default; // Use this for ting like main body text colour
 
-$form_colour:            #B61A29 !default; // This should be a medium/darker brand colour
-$form_colour_s:          #E0DED8 !default; // _s stands for secondary. This should be a lighter brand colour
+// brand colours
+// add beand colours here
+
+// form colours
+$form_colour:            #000000 !default; // This should be a medium/darker brand colour
+$form_colour_s:          #eeeeee !default; // _s stands for secondary. This should be a lighter brand colour
+
+// style guide colours - change value to match the variables above
+$colours: (
+  //key                  // value
+  'one':                 $main_colour,
+  //'two':                 UNCOMMENT_AND_ADD_COLOUR_VARIABLE_HERE,
+  //'three':               UNCOMMENT_AND_ADD_COLOUR_VARIABLE_HERE,
+  //'four':                UNCOMMENT_AND_ADD_COLOUR_VARIABLE_HERE,
+  //'five':                UNCOMMENT_AND_ADD_COLOUR_VARIABLE_HERE,
+  // to add aditional colours just number the key sequentially, add the corrosponding variable, and then add an extra column with numbered class name to the row below
+);
+
+/*doc
+---
+title: Colours
+name: a_colours
+category: Components
+---
+
+<div class="panel panel-primary">
+	<div class="panel-heading">
+	    <h3 class="panel-title">
+			Usage Notes:
+	    </h3>
+  	</div>
+  	<div class="panel-body">
+		<strong>Notes:</strong> <em>When used together, colours should be <a href="http://webaim.org/resources/contrastchecker/" target="_blank">checked for accessibility</a> and meet at least an AA rating.</em>
+  	</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-3 col-xs-6">
+    <div class="colour colour--one"></div>
+  </div>
+  <div class="col-sm-3 col-xs-6">
+    <div class="colour colour--two"></div>
+  </div>
+  <div class="col-sm-3 col-xs-6">
+    <div class="colour colour--three"></div>
+  </div>
+  <div class="col-sm-3 col-xs-6">
+    <div class="colour colour--four"></div>
+  </div>
+  <div class="col-sm-3 col-xs-6">
+    <div class="colour colour--five"></div>
+  </div>
+</div>
+<hr>
+
+*/
+
+$map: (
+  'key' : 'value'
+);
+
+@each $name, $color in $colours {
+  .colour--#{$name} {
+    background:$color;
+    &:after {
+      content: "#{$color}";
+    }
+  }
+}
+
 
 // BTS Variables
 // --------------------------------------------------

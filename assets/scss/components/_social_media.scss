@@ -21,3 +21,34 @@
 
 @media (max-width: $screen-xs-max){
 }
+
+/*doc
+---
+title: Social media
+name: social_media
+category: Components
+---
+
+[//]: # (//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////)
+
+<div class="panel panel-primary">
+	<div class="panel-heading">
+	    <h3 class="panel-title">
+			Usage Notes:
+	    </h3>
+  	</div>
+  	<div class="panel-body">
+		<strong>Website placement:</strong> <em>Footer</em><br>
+		<strong>Notes:</strong> <em>Any icon thats in the <a href="http://fontawesome.io/icons/">font awesome</a> library can be added by changing the 'fa-' class name in Sitecore.</em>
+  	</div>
+</div>
+```html_example_table
+<ul class="social_media">
+	<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+	<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+	<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+	<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+</ul>
+```
+*/
