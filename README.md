@@ -55,7 +55,7 @@ Six pre-set grunt tasks have been setup in gruntfile.js these are:
 
 ### Styleguide:
 
-A living style guide has been built into the framework to generate documentation for the content team while the front end is coded:
+A living style guide has been built into the framework to generate documentation for the content team as the front-end is coded:
 
 #### Style guide requirements:
 
