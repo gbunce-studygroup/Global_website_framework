@@ -242,5 +242,5 @@ module.exports = function(grunt) {
     grunt.registerTask('staging',['copy', 'replace']);
 
     grunt.registerTask('styleguide',['hologram']);
-    grunt.registerTask('master',['sass', 'autoprefixer', 'copy', 'replace']);
+    grunt.registerTask('master',['sass', 'autoprefixer', 'copy:main', 'replace']);
 }
