@@ -82,3 +82,78 @@
 @media (min-width: $screen-lg-min) {
   @include make-grid(lg);
 }
+
+/*doc
+---
+title: Grid
+name: ab_grid
+category: Components
+---
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+      <h3 class="panel-title">
+      Usage Notes:
+      </h3>
+    </div>
+    <div class="panel-body">
+    Below are examples of the layouts available on all 'global website framework' sites. The title above each example refers to the name given to the layout in the sitecore components list. The class name inside each of the columns refers to the <a href="https://getbootstrap.com/examples/grid/" target="_blank">bootstrap class name</a>.
+    </div>
+</div>
+
+<div class="container-fluid grid_options">
+  <h4>Row 12</h4>
+  <div class="row show-grid">
+    <div class="col-md-12 s">.col-md-12</div>
+  </div>
+  <h4>Row 6 6</h4>
+  <div class="row show-grid">
+    <div class="col-md-6 s">.col-md-6</div>
+    <div class="col-md-6 s">.col-md-6</div>
+  </div>
+  <h4>Row 8 4</h4>
+  <div class="row show-grid">
+    <div class="col-md-8 s">.col-md-8</div>
+    <div class="col-md-4 s">.col-md-4</div>
+  </div>
+  <h4>Row 4 8</h4>
+  <div class="row show-grid">
+    <div class="col-md-4 s">.col-md-4</div>
+    <div class="col-md-8 s">.col-md-8</div>
+  </div>
+  <h4>Row 3 9</h4>
+  <div class="row show-grid">
+    <div class="col-md-3 s">.col-md-3</div>
+    <div class="col-md-9 s">.col-md-9</div>
+  </div>
+  <h4>Row 9 3</h4>
+  <div class="row show-grid">
+    <div class="col-md-9 s">.col-md-9</div>
+    <div class="col-md-3 s">.col-md-3</div>
+  </div>
+  <h4>Row 7 5</h4>
+  <div class="row show-grid">
+    <div class="col-md-7 s">.col-md-7</div>
+    <div class="col-md-5 s">.col-md-5</div>
+  </div>
+  <h4>Row 5 7</h4>
+  <div class="row show-grid">
+    <div class="col-md-5 s">.col-md-5</div>
+    <div class="col-md-7 s">.col-md-7</div>
+  </div>
+  <h4>Row 4 4 4</h4>
+  <div class="row show-grid">
+    <div class="col-md-4 s">.col-md-4</div>
+    <div class="col-md-4 s">.col-md-4</div>
+    <div class="col-md-4 s">.col-md-4</div>
+  </div>
+  <h4>Row 3 3 3 3</h4>
+  <div class="row show-grid">
+    <div class="col-md-3 s">.col-md-3</div>
+    <div class="col-md-3 s">.col-md-3</div>
+    <div class="col-md-3 s">.col-md-3</div>
+    <div class="col-md-3 s">.col-md-3</div>
+  </div>
+</div>
+<hr>
+*/
