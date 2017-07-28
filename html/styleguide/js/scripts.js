@@ -1022,6 +1022,10 @@
 
 }(jQuery);
 
+//TAB NAV SCROLL
+$('.tab_wrapper').each(function(){
+    $(this).children('.nav-tabs').wrapAll('<div class="tab_ul_overflow"/>');
+});
 /* ========================================================================
  * Bootstrap: transition.js v3.2.0
  * http://getbootstrap.com/javascript/#transitions
