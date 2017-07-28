@@ -11688,6 +11688,23 @@ category: Components
   overflow-x: scroll;
 }
 
+@media (max-width: 767px) {
+  /* TABS WIDGET COMPONENT */
+  .tab_wrapper .tab_ul_overflow {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .tab_wrapper .tab_ul_overflow .nav-tabs {
+    display: inline-block;
+  }
+
+  .tab_wrapper .tab_ul_overflow .nav-tabs li {
+    float: none;
+    display: inline-block;
+  }
+}
 /*doc
 ---
 title: Tabs

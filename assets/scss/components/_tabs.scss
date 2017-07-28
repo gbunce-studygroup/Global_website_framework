@@ -29,6 +29,21 @@
 }
 
 @media (max-width: $screen-xs-max){
+    /* TABS WIDGET COMPONENT */
+    .tab_wrapper{
+        .tab_ul_overflow{
+            white-space: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            .nav-tabs{ // UL
+                display: inline-block;
+                li{
+                    float: none;
+                    display: inline-block;
+                }
+            }
+        }
+    }
 }
 
 /*doc
