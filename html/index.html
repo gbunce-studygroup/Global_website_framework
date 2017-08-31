@@ -804,7 +804,7 @@
 <div class="container">
     <h1>Data fed components:</h1>
     <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-6">
             <h4>Progression routes:</h4>
             <div class="progRoutes">
     <table class="standard">
@@ -906,7 +906,27 @@
     </table>
 </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-6">
+            <h4>Start dates:</h4>
+            <div id="form" class="start-dates" style="">
+	<h3>Term Dates</h3>
+	<div class="start-dates-content">
+		<p><strong>September, 2017</strong></p>
+		<p>
+			<span>
+				<strong><span>Term 1</span></strong>: 
+				<span>11/09/2017</span> - <span>01/12/2017</span>
+				<br>
+				<strong><span>Term 2</span></strong>: 
+				<span>08/01/2018</span> - <span>16/03/2018</span>
+				<br>
+				<strong><span>Term 3</span></strong>: 
+				<span>02/04/2018</span> - <span>08/06/2018</span>
+				<br>
+			</span>
+		</p>
+	</div>
+</div>
             <h4>Entry requirements:</h4>
             <input name="iscrlayout_1$iscrmaincontent_3$sitecoreContent" id="sitecoreContent" style="display: none" value="{&quot;CentreId&quot;:188,&quot;Programs&quot;:[{&quot;GroupLibId&quot;:&quot;68&quot;,&quot;Name&quot;:&quot;International Foundation Year&quot;}]}" hidden="hidden" type="text">
 <div style="display: none;" id="formWait" class="short-enquiryForm">
@@ -1299,30 +1319,6 @@
             </tr>
         </tbody>
     </table>
-</div>
-        </div>
-        <div class="col-md-2">
-            <h4>Start dates:</h4>
-            <div id="form" class="start-dates" style="">
-    <h4>Term dates</h4>
-    <div class="start-dates-content" data-bind="foreach: ViewBag.StartDates">
-        <p>            
-            <strong data-bind="text: Name">September 2016</strong>
-            <br>
-            <span data-bind=" if: TermDates.length == 0">
-                <span data-bind="text: sg.viewModelHolder.get().Model.formatDate(Date)">12/09/2016</span>
-                <br>
-            </span>
-        </p>
-        <p>            
-            <strong data-bind="text: Name">January 2017</strong>
-            <br>
-            <span data-bind=" if: TermDates.length == 0">
-                <span data-bind="text: sg.viewModelHolder.get().Model.formatDate(Date)">09/01/2017</span>
-                <br>
-            </span>
-        </p>
-    </div>
 </div>
         </div>
     </div>
