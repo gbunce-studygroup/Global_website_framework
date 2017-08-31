@@ -251,7 +251,7 @@ category: Components
       </h3>
     </div>
     <div class="panel-body">
-      <p>Two icon sets are available on all 'global website framework' sites. These are <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp" target="_blank">Bootstrap Glyphicons</a> and <a href="http://fontawesome.io/icons/" target="_blank">Font Awesome</a>.</p>
+      <p>Two icon sets are available on all 'global website framework' sites. These are <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp" target="_blank">Bootstrap Glyphicons</a> and <a href="http://fontawesome.io/icons/" target="_blank">Font Awesome</a>. They can be added to any content box, widget, accordion or tabs compoent by following the guidelines below.</p>
       <hr>
       <strong>Bootstrap Glyphicons</strong><br>
       Bootstrap Glyphicons should be wrapped in a <code><xmp style="display:inline;"><span></span></xmp></code> tag with the first class name <code>glyphicon</code> to declare the font family, and the second to declare the icon. For example: <code><xmp style="display:inline;"><span class="glyphicon glyphicon-envelope"></span></xmp></code> To change the size of a Glyphicon just add an inline style to the span tag. For example <code><xmp style="display:inline;"><span style="font-size: 30px;"</xmp></code>
@@ -262,7 +262,7 @@ category: Components
       <br>
       Font Awesome icons should be wrapped in a <code><xmp style="display:inline;"><i></i></xmp></code> tag via the html input in sitecore. To declare the font family the first class name should be <code>fa</code>. The second is to declare the icon. For example: <code><xmp style="display:inline;"><i class="fa fa-phone-square"></i></xmp></code>
       <br>
-      For a full list of Font Awesome icons <a href="http://fontawesome.io/icons/" target="_blank">click here</a>, and for other information such as how to adjust the size <a href="http://fontawesome.io/examples/" target="_blank">click here</a>.
+      For a full list of Font Awesome icons <a href="http://fontawesome.io/icons/" target="_blank">click here</a>, and for other information such as how to adjust the icon size <a href="http://fontawesome.io/examples/" target="_blank">click here</a>.
     </div>
 </div>
 
