@@ -235,3 +235,80 @@
 .glyphicon-cloud-upload           { &:before { content: "\e198"; } }
 .glyphicon-tree-conifer           { &:before { content: "\e199"; } }
 .glyphicon-tree-deciduous         { &:before { content: "\e200"; } }
+
+
+/*doc
+---
+title: Icons
+name: abc_icons
+category: Components
+---
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+      <h3 class="panel-title">
+      Usage Notes:
+      </h3>
+    </div>
+    <div class="panel-body">
+      <p>Two icon sets are available on all 'global website framework' sites. These are <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp" target="_blank">Bootstrap Glyphicons</a> and <a href="http://fontawesome.io/icons/" target="_blank">Font Awesome</a>.</p>
+      <hr>
+      <strong>Bootstrap Glyphicons</strong><br>
+      Bootstrap Glyphicons should be wrapped in a <code><xmp style="display:inline;"><span></span></xmp></code> tag with the first class name <code>glyphicon</code> to declare the font family, and the second to declare the icon. For example: <code><xmp style="display:inline;"><span class="glyphicon glyphicon-envelope"></span></xmp></code> To change the size of a Glyphicon just add an inline style to the span tag. For example <code><xmp style="display:inline;"><span style="font-size: 30px;"</xmp></code>
+      <br>
+      For a full list of the Bootstrap Glyphicons <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp" target="_blank">click here</a>.
+      <hr>
+      <strong>Font Awesome</strong>
+      <br>
+      Font Awesome icons should be wrapped in a <code><xmp style="display:inline;"><i></i></xmp></code> tag via the html input in sitecore. To declare the font family the first class name should be <code>fa</code>. The second is to declare the icon. For example: <code><xmp style="display:inline;"><i class="fa fa-phone-square"></i></xmp></code>
+      <br>
+      For a full list of Font Awesome icons <a href="http://fontawesome.io/icons/" target="_blank">click here</a>, and for other information such as how to adjust the size <a href="http://fontawesome.io/examples/" target="_blank">click here</a>.
+    </div>
+</div>
+
+<div class="container-fluid">
+  <h4>Bootstrap Glyphicon Examples</h4>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-asterisk"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-plus"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-minus"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-euro"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-cloud"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-envelope"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-pencil"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-glass"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-music"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-search"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-heart"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-star"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-star-empty"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-user"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-film"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-th-large"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon-th"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon glyphicon-th-list"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon glyphicon-ok"></span>
+  <span style="font-size: 30px;" class="glyphicon glyphicon glyphicon-remove"></span>
+  <br>
+  <h4>Font Awesome Examples</h4>
+  <i style="font-size: 31px;" class="fa fa-university" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-file" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-upload" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-map-marker" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-globe" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-comments" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-check" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-camera" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-filter" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-folder-open" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-graduation-cap" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-money" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-home" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-heart" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-paper-plane" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-pencil" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-phone" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-print" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-rocket" aria-hidden="true"></i>
+  <i style="font-size: 31px;" class="fa fa-tags" aria-hidden="true"></i>
+  <hr>
+*/

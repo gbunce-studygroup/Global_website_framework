@@ -1,10 +1,40 @@
 /* START DATES COMPONENT */
 .start-dates{
-	h4{}
+	@include component_margin;
+	h1, h2, h3, h4, h5, h6{
+		margin: 0 0 10px 0;
+	}
 	.start-dates-content{
 		p{
-			strong{}
-			span{}
+			&:first-of-type{
+				margin: 0;
+				strong{
+					color: #fff;
+					background: $form_colour;
+					display: block;
+					padding: 5px 10px;
+				}
+			}
+			> span{
+				border: 1px solid $form_colour_s;
+				display: block;
+				padding: 10px 10px 0 10px;
+				span{
+					border: none;
+					display: initial;
+					padding: auto;
+					font-style: italic;
+				}
+				strong{
+					span{
+						color: $form_colour;
+						font-style: normal;
+					}
+				}
+				br{
+					margin-bottom: 10px;
+				}
+			}
 		}
 	}
 }
