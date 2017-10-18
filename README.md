@@ -78,21 +78,21 @@ Websites
 |---- styleguide  
 |-- node_modules
 
-### Landing Page
+### Landing Page:
 
 The Global landing page v2 has been added to this framework so that branded landing page styles can be kept alongside the website & styleguide for each university.
 
-#### Branding the landing page
+#### Branding the landing page:
 
 The component structure for the landing page framework is set via a global stylesheet that also includes all bootstrap grid styles. The brand styles are added via the output stylesheet from this framework. Rather than changing the component structural styles the brand is applied by using colours, fonts, button styles & imagery.
 
 A file containing all required scss variables to style the components is located at landing_page/assets/scss/variables_brand.scss. ONLY this variables file should be edited.
 
-#### Folder structure
+#### Folder structure:
 
 The folder structure of the landing page framework is much like that of the university website framework. All html, css & js get output to landing_page/html/ directory. Font awesome & bootstrap glyphicons are pulled in via the global landing page stylesheet, any brand fonts should be added to landing_page/html/fonts/custom_font/ directory.
 
-#### Gruntfile setup and tasks
+#### Gruntfile setup and tasks:
 
 The gruntfile inside the 'landing_page' folder must be configured before compiled css can be sent to the designer folder. To do this simply create a folder named after the brand in 'Designer/css/globallandingpagesv2/' and replace everwhere it says '_________ADD_BRAND_FOLDER_________' in the gruntfile with the newly created folder name. 
 
