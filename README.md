@@ -100,4 +100,6 @@ The landing page should be run via the terminal app from the 'landing_page' fold
 - `grunt server` to launch the landing page in a local server
 - `grunt glpbrand` to push the compiled css to the location in the designer folder thats specified in the gruntfile 
 
+#### Documentation & users guide:
+
 A users guide for the landing page can be found [here](link users guide).
