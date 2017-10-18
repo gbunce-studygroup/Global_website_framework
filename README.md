@@ -66,7 +66,7 @@ A living style guide has been built into the framework to generate documentation
 To run the framework, open terminal at the project root and run the 'grunt server' task.
 All SCSS & Scripts are located in corosponding folders in the assets directory.
 
-All the webiste components are located at templates > includes > components. The components are liquid files so they can be easily dropped into the grid template files when building page templates.
+All the webiste components are located at `templates/includes/components`. The components are liquid files so they can be easily dropped into the grid template files when building page templates.
 
 Output files are all located in the html directory
 
@@ -86,18 +86,18 @@ The Global landing page v2 has been added to this framework so that branded land
 
 The component structure for the landing page framework is set via a global stylesheet that also includes all bootstrap grid styles. The brand styles are added via the output stylesheet from this framework. Rather than changing the component structural styles the brand is applied by using colours, fonts, button styles & imagery.
 
-A file containing all required scss variables to style the components is located at landing_page/assets/scss/variables_brand.scss. ONLY this variables file should be edited.
+A file containing all required scss variables to style the components is located at `landing_page/assets/scss/variables_brand.scss` ONLY this variables file should be edited.
 
 #### Folder structure:
 
-The folder structure of the landing page framework is much like that of the university website framework. All html, css & js get output to landing_page/html/ directory. Font awesome & bootstrap glyphicons are pulled in via the global landing page stylesheet, any brand fonts should be added to landing_page/html/fonts/custom_font/ directory.
+The folder structure of the landing page framework is much like that of the university website framework. All html, css & js get output to landing_page/html/ directory. Font awesome & bootstrap glyphicons are pulled in via the global landing page stylesheet, any brand fonts should be added to `landing_page/html/fonts/custom_font/` directory.
 
 #### Gruntfile setup and tasks:
 
-The gruntfile inside the 'landing_page' folder must be configured before compiled css can be sent to the designer folder. To do this simply create a folder named after the brand in 'Designer/css/globallandingpagesv2/' and replace everwhere it says '_________ADD_BRAND_FOLDER_________' in the gruntfile with the newly created folder name. 
+The gruntfile inside the 'landing_page' folder must be configured before compiled css can be sent to the designer folder. To do this simply create a folder named after the brand in `Designer/css/globallandingpagesv2/` and replace everwhere it says `_________ADD_BRAND_FOLDER_________` in the gruntfile with the newly created folder name. 
 
 The landing page should be run via the terminal app from the 'landing_page' folder. The grunt tasks for this are:
-- "grunt server" to launch the landing page in a local server
-- "grunt glpbrand" to push the compiled css to the location in the designer folder thats specified in the gruntfile 
+- `grunt server` to launch the landing page in a local server
+- `grunt glpbrand` to push the compiled css to the location in the designer folder thats specified in the gruntfile 
 
 A users guide for the landing page can be found [here](link users guide).
