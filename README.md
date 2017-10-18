@@ -8,9 +8,9 @@ The University Website Framework is a front-end framework that uses Grunt to com
 
 ### Folder structure:
 
-There are a number of node modules that are required for the framework to run, these are all located in the ‘node_modules’ folder.
+There are a number of node modules that are required for the framework to run, these are all located in the 'node_modules' folder.
 
-Any project that uses the University Website Framework will only run if the ‘node_modules’ folder is located at the parent root. This is so that multiple projects can use the same node modules to avoid them having to be replicated for every instance of the University Website Framework.
+Any project that uses the University Website Framework will only run if the 'node_modules' folder is located at the parent root. This is so that multiple projects can use the same node modules to avoid them having to be replicated for every instance of the University Website Framework.
 
 #### Example of local folder structure:
 
@@ -37,12 +37,11 @@ Websites
 ### Grunt tasks:
 
 Six pre-set grunt tasks have been setup in gruntfile.js these are:
-- default ('grunt' to run task)
-- server ('grunt server' to run task)
-- minify ('grunt minify' to run task)
-- staging ('grunt staging' to run task)
-- master ('grunt master' to run task)
-- styleguide ('grunt styleguide' to run task)
+"grunt server"
+"grunt minify"
+"grunt staging"
+"grunt master"
+"grunt styleguide"
 
 ### What each task does:
 
@@ -78,3 +77,13 @@ Websites
 |---- templates  
 |---- styleguide  
 |-- node_modules
+
+### Landing Page
+
+The Global landing page v2 has been added to this framework so that branded landing page styles can be kept alongside the website & styleguide for each university.
+
+The gruntfile inside the 'landing_page' folder must be configured before compiled css can be sent to the designer folder. To do this simply create a folder named after the brand in 'Designer/css/globallandingpagesv2/' and replace everwhere it says '_________ADD_BRAND_FOLDER_________' in the gruntfile with the newly created folder name. 
+
+The landing page should be run via the terminal app from the 'landing_page' folder. The grunt tasks for this are:
+- "grunt server" to launch the landing page in a local server
+- "grunt glpbrand" to push the compiled css to the location in the designer folder thats specified in the gruntfile 
