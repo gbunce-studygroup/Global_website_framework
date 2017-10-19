@@ -36,7 +36,7 @@ Websites
 
 ### Grunt tasks:
 
-Six pre-set grunt tasks have been setup in gruntfile.js these are:
+Five pre-set grunt tasks have been setup in gruntfile.js these are:
 - `grunt server`
 - `grunt minify`
 - `grunt staging`
@@ -45,7 +45,6 @@ Six pre-set grunt tasks have been setup in gruntfile.js these are:
 
 ### What each task does:
 
-- `grunt` - runs grunt  
 - `grunt server` - runs the project in the browser, enables synchronised browser testing & debugging, and auto refreshes browser when changes are made to the code  
 - `grunt minify` - minifys js & css and creates '.min' version of the file in the output directory  
 - `grunt staging` - takes the compiled css from the output directory, makes a copy of it on staging at the location specified on line 178 of the gruntfile, then replaces image and font urls in the css with ones specified on lines 209, 213 & 216 in the gruntfile  
