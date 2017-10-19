@@ -90,7 +90,7 @@ A file containing all required scss variables to style the components is located
 
 #### Folder structure:
 
-The folder structure of the landing page framework is much like that of the university website framework. All html, css & js get output to landing_page/html/ directory. Font awesome & bootstrap glyphicons are pulled in via the global landing page stylesheet, any brand fonts should be added to `landing_page/html/fonts/custom_font/` directory.
+The folder structure of the landing page framework is much like that of the university website framework. All html, css & js get output to `landing_page/html/` directory. Font awesome & bootstrap glyphicons are pulled in via the global landing page stylesheet, any brand fonts should be added to `landing_page/html/fonts/custom_font/` directory.
 
 #### Gruntfile setup and tasks:
 
