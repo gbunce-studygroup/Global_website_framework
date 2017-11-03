@@ -13,14 +13,6 @@
 }
 #submitEnquiryButton{
     @include form_cta;
-    @include component_margin;
-}
-
-// popup from styles
-.modal{
-    &.form-popup{
-        background: $modal_background_colour;
-    }
 }
 
 // Datepick - dropdown
