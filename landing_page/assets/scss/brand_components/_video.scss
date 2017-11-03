@@ -9,9 +9,10 @@
 
 /* VIDEO LIGHTBOX */
 .modal-backdrop{
-	background: $modal_background_colour;
-	opacity: $modal_background_opacity !important;
+	background: rgba($modal_background_colour, $modal_background_opacity);
+	opacity: 1 !important;
 }
+
 .modal{
 	.modal-dialog{
 		.modal-content{

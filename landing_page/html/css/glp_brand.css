@@ -544,7 +544,6 @@ footer {
   border-width: 2px;
   border-color: #000;
   border-radius: 5px;
-  margin: 0 0 30px 0;
 }
 #submitEnquiryButton:hover {
   text-decoration: none;
@@ -561,10 +560,6 @@ footer {
   font-size: 12px;
   content: "\e080";
   margin: 0 0 0 7px;
-}
-
-.modal.form-popup {
-  background: #fff;
 }
 
 .datepicker .datepicker-days .table-condensed thead tr th.prev, .datepicker .datepicker-days .table-condensed thead tr th.next, .datepicker .datepicker-days .table-condensed thead tr th.dow,
@@ -1172,8 +1167,8 @@ footer {
 
 /* VIDEO LIGHTBOX */
 .modal-backdrop {
-  background: #fff;
-  opacity: 0.9 !important;
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 1 !important;
 }
 
 .modal .modal-dialog .modal-content .modal-header .close,
