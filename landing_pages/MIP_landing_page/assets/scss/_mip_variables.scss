@@ -1,22 +1,22 @@
 // brand colours
-$main_text_colour:          #32363f !default;
-$main_brand_colour:         #B61A29 !default;
+$main_text_colour:          #000000 !default;
+$main_brand_colour:         #808080 !default;
 
 // cta
-$cta_background_colour:     #32363f !default;
+$cta_background_colour:     #000000 !default;
 $cta_colour:                $main_brand_colour !default;
 $cta_text_colour:           #ffffff !default;
 $cta_border-radius:         0 !default;
 
 // header
-$header_background_colour:  #32363f !default;
+$header_background_colour:  $cta_background_colour !default;
 
 // logo
 $logo_width:                200px !default;
 $logo_margin:				7px 0 15px 0 !default;
 
 // section
-$section_two_bg_colour:     #E0DED8 !default;
+$section_two_bg_colour:     #F5F5F5 !default;
 
 // widget
 $widget_background_colour:	$section_two_bg_colour !default;
@@ -25,6 +25,6 @@ $widget_cta_colour:         $main_brand_colour !default;
 $widget_cta_text_colour:    #ffffff !default;
 
 // footer
-$footer_background_colour:  $main_brand_colour !default;
+$footer_background_colour:  $header_background_colour !default;
 $footer_text_colour:        #ffffff !default;
 $social_media_colour:       #ffffff !default;
