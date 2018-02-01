@@ -11,7 +11,7 @@
 body {
   font-size: 16px;
   line-height: 26px;
-  color: #32363f;
+  color: #000000;
   font-family: 'font_regular';
 }
 
@@ -21,19 +21,19 @@ strong, b, h1, h2, h3, h4, h5, h6 {
 }
 
 header .button-group {
-  background: #32363f;
+  background: #000000;
 }
 .button-group ul li a {
-  background: #B61A29;
+  background: #808080;
   color: #ffffff;
   border-radius: 0;
 }
 .button-group ul li a:hover, .button-group ul li a:focus, .button-group ul li a:active {
-  background: #e12c3e;
+  background: #9f9f9f;
 }
 
 header {
-  background: #32363f;
+  background: #000000;
 }
 header .logo {
   margin: 7px 0 15px 0;
@@ -43,34 +43,34 @@ header .logo a img {
 }
 
 .section.two {
-  background: #E0DED8;
+  background: #F5F5F5;
 }
 
 .content_box h1, .content_box h2, .content_box h3, .content_box h4, .content_box h5, .content_box h6 {
-  color: #B61A29;
+  color: #808080;
 }
 .content_box a {
-  color: #B61A29;
+  color: #808080;
 }
 .content_box a:hover, .content_box a:active, .content_box a:focus {
-  color: #e12c3e;
+  color: #9f9f9f;
 }
 
 .widget {
-  background: #E0DED8;
-  color: #32363f;
+  background: #F5F5F5;
+  color: #000000;
 }
 .widget h1, .widget h2, .widget h3, .widget h4, .widget h5, .widget h6 {
-  color: #B61A29;
+  color: #808080;
 }
 .widget .button a {
-  background: #B61A29;
+  background: #808080;
   color: #ffffff;
 }
 
 footer {
   text-align: center;
-  background: #B61A29;
+  background: #000000;
 }
 footer .footer_links li a {
   color: #ffffff;
