@@ -128,7 +128,7 @@ module.exports = function(grunt) {
         /* REPLACE NEW VERSION ON STAGING WITH UPDATED URL VERSION SO THAT IMAGES AND FONTS WILL WORK*/
         replace: {
             glpbrand: {
-                src: ['html/css/mip_css/mip_brand_style.css'], // CHANGE TO MATCH THE CSS LOCATION ON STAGING
+                src: ['html/css/mip_brand_style.min.css'], // CHANGE TO MATCH THE CSS LOCATION ON STAGING
                 overwrite: true, // overwrite matched source files 
                 replacements: [{
                     from: '../fonts/custom_font/',
