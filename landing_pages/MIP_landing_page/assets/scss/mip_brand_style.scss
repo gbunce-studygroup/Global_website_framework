@@ -3,17 +3,17 @@
 // regular font
 @font-face{
     font-family: 'font_regular';
-    src: url('../fonts/custom_font/________FONT_FILE________');
-    src: url('../fonts/custom_font/________FONT_FILE________#iefix') format('embedded-opentype'),
-         url('../fonts/custom_font/________FONT_FILE________') format('woff');
+    src: url('../fonts/custom_font/________FONT_FILE________.eot');
+    src: url('../fonts/custom_font/________FONT_FILE________.eot#iefix') format('embedded-opentype'),
+         url('../fonts/custom_font/________FONT_FILE________.woff') format('woff');
 }
 
 // bold font
 @font-face{
-    font-family: 'font_regular';
-    src: url('../fonts/custom_font/________FONT_FILE________');
-    src: url('../fonts/custom_font/________FONT_FILE________#iefix') format('embedded-opentype'),
-         url('../fonts/custom_font/________FONT_FILE________') format('woff');
+    font-family: 'font_bold';
+    src: url('../fonts/custom_font/________FONT_FILE________.eot');
+    src: url('../fonts/custom_font/________FONT_FILE________.eot#iefix') format('embedded-opentype'),
+         url('../fonts/custom_font/________FONT_FILE________.woff') format('woff');
 }
 
 body{
