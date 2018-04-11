@@ -10639,7 +10639,7 @@ category: Components
 /* CHAT BUTTON COMPONENT */
 .live_chat_button {
   position: fixed;
-  z-index: 9999;
+  z-index: 9998;
   left: -60px;
   left: 0px \0/IE9;
   top: 30%;
@@ -10813,8 +10813,14 @@ category: Components
 .cookie-bar {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 100%;
   padding: 20px 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: #fff;
 }
 
 .cookie-bar:after {
@@ -10857,11 +10863,13 @@ category: Components
 .cookie-bar .cookie-inner .col-a a.cookie {
   color: #000000;
   display: block;
+  text-decoration: underline;
 }
 
 .cookie-bar .cookie-inner .col-b {
   width: 16.6667%;
   float: left;
+  text-align: right;
 }
 
 .cookie-bar .cookie-inner .col-b a.cookie-btn {
@@ -10871,14 +10879,8 @@ category: Components
   display: inline-block;
 }
 
-@media (max-width: 1199px) {
-  .cookie-bar {
-    width: 970px;
-  }
-}
 @media (max-width: 991px) {
   .cookie-bar {
-    width: 750px;
     text-align: center;
     font-size: 12px;
     padding: 10px 15px;
@@ -10887,6 +10889,14 @@ category: Components
   .cookie-bar .cookie-inner .col-a, .cookie-bar .cookie-inner .col-b {
     float: none;
     width: 100%;
+  }
+
+  .cookie-bar .cookie-inner .col-a a.cookie {
+    display: inline;
+  }
+
+  .cookie-bar .cookie-inner .col-b {
+    text-align: center;
   }
 
   .cookie-bar .cookie-inner .col-b a.cookie-btn {
