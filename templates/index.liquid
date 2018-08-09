@@ -100,27 +100,55 @@
 
 <div class="container">
     <h1>Page components:</h1>
+    <h2>Widget:</h2>
+    <hr>
     <div class="row">
-        <div class="col-md-3">
-            <h4>Widget:</h4>
-
+        <div class="col-md-4">
             {% include 'components/widget'%}
                 {% assign className = '' %}
-                {% assign title = 'Widget' %}
+                {% assign clickable_widget = 'no' %}
+                {% assign title = 'Default' %}
+                {% assign clickable_title = 'no' %}
                 {% assign image_size = '720x400' %}
-                {% assign content = '<p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>' %}
+                {% assign content = '<p>lorem ipsum dolor sit amet, consectetur adipisicing elit magna aliqua.</p> <p>lorem ipsum sed do eiusmod tempor ut labore et dolore magna aliqua.</p>' %}
                 {% assign button = 'Apply now' %}
-
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
+            {% include 'components/widget'%}
+                {% assign className = '' %}
+                {% assign clickable_widget = 'no' %}
+                {% assign title = 'Clickable title' %}
+                {% assign clickable_title = 'yes' %}
+                {% assign image_size = '720x400' %}
+                {% assign content = '<p>lorem ipsum dolor sit amet, consectetur adipisicing elit magna aliqua.</p> <p>lorem ipsum sed do eiusmod tempor ut labore et dolore magna aliqua.</p>' %}
+                {% assign button = 'Apply now' %}         
+        </div>
+        <div class="col-md-4">
+            {% include 'components/widget'%}
+                {% assign className = '' %}
+                {% assign clickable_widget = 'yes' %}
+                {% assign title = 'Fully clickable' %}
+                {% assign clickable_title = 'no' %}
+                {% assign image_size = '720x400' %}
+                {% assign content = '<p>lorem ipsum dolor sit amet, consectetur adipisicing elit magna aliqua.</p> <p>lorem ipsum sed do eiusmod tempor ut labore et dolore magna aliqua.</p>' %}
+                {% assign button = 'Apply now' %}            
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
             <h4>Map:</h4>
             {% include "components/map" %}
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <h4>Testiomonial:</h4>
             {% include "components/testimonial" %}
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <h4>Button:</h4>
             {% include "components/button" %}
             <h4>Button group:</h4>
