@@ -2,9 +2,9 @@
 .widget{
 	@include component_margin;
 	h1, h2, h3, h4, h5, h6{
-		&:first-child{
-			margin-top: 0;
-		}
+		@include component_margin;
+		// wrapped in an anchor (clickable title)
+		a{}
 	}
 	img{
 		width: 100%;
@@ -12,6 +12,18 @@
 	}
 	.button{
 		a{}
+	}
+	// fully clickable widget
+	&.clickable{
+		> a{
+			display: block;
+			&:hover, &:focus, &:active{
+				text-decoration: none;
+				outline: 0;
+			}
+			h1, h2, h3, h4, h5, h6{}
+			p, ul, ol{}
+		}
 	}
 }
 
