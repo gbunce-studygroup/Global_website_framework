@@ -198,7 +198,29 @@
         </div>
         <div class="col-md-2">
             <h4>News archive:</h4>
-            {% include "components/news_archive" %} 
+            {% include "components/news_archive" %}
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <h1>Blog components:</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Blog feed:</h4>
+            {% include "components/wb_feed" %}
+            <h4>Sideboxes:</h4>
+            {% include "components/wb_categories" %}
+            {% include "components/wb_syndication" %} 
+            {% include "components/wb_tagcloud" %}
+        </div>
+        <div class="col-md-6">
+            <h4>Post listing:</h4>
+            {% include "components/wb_listing" %}
+            <h4>Post:</h4>
+            {% include "components/wb_entry" %}
         </div>
     </div>
 </div>
