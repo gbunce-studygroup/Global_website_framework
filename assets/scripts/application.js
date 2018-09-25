@@ -27,3 +27,12 @@ if ($('.third-level li a').hasClass('active')){
 $(".modal").on('hidden.bs.modal', function (e) {
     $(this).find("iframe").attr("src", $(this).find("iframe").attr("src"));
 });
+
+// RE-JIG THE NEWS FEED TO GROUP CONTENT
+$('.news_details').each(function(){
+    $(this).children('').not('img').wrapAll('<div class="news_wrap"/>');
+});
+$('.news_item').each(function(){
+    $(this).children('.news_heading').prependTo($(this).find(".news_wrap"));
+    $(this).children('.news_date').insertAfter($(this).find(".news_heading"));
+});
