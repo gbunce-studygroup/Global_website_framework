@@ -10401,6 +10401,33 @@ body {
   margin-bottom: 0;
 }
 
+.accordion .panel-group .panel-summary table tr {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.accordion .panel-group .panel-summary table tr:nth-child(odd) {
+  background: #eeeeee;
+}
+
+.accordion .panel-group .panel-summary table tr th {
+  color: #fff;
+  background: #000000;
+}
+
+.accordion .panel-group .panel-summary table.unstyled tr {
+  border-bottom: 0;
+}
+
+.accordion .panel-group .panel-summary table.unstyled tr th {
+  color: #000000;
+  background: none;
+}
+
+.accordion .panel-group .panel-summary .table_overflow {
+  width: 100%;
+  overflow-x: scroll;
+}
+
 .accordion .panel-group .panel .panel-heading {
   padding: 0;
 }
